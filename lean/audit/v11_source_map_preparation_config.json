@@ -1,0 +1,551 @@
+{
+  "schema": 1,
+  "paper": "IT25KnowledgeEconomy",
+  "namespace": "IT25KnowledgeEconomy",
+  "paper_interface_module": "",
+  "semantic_route_schema": 2,
+  "closeout_review_policy": {
+    "schema": 1,
+    "source_scope": "all_named_theory",
+    "repeat_final_scope": "main_primary",
+    "required_final_adversary_count": 1,
+    "scheduling": {
+      "initial_semantic_review": [],
+      "final_adversarial_review": []
+    }
+  },
+  "source_version": "arXiv:2312.05481v11",
+  "initialize_selected_source_claim_atoms": true,
+  "include_specs": [
+    "proposition1",
+    "proposition2",
+    "proposition3",
+    "proposition4",
+    "proposition5",
+    "proposition6"
+  ],
+  "source_item_for_spec": {
+    "proposition1": "proposition1",
+    "proposition2": "proposition2",
+    "proposition3": "proposition3",
+    "proposition4": "proposition4",
+    "proposition5": "proposition5",
+    "proposition6": "proposition6"
+  },
+  "evidence_declaration_for_spec": {
+    "proposition1": "IT25KnowledgeEconomy.proposition1",
+    "proposition2": "IT25KnowledgeEconomy.proposition2",
+    "proposition3": "IT25KnowledgeEconomy.proposition3",
+    "proposition4": "IT25KnowledgeEconomy.proposition4",
+    "proposition5": "IT25KnowledgeEconomy.proposition5",
+    "proposition6": "IT25KnowledgeEconomy.proposition6"
+  },
+  "add_source_items": {
+    "model_primitives": {
+      "statement": "Humans have heterogeneous knowledge z in [0,1], distributed according to G with continuous strictly positive density g; communication costs h in (0,1), one-layer production succeeds with probability z, and a two-layer organization has team size n(z)=1/[h(1-z)].",
+      "source_kind": "model",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:352-377",
+      "source_note": "Source primitives, population assumptions, production technology, and team-size formula.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.knowledgeDomain",
+        "IT25KnowledgeEconomy.Economy",
+        "IT25KnowledgeEconomy.teamSize"
+      ]
+    },
+    "uniform_normalization": {
+      "statement": "Problem difficulty x is uniform on [0,1], so an individual's knowledge z is the fraction of problems she can solve independently.",
+      "source_kind": "model",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:407-409",
+      "source_note": "Uniform problem-difficulty normalization; this is distinct from the arbitrary human knowledge distribution G.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.independentSuccessProbability"
+      ]
+    },
+    "ai_compute_model": {
+      "statement": "An AI agent has knowledge zAI in [0,1), compute is an exogenous stock, and compute may be allocated among independent production, AI workers, and AI solvers.",
+      "source_kind": "model",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:417-430",
+      "source_note": "AI knowledge, compute, and the five organizational configurations.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.AIMode",
+        "IT25KnowledgeEconomy.AdmissibleAI",
+        "IT25KnowledgeEconomy.EquilibriumOutcome"
+      ]
+    },
+    "profit_formulas": {
+      "statement": "The source displays profits for one-layer human and AI firms and for the three two-layer human/AI configurations.",
+      "source_kind": "formula",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:487-520",
+      "source_note": "All displayed firm-profit formulas and the zero-profit optimality condition.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.singleHumanProfit",
+        "IT25KnowledgeEconomy.singleAIProfit",
+        "IT25KnowledgeEconomy.topAutomatedProfit",
+        "IT25KnowledgeEconomy.bottomAutomatedProfit",
+        "IT25KnowledgeEconomy.humanTeamProfit",
+        "IT25KnowledgeEconomy.FirmsChooseOptimally"
+      ]
+    },
+    "allocation_matching_conditions": {
+      "statement": "The source specifies compute accounting, occupation sets, human matching, inverse employee matching, and equation (1)'s measurable-subset resource constraint.",
+      "source_kind": "condition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:521-557",
+      "source_note": "Allocation identities and the matching feasibility equation used by competitive equilibrium.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.ComputeAccounting",
+        "IT25KnowledgeEconomy.MatchingResourceConstraint",
+        "IT25KnowledgeEconomy.humanOccupationSets"
+      ]
+    },
+    "competitive_equilibrium_definition": {
+      "statement": "An equilibrium consists of nonnegative compute allocations, measurable occupation sets, matching and wage functions, and a nonnegative compute rental rate such that firms optimally choose their structures at zero profit and markets clear.",
+      "source_kind": "definition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:558-567",
+      "source_note": "The paper's displayed Definition (Competitive Equilibrium), including both numbered clauses.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.PairwiseAlmostDisjoint",
+        "IT25KnowledgeEconomy.availableCompute",
+        "IT25KnowledgeEconomy.ModeRestrictions",
+        "IT25KnowledgeEconomy.MarketsClear",
+        "IT25KnowledgeEconomy.CompetitiveEquilibrium",
+        "IT25KnowledgeEconomy.EquilibriumEquivalent",
+        "IT25KnowledgeEconomy.UniqueCompetitiveEquilibrium"
+      ]
+    },
+    "output_income_formulas": {
+      "statement": "Total output is the sum of output from the five firm configurations; total labor income is the wage integral and total capital income is μr.",
+      "source_kind": "formula",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:572-577",
+      "source_note": "Aggregate output and labor/capital income formulas.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.totalOutput",
+        "IT25KnowledgeEconomy.laborIncome",
+        "IT25KnowledgeEconomy.capitalIncome",
+        "IT25KnowledgeEconomy.Efficient",
+        "IT25KnowledgeEconomy.LaborIncomeMaximizing"
+      ]
+    },
+    "compute_abundance_condition": {
+      "statement": "Compute is abundant relative to human time when more AI agents exist than can be matched with humans, so some autonomous AI produces independently; the footnote gives a sufficient inequality and states a uniform finite μ exists.",
+      "source_kind": "condition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:578-600",
+      "source_note": "Maintained compute-abundance condition and its sufficient formula.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.ComputeAbundant",
+        "IT25KnowledgeEconomy.UniformlyComputeAbundant"
+      ]
+    },
+    "equilibrium_notation_definition": {
+      "statement": "W is Wa union Wp, S is Sa union Sp, e is the inverse employee matching function, int and cl denote interior and closure, and B ≼ B' means sup B ≤ inf B'.",
+      "source_kind": "definition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:604-612",
+      "source_note": "The source's Some Notation paragraph.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.humanWorkers",
+        "IT25KnowledgeEconomy.humanSolvers",
+        "IT25KnowledgeEconomy.LiesBelow"
+      ]
+    },
+    "pre_ai_regime": {
+      "statement": "Without AI, equivalently when μ=0, the AI-worker and AI-solver sets are empty.",
+      "source_kind": "condition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:701-703",
+      "source_note": "Pre-AI technological restriction used in Proposition 1.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.AIMode.preAI"
+      ]
+    },
+    "basic_advanced_definition": {
+      "statement": "We say AI is basic if zAI belongs to the interior of the pre-AI worker set W, and advanced if it belongs to the interior of the pre-AI solver set S.",
+      "source_kind": "definition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:954-957",
+      "source_note": "Basic-versus-advanced AI terminology used by Propositions 3 and 4.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.BasicAI",
+        "IT25KnowledgeEconomy.AdvancedAI"
+      ]
+    },
+    "productivity_definition": {
+      "statement": "A worker's average productivity is expected output per unit of time and equals the knowledge of the solver with whom she is matched.",
+      "source_kind": "definition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:1035-1038",
+      "source_note": "Worker productivity definition preceding Proposition 4.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.productivity"
+      ]
+    },
+    "span_of_control_definition": {
+      "statement": "A solver's span of control equals the number of human or AI workers under her supervision and increases with the knowledge of the workers with whom she is matched.",
+      "source_kind": "definition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:1038-1041",
+      "source_note": "Solver span-of-control definition preceding Proposition 4.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.spanOfControl"
+      ]
+    },
+    "winner_sets_definition": {
+      "statement": "B and T are the sets of individuals below and above zAI whose post-AI wage is strictly larger than their pre-AI wage.",
+      "source_kind": "definition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:1171-1174",
+      "source_note": "Bottom- and top-winner sets used by Proposition 5.",
+      "claim_bearing": true,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.bottomWinners",
+        "IT25KnowledgeEconomy.topWinners"
+      ]
+    },
+    "nonautonomous_ai_model": {
+      "statement": "Non-autonomous AI can act as a solver or co-pilot but not as a worker or co-worker and cannot independently produce; unused compute is idle and its rental rate is zero when compute is abundant.",
+      "source_kind": "model",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:1276-1342",
+      "source_note": "The non-autonomous-AI technology and equilibrium modifications.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.AIMode.nonAutonomous"
+      ]
+    },
+    "occupation_comparison": {
+      "statement": "The source compares pre-AI, autonomous-AI, and non-autonomous-AI human occupational assignments using the same three aggregate human occupations.",
+      "source_kind": "condition",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:1343-1347",
+      "source_note": "Comparison convention used in Proposition 6.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.SameHumanOccupations"
+      ]
+    },
+    "proposition_6_footnote_artifact": {
+      "statement": "The transcript phrase 'Figure 9 illustrates Proposition 6.20' is Proposition 6 followed by footnote marker 20, not a distinct Proposition 6.20.",
+      "source_kind": "remark",
+      "source_location": "papers/IT25KnowledgeEconomy/source-audited.txt:1375-1430",
+      "source_note": "PDF-text extraction joins the proposition number with footnote 20; retained to reconcile the mechanical named-result false positive.",
+      "claim_bearing": false,
+      "lean_declarations": [
+        "IT25KnowledgeEconomy.proposition6Spec"
+      ]
+    }
+  },
+  "source_semantic_declarations": {
+    "model_primitives": [
+      "IT25KnowledgeEconomy.knowledgeDomain",
+      "IT25KnowledgeEconomy.Economy",
+      "IT25KnowledgeEconomy.teamSize"
+    ],
+    "uniform_normalization": [
+      "IT25KnowledgeEconomy.independentSuccessProbability"
+    ],
+    "ai_compute_model": [
+      "IT25KnowledgeEconomy.AIMode",
+      "IT25KnowledgeEconomy.AdmissibleAI",
+      "IT25KnowledgeEconomy.EquilibriumOutcome"
+    ],
+    "profit_formulas": [
+      "IT25KnowledgeEconomy.singleHumanProfit",
+      "IT25KnowledgeEconomy.singleAIProfit",
+      "IT25KnowledgeEconomy.topAutomatedProfit",
+      "IT25KnowledgeEconomy.bottomAutomatedProfit",
+      "IT25KnowledgeEconomy.humanTeamProfit",
+      "IT25KnowledgeEconomy.FirmsChooseOptimally"
+    ],
+    "allocation_matching_conditions": [
+      "IT25KnowledgeEconomy.ComputeAccounting",
+      "IT25KnowledgeEconomy.MatchingResourceConstraint",
+      "IT25KnowledgeEconomy.humanOccupationSets"
+    ],
+    "competitive_equilibrium_definition": [
+      "IT25KnowledgeEconomy.PairwiseAlmostDisjoint",
+      "IT25KnowledgeEconomy.availableCompute",
+      "IT25KnowledgeEconomy.ModeRestrictions",
+      "IT25KnowledgeEconomy.MarketsClear",
+      "IT25KnowledgeEconomy.CompetitiveEquilibrium",
+      "IT25KnowledgeEconomy.EquilibriumEquivalent",
+      "IT25KnowledgeEconomy.UniqueCompetitiveEquilibrium"
+    ],
+    "output_income_formulas": [
+      "IT25KnowledgeEconomy.totalOutput",
+      "IT25KnowledgeEconomy.laborIncome",
+      "IT25KnowledgeEconomy.capitalIncome",
+      "IT25KnowledgeEconomy.Efficient",
+      "IT25KnowledgeEconomy.LaborIncomeMaximizing"
+    ],
+    "compute_abundance_condition": [
+      "IT25KnowledgeEconomy.ComputeAbundant",
+      "IT25KnowledgeEconomy.UniformlyComputeAbundant"
+    ],
+    "equilibrium_notation_definition": [
+      "IT25KnowledgeEconomy.humanWorkers",
+      "IT25KnowledgeEconomy.humanSolvers",
+      "IT25KnowledgeEconomy.LiesBelow"
+    ],
+    "pre_ai_regime": [
+      "IT25KnowledgeEconomy.AIMode.preAI"
+    ],
+    "basic_advanced_definition": [
+      "IT25KnowledgeEconomy.BasicAI",
+      "IT25KnowledgeEconomy.AdvancedAI"
+    ],
+    "productivity_definition": [
+      "IT25KnowledgeEconomy.productivity"
+    ],
+    "span_of_control_definition": [
+      "IT25KnowledgeEconomy.spanOfControl"
+    ],
+    "winner_sets_definition": [
+      "IT25KnowledgeEconomy.bottomWinners",
+      "IT25KnowledgeEconomy.topWinners"
+    ],
+    "nonautonomous_ai_model": [
+      "IT25KnowledgeEconomy.AIMode.nonAutonomous"
+    ],
+    "occupation_comparison": [
+      "IT25KnowledgeEconomy.SameHumanOccupations"
+    ]
+  },
+  "paper_semantic_prerequisite_sources": {
+    "IT25KnowledgeEconomy.knowledgeDomain": "model_primitives",
+    "IT25KnowledgeEconomy.Economy": "model_primitives",
+    "IT25KnowledgeEconomy.teamSize": "model_primitives",
+    "IT25KnowledgeEconomy.independentSuccessProbability": "uniform_normalization",
+    "IT25KnowledgeEconomy.AIMode": "ai_compute_model",
+    "IT25KnowledgeEconomy.AdmissibleAI": "ai_compute_model",
+    "IT25KnowledgeEconomy.EquilibriumOutcome": "ai_compute_model",
+    "IT25KnowledgeEconomy.humanWorkers": "equilibrium_notation_definition",
+    "IT25KnowledgeEconomy.humanSolvers": "equilibrium_notation_definition",
+    "IT25KnowledgeEconomy.LiesBelow": "equilibrium_notation_definition",
+    "IT25KnowledgeEconomy.PairwiseAlmostDisjoint": "competitive_equilibrium_definition",
+    "IT25KnowledgeEconomy.MatchingResourceConstraint": "allocation_matching_conditions",
+    "IT25KnowledgeEconomy.ComputeAccounting": "allocation_matching_conditions",
+    "IT25KnowledgeEconomy.singleHumanProfit": "profit_formulas",
+    "IT25KnowledgeEconomy.singleAIProfit": "profit_formulas",
+    "IT25KnowledgeEconomy.topAutomatedProfit": "profit_formulas",
+    "IT25KnowledgeEconomy.bottomAutomatedProfit": "profit_formulas",
+    "IT25KnowledgeEconomy.humanTeamProfit": "profit_formulas",
+    "IT25KnowledgeEconomy.FirmsChooseOptimally": "profit_formulas",
+    "IT25KnowledgeEconomy.availableCompute": "competitive_equilibrium_definition",
+    "IT25KnowledgeEconomy.ModeRestrictions": "competitive_equilibrium_definition",
+    "IT25KnowledgeEconomy.MarketsClear": "competitive_equilibrium_definition",
+    "IT25KnowledgeEconomy.CompetitiveEquilibrium": "competitive_equilibrium_definition",
+    "IT25KnowledgeEconomy.EquilibriumEquivalent": "competitive_equilibrium_definition",
+    "IT25KnowledgeEconomy.UniqueCompetitiveEquilibrium": "competitive_equilibrium_definition",
+    "IT25KnowledgeEconomy.ComputeAbundant": "compute_abundance_condition",
+    "IT25KnowledgeEconomy.UniformlyComputeAbundant": "compute_abundance_condition",
+    "IT25KnowledgeEconomy.totalOutput": "output_income_formulas",
+    "IT25KnowledgeEconomy.laborIncome": "output_income_formulas",
+    "IT25KnowledgeEconomy.capitalIncome": "output_income_formulas",
+    "IT25KnowledgeEconomy.Efficient": "output_income_formulas",
+    "IT25KnowledgeEconomy.LaborIncomeMaximizing": "output_income_formulas",
+    "IT25KnowledgeEconomy.BasicAI": "basic_advanced_definition",
+    "IT25KnowledgeEconomy.AdvancedAI": "basic_advanced_definition",
+    "IT25KnowledgeEconomy.productivity": "productivity_definition",
+    "IT25KnowledgeEconomy.spanOfControl": "span_of_control_definition",
+    "IT25KnowledgeEconomy.bottomWinners": "winner_sets_definition",
+    "IT25KnowledgeEconomy.topWinners": "winner_sets_definition",
+    "IT25KnowledgeEconomy.SameHumanOccupations": "occupation_comparison"
+  },
+  "library_semantic_prerequisite_sources": {},
+  "semantic_context_requirements": {},
+  "model_convention_ids_by_source_item": {},
+  "unselected_item_dispositions": {
+    "proposition_6_footnote_artifact": {
+      "inventory_role": "deep_audit_material",
+      "scope_disposition": "deep_audit_material",
+      "reason": "The exact text is explanatory material following Proposition 6; the apparent label 6.20 is a PDF-transcript collision with footnote marker 20."
+    }
+  },
+  "source_presentation_reconciliations": {
+    "proposition1": {
+      "presentation_kind": "proposition",
+      "presentation_label": "Proposition 1",
+      "core_anchor_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:704-715",
+      "boundary_reason": "completed_statement_then_explanation",
+      "semantic_basis": "Lines 704-715 contain the complete proposition; the extractor conservatively continues through the following discussion and Figure 3.",
+      "validator": "Huygens independent source-boundary review",
+      "validated_at": "2026-09-13T00:00:00Z"
+    },
+    "proposition3": {
+      "presentation_kind": "proposition",
+      "presentation_label": "Proposition 3",
+      "core_anchor_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:1025-1027",
+      "boundary_reason": "completed_statement_then_explanation",
+      "semantic_basis": "Lines 1025-1027 contain the complete proposition; the following lines are intuition and introduce the next definitions.",
+      "validator": "Huygens independent source-boundary review",
+      "validated_at": "2026-09-13T00:00:00Z"
+    },
+    "proposition4": {
+      "presentation_kind": "proposition",
+      "presentation_label": "Proposition 4",
+      "core_anchor_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:1042-1048",
+      "boundary_reason": "completed_statement_then_explanation",
+      "semantic_basis": "Lines 1042-1048 contain the complete proposition; the extractor's larger span consists of explanatory prose and Figure 6.",
+      "validator": "Huygens independent source-boundary review",
+      "validated_at": "2026-09-13T00:00:00Z"
+    }
+  },
+  "prose_definition_reconciliations": {
+    "competitive_equilibrium_definition": {
+      "presentation_id": "pdef_competitive_equilibrium",
+      "semantic_basis": "The source item covers the complete displayed definition and its two equilibrium clauses.",
+      "validator": "Codex source-to-model reviewer",
+      "validator_type": "agent",
+      "validated_at": "2026-09-13T00:00:00Z"
+    },
+    "equilibrium_notation_definition": {
+      "presentation_id": "pdef_equilibrium_notation",
+      "semantic_basis": "The source item covers exactly the notation paragraph defining aggregate occupations and lies-below.",
+      "validator": "Codex source-to-model reviewer",
+      "validator_type": "agent",
+      "validated_at": "2026-09-13T00:00:00Z"
+    },
+    "basic_advanced_definition": {
+      "presentation_id": "pdef_basic_advanced",
+      "semantic_basis": "The source item states the two membership predicates used to distinguish basic and advanced AI.",
+      "validator": "Codex source-to-model reviewer",
+      "validator_type": "agent",
+      "validated_at": "2026-09-13T00:00:00Z"
+    },
+    "productivity_definition": {
+      "presentation_id": "pdef_productivity",
+      "semantic_basis": "The item directly represents average worker productivity as the knowledge of the matched solver.",
+      "validator": "Codex source-to-model reviewer",
+      "validator_type": "agent",
+      "validated_at": "2026-09-13T00:00:00Z"
+    },
+    "span_of_control_definition": {
+      "presentation_id": "pdef_span_of_control",
+      "semantic_basis": "The item directly represents a solver's span as the number of supervised human or AI workers.",
+      "validator": "Codex source-to-model reviewer",
+      "validator_type": "agent",
+      "validated_at": "2026-09-13T00:00:00Z"
+    },
+    "winner_sets_definition": {
+      "presentation_id": "pdef_winner_sets",
+      "semantic_basis": "The source item represents both source-defined wage-winner sets B and T with their knowledge ranges.",
+      "validator": "Codex source-to-model reviewer",
+      "validator_type": "agent",
+      "validated_at": "2026-09-13T00:00:00Z"
+    }
+  },
+  "source_named_result_inventory_review": {
+    "complete": true,
+    "validator": "Huygens independent source inventory agent",
+    "method": "Full source-only reading of the byte-pinned v11 PDF transcript, cross-checked against mechanical heading extraction before inspecting Lean declarations.",
+    "validated_at": "2026-09-13T00:00:00Z",
+    "prose_definition_presentations": [
+      {
+        "id": "pdef_competitive_equilibrium",
+        "source_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:558-567",
+        "defined_entity_kind": "object",
+        "defined_object": "Competitive Equilibrium",
+        "scope_disposition": "normal_named_theory_definition"
+      },
+      {
+        "id": "pdef_equilibrium_notation",
+        "source_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:604-612",
+        "defined_entity_kind": "object",
+        "defined_object": "W",
+        "scope_disposition": "normal_named_theory_definition"
+      },
+      {
+        "id": "pdef_basic_advanced",
+        "source_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:954-957",
+        "defined_entity_kind": "predicate",
+        "defined_object": "AI",
+        "scope_disposition": "normal_named_theory_definition"
+      },
+      {
+        "id": "pdef_productivity",
+        "source_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:1035-1038",
+        "defined_entity_kind": "object",
+        "defined_object": "productivity",
+        "scope_disposition": "normal_named_theory_definition"
+      },
+      {
+        "id": "pdef_span_of_control",
+        "source_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:1038-1041",
+        "defined_entity_kind": "object",
+        "defined_object": "span of control",
+        "scope_disposition": "normal_named_theory_definition"
+      },
+      {
+        "id": "pdef_winner_sets",
+        "source_locator": "papers/IT25KnowledgeEconomy/source-audited.txt:1171-1174",
+        "defined_entity_kind": "object",
+        "defined_object": "B and T",
+        "scope_disposition": "normal_named_theory_definition"
+      }
+    ],
+    "candidate_presentations": [
+      {"id":"D01","source_locator":"source-audited.txt:38-248","presentation_label":"knowledge-economy conceptual framing","scope_disposition":"deep_audit_material","semantic_basis":"Motivation and interpretation, not a standalone named theoretical result."},
+      {"id":"D02","source_locator":"source-audited.txt:53-73","presentation_label":"Table 1 conceptual taxonomy","scope_disposition":"deep_audit_material","semantic_basis":"Descriptive taxonomy rather than a theorem or model definition."},
+      {"id":"D03","source_locator":"source-audited.txt:265-284","presentation_label":"AI and tacit-knowledge scale","scope_disposition":"deep_audit_material","semantic_basis":"Conceptual motivation without a standalone formal claim."},
+      {"id":"D04","source_locator":"source-audited.txt:285-301","presentation_label":"knowledge-economy foundation","scope_disposition":"deep_audit_material","semantic_basis":"Section-level exposition preceding the formal primitives."},
+      {"id":"D05","source_locator":"source-audited.txt:310-313","presentation_label":"problem and knowledge terminology footnote","scope_disposition":"deep_audit_material","semantic_basis":"Expository terminology supporting the source model."},
+      {"id":"D06","source_locator":"source-audited.txt:319-342","presentation_label":"AI-agent interpretation","scope_disposition":"deep_audit_material","semantic_basis":"Economic interpretation, not an additional named result."},
+      {"id":"D07","source_locator":"source-audited.txt:378-398","presentation_label":"Figure 1 organization illustration","scope_disposition":"deep_audit_material","semantic_basis":"Illustrative figure and parameterized example."},
+      {"id":"D08","source_locator":"source-audited.txt:402-404","presentation_label":"arbitrary-layer appendix pointer","scope_disposition":"deep_audit_material","semantic_basis":"Pointer to supplementary analysis absent from pinned main-text source."},
+      {"id":"D09","source_locator":"source-audited.txt:436-477","presentation_label":"Figure 2 firm configurations","scope_disposition":"deep_audit_material","semantic_basis":"Illustration of model configurations already represented by source definitions."},
+      {"id":"D10","source_locator":"source-audited.txt:622-652","presentation_label":"model interpretation discussion","scope_disposition":"deep_audit_material","semantic_basis":"Discussion and examples, not a standalone named theoretical result."},
+      {"id":"D11","source_locator":"source-audited.txt:671-674","presentation_label":"multiple-AI extension pointer","scope_disposition":"deep_audit_material","semantic_basis":"Unformalized extension pointer to the Online Appendix."},
+      {"id":"D12","source_locator":"source-audited.txt:675-686","presentation_label":"compute-ownership heterogeneity discussion","scope_disposition":"deep_audit_material","semantic_basis":"Interpretive robustness discussion outside the named-theory target set."},
+      {"id":"D13","source_locator":"source-audited.txt:691-695","presentation_label":"technological-unemployment extension","scope_disposition":"deep_audit_material","semantic_basis":"Online Appendix extension, not part of the pinned main-text named-result set."},
+      {"id":"D14","source_locator":"source-audited.txt:726-727","presentation_label":"marginal-product interpretation","scope_disposition":"deep_audit_material","semantic_basis":"Economic interpretation of the equilibrium wage."},
+      {"id":"D15","source_locator":"source-audited.txt:742-781","presentation_label":"Figure 3 pre-AI illustration","scope_disposition":"deep_audit_material","semantic_basis":"Numerical illustration of Proposition 1."},
+      {"id":"D16","source_locator":"source-audited.txt:809-811","presentation_label":"high-help-cost extension pointer","scope_disposition":"deep_audit_material","semantic_basis":"Prior-version and extension note, not a separate current theorem."},
+      {"id":"D17","source_locator":"source-audited.txt:873-926","presentation_label":"Figure 4 autonomous-AI illustration","scope_disposition":"deep_audit_material","semantic_basis":"Numerical illustration of Proposition 2."},
+      {"id":"D18","source_locator":"source-audited.txt:928-931","presentation_label":"simultaneous AI-use appendix pointer","scope_disposition":"deep_audit_material","semantic_basis":"Online Appendix extension pointer."},
+      {"id":"D19","source_locator":"source-audited.txt:952-957","presentation_label":"firm-composition and knife-edge discussion","scope_disposition":"deep_audit_material","semantic_basis":"Interpretive classification surrounding the formal basic/advanced definition."},
+      {"id":"D20","source_locator":"source-audited.txt:958-1016","presentation_label":"Figure 5 wage comparison","scope_disposition":"deep_audit_material","semantic_basis":"Numerical illustration preceding comparative statics."},
+      {"id":"D21","source_locator":"source-audited.txt:1060-1139","presentation_label":"Figure 6 productivity illustration","scope_disposition":"deep_audit_material","semantic_basis":"Numerical illustration and intuition for Proposition 4."},
+      {"id":"D22","source_locator":"source-audited.txt:1160-1166","presentation_label":"labor-income and output observation","scope_disposition":"deep_audit_material","semantic_basis":"Unnumbered consequence discussed in prose rather than a selected named theorem."},
+      {"id":"D23","source_locator":"source-audited.txt:1203-1262","presentation_label":"Figure 7 distributional illustration","scope_disposition":"deep_audit_material","semantic_basis":"Illustration and intuition for Proposition 5."},
+      {"id":"D24","source_locator":"source-audited.txt:1269-1270","presentation_label":"high-help-cost countercase","scope_disposition":"deep_audit_material","semantic_basis":"Boundary-case discussion outside the maintained h<h0 regime."},
+      {"id":"D25","source_locator":"source-audited.txt:1280-1283","presentation_label":"perfect-AI endpoint note","scope_disposition":"deep_audit_material","semantic_basis":"Endpoint discussion for zAI=1, excluded by the paper's stated admissible range."},
+      {"id":"D26","source_locator":"source-audited.txt:1287-1328","presentation_label":"Figure 8 non-autonomous configurations","scope_disposition":"deep_audit_material","semantic_basis":"Illustration of the non-autonomous source model."},
+      {"id":"D27","source_locator":"source-audited.txt:1389-1392","presentation_label":"additional non-autonomous comparisons","scope_disposition":"deep_audit_material","semantic_basis":"Online Appendix result pointer without the result statement in the pinned main text."},
+      {"id":"D28","source_locator":"source-audited.txt:1396-1436","presentation_label":"Figure 9 regime comparison","scope_disposition":"deep_audit_material","semantic_basis":"Numerical illustration of Proposition 6."},
+      {"id":"D29","source_locator":"source-audited.txt:1438-1444","presentation_label":"free-compute observation","scope_disposition":"deep_audit_material","semantic_basis":"Interpretive consequence of the two-layer restriction."},
+      {"id":"D30","source_locator":"source-audited.txt:1445-1460","presentation_label":"arbitrary-layers robustness discussion","scope_disposition":"deep_audit_material","semantic_basis":"Robustness and extension discussion rather than a selected theorem."},
+      {"id":"D31","source_locator":"source-audited.txt:1453-1456","presentation_label":"continuity and limited-compute discussion","scope_disposition":"deep_audit_material","semantic_basis":"Extension pointer outside the maintained abundance regime."},
+      {"id":"D32","source_locator":"source-audited.txt:1491-1495","presentation_label":"more-than-two-layers extension","scope_disposition":"deep_audit_material","semantic_basis":"Online Appendix extension pointer."},
+      {"id":"D33","source_locator":"source-audited.txt:1509-1535","presentation_label":"robots comparison","scope_disposition":"deep_audit_material","semantic_basis":"Conceptual comparison with robots, not a named model theorem."},
+      {"id":"D34","source_locator":"source-audited.txt:1518-1526","presentation_label":"offshoring comparison","scope_disposition":"deep_audit_material","semantic_basis":"Conceptual comparison with offshoring."},
+      {"id":"D35","source_locator":"source-audited.txt:1527-1541","presentation_label":"ICT comparison","scope_disposition":"deep_audit_material","semantic_basis":"Conceptual comparison with information and communication technologies."},
+      {"id":"D36","source_locator":"source-audited.txt:1545-1552","presentation_label":"knowledge-economy implications","scope_disposition":"deep_audit_material","semantic_basis":"Concluding economic interpretation."},
+      {"id":"D37","source_locator":"source-audited.txt:1553-1557","presentation_label":"policy summary","scope_disposition":"deep_audit_material","semantic_basis":"Policy discussion rather than a mathematical result."},
+      {"id":"D38","source_locator":"source-audited.txt:1567-1571","presentation_label":"communication-cost conclusion","scope_disposition":"deep_audit_material","semantic_basis":"Concluding comparative interpretation of communication costs."}
+    ],
+    "source_region_partition": {
+      "complete": true,
+      "validator": "Codex source-region reviewer",
+      "method": "The pinned v11 transcript contains the main article only; all 1,737 text slices were assigned to one exhaustive main-text region after confirming that the archive has no appendix body.",
+      "validated_at": "2026-09-13T00:00:00Z",
+      "regions": [
+        {"id":"main","kind":"main_text","source_locator":"source-audited.txt:1-1737"}
+      ],
+      "source_item_regions": {
+        "proposition1":"main","proposition2":"main","proposition3":"main","proposition4":"main","proposition5":"main","proposition6":"main",
+        "model_primitives":"main","uniform_normalization":"main","ai_compute_model":"main","profit_formulas":"main","allocation_matching_conditions":"main","competitive_equilibrium_definition":"main","output_income_formulas":"main","compute_abundance_condition":"main","equilibrium_notation_definition":"main","pre_ai_regime":"main","basic_advanced_definition":"main","productivity_definition":"main","span_of_control_definition":"main","winner_sets_definition":"main","nonautonomous_ai_model":"main","occupation_comparison":"main","proposition_6_footnote_artifact":"main"
+      },
+      "candidate_presentation_regions": {
+        "D01":"main","D02":"main","D03":"main","D04":"main","D05":"main","D06":"main","D07":"main","D08":"main","D09":"main","D10":"main","D11":"main","D12":"main","D13":"main","D14":"main","D15":"main","D16":"main","D17":"main","D18":"main","D19":"main","D20":"main","D21":"main","D22":"main","D23":"main","D24":"main","D25":"main","D26":"main","D27":"main","D28":"main","D29":"main","D30":"main","D31":"main","D32":"main","D33":"main","D34":"main","D35":"main","D36":"main","D37":"main","D38":"main"
+      },
+      "prose_definition_presentation_regions": {
+        "pdef_competitive_equilibrium":"main","pdef_equilibrium_notation":"main","pdef_basic_advanced":"main","pdef_productivity":"main","pdef_span_of_control":"main","pdef_winner_sets":"main"
+      },
+      "promoted_source_items": []
+    }
+  }
+}
