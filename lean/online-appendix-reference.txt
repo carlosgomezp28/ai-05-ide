@@ -1,0 +1,5007 @@
+Online Appendix for:
+Artificial Intelligence in the Knowledge Economy
+(Not for Publication)
+Enrique Ide & Eduard Talamàs1
+February 23, 2025
+
+1
+
+Department of Economics, IESE Business School, Carrer d’Arnús i de Garı́ 3-7, 08034 Barcelona, Spain
+(eide@iese.edu and etalamas@iese.edu).
+
+Contents
+1
+
+Limitations of Our Model and Avenues for Future Research
+
+3
+
+2
+
+Proofs Omitted from the Main Text
+
+5
+
+2.1
+
+Proof of Proposition 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5
+
+2.2
+
+Proof of Proposition 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+7
+
+2.3
+
+Proof of Proposition 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+15
+
+2.4
+
+Proof of Proposition 4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+2.5
+
+Proof of Proposition 5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+18
+
+2.5.1
+
+A Preliminary Result . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+18
+
+2.5.2
+
+Proof of Proposition 5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+20
+
+Proof of Proposition 6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+21
+
+2.6
+3
+
+4
+
+The Pre-AI Economy: Further Results
+
+28
+
+3.1
+
+Pre-AI Equilibrium when Knowledge is Uniformly Distributed . . . . . . . . . . . . .
+
+28
+
+3.2
+
+Developing vs. Advanced Economies . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+28
+
+Autonomous AI: Further Results
+
+30
+
+4.1
+
+More on the Baseline Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+30
+
+4.1.1
+
+Post-AI Equilibrium when Knowledge is Uniformly Distributed . . . . . . . . .
+
+30
+
+4.1.2
+
+The Effects of AI on the Distribution of Firm Size, Productivity, and Span of
+
+4.2
+
+Control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+31
+
+4.1.3
+
+The Knife-Edge Case zAI ∈ W ∩ S . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+34
+
+4.1.4
+
+Superintelligent AI: zAI = 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+36
+
+Negligible Amount of Compute: µ → 0 . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+38
+
+4.2.1
+
+Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+38
+
+4.2.2
+
+Proof of Proposition 4.6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+41
+
+1
+
+4.2.3
+4.3
+
+4.4
+
+4.5
+
+4.6
+5
+
+Proof of Proposition 4.7 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+46
+
+Equilibrium when Compute is Abundant Relative to Production Opportunities . . . .
+
+48
+
+4.3.1
+
+Preliminaries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+49
+
+4.3.2
+
+AI Leads to Technological Unemployment . . . . . . . . . . . . . . . . . . . . .
+
+50
+
+4.3.3
+
+Proof of Proposition 4.8 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+52
+
+4.3.4
+
+A Reinterpretation of the Price of Production Opportunities . . . . . . . . . . .
+
+54
+
+AI Heterogeneity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+55
+
+4.4.1
+
+Preliminaries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+55
+
+4.4.2
+
+Equilibrium . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+57
+
+Autonomous AI vs. Offshoring/Immigration . . . . . . . . . . . . . . . . . . . . . . . .
+
+59
+
+4.5.1
+
+AI vs. Offshoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+60
+
+4.5.2
+
+AI vs. Targeted Immigration . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+60
+
+More Layers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+61
+
+Non-Autonomous AI: Further Results
+
+64
+
+5.1
+
+Occupational Choice, Firm Distribution, and Worker-Solver Matching . . . . . . . . .
+
+64
+
+5.2
+
+Negligible Amount of Compute: µ → 0 . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+68
+
+5.2.1
+
+Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+68
+
+5.2.2
+
+Proof of Proposition 5.2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+70
+
+2
+
+Chapter 1
+
+Limitations of Our Model and Avenues
+for Future Research
+In this chapter, we discuss some limitations of our model and suggest avenues for future research.
+Firms with at Most Two Layers.—To keep the analysis transparent and provide simple, testable predictions, we focus on the simplest hierarchical organizations—those with at most two layers. As
+discussed in the main text, this simple environment aligns well with emerging experimental and observational evidence on AI’s impact on knowledge work. It is also sufficiently rich to demonstrate
+the reorganizations AI can induce and how these depend on AI’s autonomy and problem-solving
+capabilities.
+Allowing for more complex organizational structures could undoubtedly reveal additional subtleties in how AI reorganizes knowledge work. However, our goal is to strike a balance between
+simplicity and analytical richness. Introducing a more elaborate model risks obscuring the key mechanisms and insights we aim to emphasize. Furthermore, as we show in Chapter 4.6, many insights we
+uncover—such as the conditions under which the least and most knowledgeable individuals benefit
+from AI—naturally generalize to settings with an arbitrary number of layers. Nevertheless, a more
+comprehensive examination of AI’s effects on more complex organizational structures is a promising
+area for future research.
+Equal Access to AI.—In light of the rise of foundation models, we assume negligible customization
+costs and equal access to AI across firms. This serves as a useful first approximation since customizing foundation models typically costs several orders of magnitude less than developing AI systems
+from scratch (Appenzeller et al., 2023; Xia et al., 2024), with costs likely to decline further.1 However, certain applications still require domain-specific AI models, as demonstrated by programs like
+Google’s AlphaFold. Developing a multi-sector model of the knowledge economy—where some sec1
+
+Developing more effective and cost-efficient techniques for customizing foundation models is an especially active area
+
+in the computer science literature. Techniques such as RAG, LoRA, QLoRA, and PETF, or variations thereof, are being
+proposed at an accelerated pace. For an overview of the most commonly used methods, see Shah and Patel (2023).
+
+3
+
+tors rely on shared foundation models while others require specialized models—presents a promising
+avenue for future research.
+Variation in AI’s Capabilities Across Sectors.— AI systems often exhibit varying capabilities across industries. For example, Goldman Sachs (2023) estimates that Generative AI’s automation potential in
+healthcare support is roughly half that in office and administrative support. A multi-sector framework that accounts for these differences would offer valuable insights into how AI might drive interindustry reallocation.
+The Industrial Organization of the AI Ecosystem.— For simplicity, we treat AI technology as a given
+and model the stock of compute as an endowment. This allows us to bypass the complexities of
+modeling the AI training technology and the industrial organization of the AI sector—such as foundation model developers, application developers, and compute providers. It also keeps the model
+static. While our model touches on some of these issues—see the discussion on the commoditization
+of foundation models in Section 3.2 of the main text—a detailed analysis of the AI sector and the
+drivers of AI and compute development are promising areas for future research.
+
+4
+
+Chapter 2
+
+Proofs Omitted from the Main Text
+2.1
+
+Proof of Proposition 1
+
+As noted in the main text, the pre-AI equilibrium was first described in general by Fuchs et al. (2015).
+Proposition 1 follows directly from Lemmas 2.1 and 2.2 and Corollary 2.1 below.
+To start, note that the First Welfare Theorem holds in this setting (see Fuchs et al., 2015, Online
+Supplement, p. 1). Thus, the competitive equilibrium is efficient. The following lemma shows that in
+the pre-AI world, there is a unique efficient allocation:
+Lemma 2.1. In the absence of AI, there is a unique allocation that maximizes output:
+• When h ≥ h0 ∈ (0, 1), W = [0, z], I = (z, z̄), and S = [z̄, 1]. Moreover, workers and solvers are matched
+Rz
+R m(z;z̄)
+dG(u) = 0 h(1 − u)dG(u). Finally,
+according to the strictly increasing function m(z; z̄) given by z̄
+the cutoffs 0 < z < z̄ < 1 satisfy:
+(2.1)
+
+1
+h − z̄ =
+
+R1
+
+−1
+z̄ n e(u; z̄) du, and m(z; z̄) = 1, where e(z; z̄) = m (z; z̄)
+
+
+
+• When h < h0 , W = [0, ẑ], I = ∅, and S = [ẑ, 1]. Moreover, workers and solvers are matched according
+R m(z;ẑ)
+Rz
+to the strictly increasing function m(z; ẑ) given by ẑ
+dG(u) = 0 h(1 − u)dG(u). Finally, the cutoff
+ẑ ∈ (0, 1) satisfies m(0; ẑ) = ẑ, m(ẑ; ẑ) = 1, and:
+(2.2)
+
+1
+h − ẑ >
+
+R1
+
+ẑ n(e(z; ẑ))dz, where e(z; ẑ) = m
+
+−1 (z; ẑ)
+
+Proof. For the proof see Fuchs et al. (2015, Lemma 2).
+Note that the efficient (and, therefore, equilibrium) allocation satisfies occupational stratification
+and strict positive assortative matching. Moreover, W ̸= ∅ and S ̸= ∅ but I ̸= ∅ if and only if
+h > h0 ∈ (0, 1). The next step is characterizing the wages that support the allocation of Lemma 2.1 as
+a competitive equilibrium:
+Lemma 2.2. In the absence of AI, the equilibrium wage function is given by:
+5
+
+• When h ≥ h0 :
+w(z) =
+
+
+m(z; z̄) − w(m(z; z̄))/n(z) if z ∈ W
+
+
+
+
+
+
+
+z
+
+if z ∈ I
+
+
+z̄ + z̄ n e(u; z̄) du
+
+if z ∈ S
+
+Rz
+
+• When h < h0 :
+w(z) =
+
+
+
+ẑ + 1
+1+n(ẑ)
+
+n
+
+m(z; ẑ) − w(m(z; ẑ))/n(z)
+if z ∈ W
+o
+
+
+R1
+Rz
+1
+h − ẑ − ẑ n e(u; ẑ) du + ẑ n e(u; ẑ) du if z ∈ S
+
+Proof. See the Online Supplement of Fuchs et al. (2015, pp. 1–4).
+We end by showing that w is continuous, strictly increasing, and convex (strictly so when z ∈
+W ∪ S) and that w(z) > z for all z ∈
+/ clI.
+Corollary 2.1. Irrespective of whether h ≷ h0 , the equilibrium wage function w(z) is continuous, strictly
+increasing, and (weakly) convex. Moreover, it satisfies:
+• w(z) > z for z ∈ W (except possibly at z = sup W ), w′ (z) ∈ (0, 1), and w′′ (z) > 0 for z ∈ intW .
+• w(z) = z for all z ∈ I.
+• w(z) > z for z ∈ S (except possibly at z = inf S), w′ (z) > 1, and w′′ (z) > 0 for z ∈ intS.
+Proof. Consider first h ≥ h0 . To show continuity, it is sufficient to verify that w(z) is continuous at
+z = z and z = z̄. Continuity at z = z follows from the fact that limz↑z w(z) = 1 − w(1)h(1 − z) =
+
+R1
+z = limz↓z w(z), where we are using the fact that m(z; z̄) = 1 and that w(1) = z̄ n e(u; z̄) du + z̄ = h1
+(due to condition (2.1)). Continuity at z = z̄ follows because, by Lemma 2.2, limz↓z̄ w(z) = w(z̄) = z̄.
+We now show the remaining properties of w(z). Note that if z ∈ intS, then w′ (z) = n(e(z; z̄)) >
+1, which also implies that w′′ (z) > 0 because both n(z) and e(z; z̄) are strictly increasing in their
+arguments. Given that limz↓z̄ w(z) = z̄, the previous results then imply that w(z) > z for all z ∈ (z̄, 1].
+Similarly, if z ∈ intW , then w′ (z) = hw(m(z; z̄)) > 0, which immediately implies that w′′ (z) > 0,
+since both w(z) and m(z; z̄) are strictly increasing in their arguments. Given that limz↑z w(z) = z, the
+previous results then imply that w(z) > z for all z ∈ [0, z). Finally, w′ (z) ∈ (0, 1) follows from:
+
+
+m(z; z̄) − w(z)
+′
+w (z) = hw(m(z; z̄)) = h
+<1
+h(1 − z)
+where the second-to-last equality comes from the firms’ zero-profit condition, and the last inequality
+holds because m(z; z̄) ≤ 1 and w(z) > z when z ∈ intW .
+Now consider h ≤ h0 . To show continuity, it is sufficient to verify that w(z) is continuous at z = ẑ.
+Given that m(ẑ; ẑ) = 1, from Lemma 2.2, we have that:
+1
+limz↑ẑ w(z) = 1 − n(ẑ)
+w(1)
+
+Note then that w(1) = limz↓ẑ w(z) +
+
+and
+R1
+
+n
+ o
+R1
+1
+limz↓ẑ w(z) = 1+n(ẑ)
+n(ẑ) − ẑ n e(u; ẑ) du
+
+
+ẑ n e(u; ẑ) du.
+
+Combining the latter with the expression for
+
+limz↑ẑ w(z) above and rearranging terms yields limz↑ẑ w(z) = limz↓ẑ w(z). The proof that limz↓ẑ w(z) >
+6
+
+ẑ, in turn, can be found in Fuchs et al. (2015, Online Supplement, p. 4). Finally, the proofs for the
+remaining properties of w(z) (i.e., their monotonicity and convexity, among others) follow the exact
+same logic as in the case when h > h0 .
+
+2.2
+
+Proof of Proposition 2
+
+In this chapter, we provide a complete characterization of the equilibrium with autonomous AI. As
+noted in the main text, we focus on h < h0 . The proof of Proposition 2 is a direct implication of
+Lemmas 2.3 and 2.4 below.
+Lemma 2.3. Any equilibrium with autonomous AI has the following features:
+• Efficiency (i.e., it maximizes total output).
+• Some compute must be allocated to independent production: µ∗i > 0.
+• The price of compute is equal to AI’s knowledge: r∗ = zAI .
+• Occupational stratification: W ∗ ⪯ I ∗ ⪯ S ∗ .
+• No worker is more knowledgeable than AI, and no solver is less knowledgeable than AI: W ∗ ⪯ {zAI } ⪯ S ∗ .
+• Positive assortative matching: m∗ : Wp∗ → Sp∗ is strictly increasing and Wa∗ ⪯ Wp∗ and Sp∗ ⪯ Sa∗ .
+Proof. • The equilibrium is efficient.— The following proof is adapted from Garicano and Rossi-Hansberg
+(2006, Proposition 6): Consider a competitive equilibrium with wage function w∗ and rental rate of
+compute r∗ . Suppose for contradiction that there is an alternative feasible allocation where some
+workers and/or compute are allocated to different firms and where output is strictly higher. This
+constitutes a contradiction of the definition of competitive equilibrium since, in equilibrium, firms
+maximize profits given w∗ and r∗ .
+• Some compute must be allocated to independent production.— This result follows because compute is
+abundant relative to human time. Hence, there are not enough humans to interact with all AI agents
+(i.e., compute) inside two-layer organizations.
+• The price of compute is equal to AI’s knowledge.— This follows because the single-layer firms using AI
+must obtain zero profits.
+• Occupational stratification.— Throughout the proof, let Π(s, z) be the profit of a two-layer firm that
+hires a solver with knowledge s and workers with knowledge z. Moreover, we use that w∗ (z) ≥ z for
+all z ∈ [0, 1], as it cannot be strictly profitable to hire z as an independent producer.
+We first show that W ∗ ⪯ I ∗ . Suppose for contradiction that there exist zL < zH such that zH ∈ W ∗
+and zL ∈ I ∗ . Since zL ∈ I ∗ , then w∗ (zL ) = zL . Let s > zH be the knowledge of the solver matched with
+zH (which can be human or AI). In equilibrium, Π(s, zH ) = 0, so w∗ (s) = n(zH )(s−w∗ (zH )). We claim
+that this implies that Π(s, zL ) > 0, yielding a contradiction. Indeed, Π(s, zL ) = n(zL )(s−zL )−w∗ (s) =
+n(zL )(s − zL ) − n(zH )(s − w∗ (zH )) ≥ n(zL )(s − zL ) − n(zH )(s − zH ) > 0, where the second-to-last
+
+7
+
+inequality follows because w∗ (zH ) ≥ zH and the last inequality because zH > zL and n(x)(s − x) is
+strictly decreasing in x.
+We now show that I ∗ ⪯ S ∗ . Suppose for contradiction that there exist sL < sH such that sH ∈ I ∗
+and sL ∈ S ∗ . Since sH ∈ I ∗ , then w∗ (sH ) = sH . Let z < sL be the knowledge of the worker matched
+with sL (which can be human or AI). In equilibrium, Π(sL , z) = 0, so n(z)w∗ (z) = n(z)sL − w∗ (sL ).
+We claim that Π(sH , z) > 0, yielding a contradiction. Indeed, Π(sH , z) = n(z)(sH − w∗ (z)) − sH =
+n(z)(sH − sL ) − sH + w∗ (sL ) ≥ (n(z) − 1)(sH − sL ) > 0, where the second-to-last inequality follows
+because w∗ (sL ) ≥ sL and the last inequality because n(z) > 1 and sH > sL .
+Finally, we show that W ∗ ⪯ S ∗ . Suppose for contradiction that there exist zH ∈ W ∗ and sL ∈ S ∗
+such that zH > sL . Let zL < sL be the knowledge of the worker matched with sL (which can be
+human or AI). Similarly, let sH > zH be the solver matched with zH (which can be human or AI).
+Note that zL < sL < zH < sH .
+We claim that n(sL )Π(zH , zL )+Π(sH , sL ) > 0, which implies that either Π(zH , zL ) > 0 or Π(sH , sL ) >
+0, leading to the desired contradiction. Indeed, n(sL )Π(zH , zL ) + Π(sH , sL ) = n(sL )n(zL )(zH − sL ) −
+(n(zH )−n(sL ))(sH −w∗ (zH )) ≥ n(sL )n(zL )(zH −sL )−(n(zH )−n(sL ))(sH −zH ), where the first equality follows from using Π(sL , zL ) = 0 and Π(sH , zH ) = 0, and the last inequality from w∗ (zH ) ≥ zH .
+Moreover,
+n(sL )n(zL )(zH − sL ) − (n(zH ) − n(sL ))(sH − zH )
+≥ n(sL )n(zL )(zH − sL ) − (n(zH ) − n(sL ))(1 − zH ) =
+
+(zH − sL )(1 − h(1 − zL ))
+>0
+h2 (1 − zL )(1 − sL )
+
+where the first inequality follows because n(sL )n(zL )(zH − sL ) − (n(zH ) − n(sL ))(sH − zH ) is strictly
+decreasing in sH and sH ≤ 1. Hence, we conclude that n(sL )Π(zH , zL ) + Π(sH , sL ) > 0.
+• No worker is more knowledgeable than AI, and no solver is less knowledgeable than AI.— This result follows
+from occupational stratification, the fact that some compute must necessarily be used for independent
+production, and that AI agents are perfect substitutes for humans with equivalent knowledge.
+• Positive assortative matching.— To prove this part, we use the following claim:
+Claim 2.1. In equilibrium, if a firm matches workers with knowledge z with a solver with knowledge s, then
+there is no firm that matches workers with knowledge z ′ > z with a solver with knowledge s′ < s.
+Proof. Let w∗ be the equilibrium wage schedule, and consider a firm that, in equilibrium, hires workers with knowledge x. Since the firm maximizes its profits, it must select a solver with knowledge
+σ(x) that satisfies σ(x) ∈ arg maxσ Π(σ, x), where Π(σ, x) = n(x)(σ − w∗ (x)) − w∗ (σ). Because Π(σ, x)
+exhibits increasing differences, standard results in monotone comparative statics (see, e.g., Tadelis
+and Segal, 2005, Theorem 1) imply that σ(x′′ ) ≥ σ(x′ ) whenever x′′ > x′ . Consequently, if z is
+matched with s = σ(z), then s′ = σ(z ′ ) ≥ σ(z) = s for any z ′ > z.
+The results Wa∗ ⪯ Wp∗ and Sp∗ ⪯ Sa∗ follow immediately from Claim 2.1 in combination with W ∗ ⪯
+{zAI } ⪯ S ∗ . Hence, it only remains to show that m∗ : Wp∗ → Sp∗ is strictly increasing. Claim 2.1 implies
+8
+
+that m∗ is weakly increasing. Suppose for contradiction it is not strictly increasing. This means
+there exist two different elements of Wp∗ , z ′ and z ′′ > z ′ , such that m∗ (z ′ ) = m∗ (z ′′ ). Occupational
+stratification and the fact that Wa∗ ⪯ Wp∗ imply that Wp∗ is an interval, so all elements between z ′ and
+R z ′′
+R m∗ (z ′′ )
+z ′′ are also in Wp∗ . Hence, z ′ h(1−z)dG(z) = m∗ (z ′ ) h(1−z)dG(z) = 0 (as m∗ must satisfy condition
+R z ′′
+(1) of the main text), contradicting the fact that z ′ h(1 − z)dG(z) > 0 (as z ′ < z ′′ and G has strict
+positive density).
+The next corollary is a direct implication of Lemma 2.3:
+Corollary 2.2. An equilibrium allocation with autonomous AI must take one of the following four potential
+configurations:
+• Type 1 configuration:
+Wa∗ = ∅, Wp∗ = [0, zAI ], I ∗ = (zAI , z ∗1 ), Sp∗ = [z ∗1 , z̄1∗ ], Sa∗ = [z̄1∗ , 1], where zAI < z ∗1 ≤ z̄1∗ ≤ 1
+R1
+So µ∗w = z̄ ∗ n(zAI )dG(z), µ∗s = 0, µ∗i = µ − µ∗w
+1
+
+• Type 2 configuration:
+Wa∗ = [0, z ∗2 ], Wp∗ = [z ∗2 , zAI ], I ∗ ⊆ {zAI }, Sp∗ = [zAI , z̄2∗ ], Sa∗ = [z̄2∗ , 1], where 0 ≤ z ∗2 ≤ zAI ≤ z̄2∗ ≤ 1
+R z∗
+R1
+So µ∗w = z̄ ∗ n(zAI )dG(z), µ∗s = 0 2 n(z)−1 dG(z), µ∗i = µ − µ∗w − µ∗s
+2
+
+• Type 3 configuration:
+Wa∗ = [0, z ∗3 ], Wp∗ = [z ∗3 , z̄3∗ ], I ∗ = (z̄3∗ , zAI ), Sp∗ = [zAI , 1], Sa∗ = ∅, where 0 < z ∗3 ≤ z̄3∗ < zAI
+R z∗
+So µ∗w = 0, µ∗s = 0 3 n(z)−1 dG(z), µ∗i = µ − µ∗s
+• Type 4 configuration:
+Wa∗ = ∅, Wp∗ = [0, z ∗4 ], I ∗ = (z ∗4 , z̄4∗ ) ∋ zAI , Sp∗ = [z̄4∗ , 1], Sa∗ = ∅, where 0 ≤ z ∗4 < z̄4∗ ≤ 1
+So µ∗w = 0, µ∗s = 0, µ∗i = µ
+Proof. As mentioned above, the proof of this corollary is a direct implication of Lemma 2.3. Note
+that in a Type 2 configuration, I ∗ can either be {zAI } or ∅ because the human with knowledge zAI
+is indifferent between any of the three roles. However, this is irrelevant for all practical purposes
+because I ∗ has measure zero in this case.
+Intuitively, in a Type 1 configuration, AI is used as a worker and independent producer. In a Type
+2 configuration, AI is used in all three possible roles (i.e., as a worker, an independent producer, and
+a solver). In a Type 3 configuration, AI is used as a solver and independent producer, while in a Type
+4 configuration, AI is used exclusively as an independent producer.
+Now, recall that W and S are the sets of human workers and solvers in the pre-AI equilibrium. For
+R m (z;z )
+Rz
+zAI ∈ W , define the function mw : [0, zAI ] → [zAI , 1] by zAIw AI dG(u) = 0 h(1 − u)dG(u) and note
+that zAI ∈ W implies that mw (zAI ; zAI ) ≤ 1. Let then ew (z; zAI ) ≡ m−1
+w (z; zAI ) and define:
+R m (x;x)
+Γw (x) ≡ n(x)(mw (x; x) − x) − x − x w
+n(ew (u; x))du
+9
+
+Similarly, for zAI ∈ S, define the function es : [zAI , 1] → [0, zAI ] by
+
+R1
+
+z dG(u) =
+
+R zAI
+
+es (z;zAI ) h(1 − u)dG(u),
+
+note that zAI ∈ S implies that es (zAI ; zAI ) ≥ 0, and define:
+R1
+Γs (x) ≡ h1 − x − x n(es (u; x))du
+Consider the following partition of the knowledge space (note that W ∪ S = [0, 1] when h < h0 ):
+R1 ≡ {z ∈ W : Γw (z) < 0}, R2 ≡ {z ∈ W : Γw (z) ≥ 0} ∪ {z ∈ S : Γs (z) ≥ 0}, and R3 ≡ {z ∈ S :
+Γs (z) < 0}. The following lemma—which is the main result of this appendix—characterizes in detail
+the post-AI equilibrium:
+Lemma 2.4. In the presence of autonomous AI, there is a unique competitive equilibrium. It is given as follows:
+• If zAI ∈ R1 , then the equilibrium allocation is Type 1. The equilibrium cutoffs z ∗1 and z̄1∗ satisfy:
+
+R m∗ (z ;z ∗ )
+and n(zAI )(m∗1 (zAI ; z ∗1 ) − zAI ) = z ∗1 + z ∗ 1 AI 1 n e∗1 (z; z ∗1 ) dz
+1
+Rz
+R m∗ (z;z ∗ )
+where m∗1 : [0, zAI ] → [z ∗1 , z̄1∗ ] is given by z ∗ 1 1 dG(u) = 0 h(1 − u)dG(u) and e∗1 (z; ·) = (m∗1 )−1 (z; ·)
+z̄1∗ = m∗1 (zAI ; z ∗1 )
+
+1
+
+• If zAI ∈ R2 , then the equilibrium allocation is Type 2. The equilibrium cutoffs z ∗2 and z̄2∗ satisfy:
+
+R m∗ (z ;z ∗ )
+and n(zAI )(m∗2 (zAI ; z ∗2 ) − zAI ) = zAI + zAI2 AI 2 n e∗2 (z; z ∗2 ) dz
+Rz
+R m∗ (z;z ∗ )
+where m∗2 : [z ∗2 , zAI ] → [zAI , z̄2∗ ] is given by zAI2 2 dG(u) = z ∗ h(1 − u)dG(u) and e∗2 (z; ·) = (m∗2 )−1 (z; ·)
+z̄2∗ = m∗2 (zAI ; z ∗2 )
+
+2
+
+• If zAI ∈ R3 , then the equilibrium allocation is Type 3. The equilibrium cutoffs z ∗3 and z̄3∗ satisfy:
+
+R1
+1
+∗
+∗
+h = zAI + zAI n e3 (z; z 3 ) dz
+R m∗ (z;z ∗ )
+Rz
+where m∗3 : [z ∗3 , z̄3∗ ] → [zAI , 1] given by zAI3 3 dG(u) = z ∗ h(1 − u)dG(u) and e∗3 (z; ·) = (m∗3 )−1 (z; ·)
+3
+z̄3∗ = e∗3 (1; z ∗3 )
+
+and
+
+The equilibrium matching function is given by m∗ (z) = m∗j (z; z ∗j ) if zAI ∈ Rj , while the equilibrium wage
+w∗ is continuous, strictly increasing, and (weakly) convex, and satisfies:
+• w∗ (z) = zAI (1 − 1/n(z)) > z for all z ∈ Wa∗ .
+• w∗ (z) = m∗ (z) − w∗ (m∗ (z))/n(z) for all z ∈ Wp∗ .
+• w∗ (z) = z for all z ∈ I ∗ .
+Rz
+• w∗ (z) = inf Sp∗ + inf S ∗ n(e∗ (u))du for all z ∈ Sp∗ .
+p
+
+• w∗ (z) = n(zAI )(z − zAI ) > z for all z ∈ Sa∗ .
+For the interested reader, in Chapter 4.1.1 we also provide a version of Lemma 2.4 for the case in
+which human knowledge is uniformly distributed. In such a case, the equilibrium expressions (i.e.,
+the wage function w∗ , the equilibrium cutoffs, and the partition Rj for j = 1, 2, 3) can be obtained in
+(almost) closed form.
+According to Lemma 2.3, AI is always used for independent production. Lemma 2.4 adds to this
+point by stating that if zAI ∈ W , then AI is also used as a worker and possibly as a solver, while if
+zAI ∈ S, then AI is also used as a solver and possibly as a worker. Indeed, if zAI ∈ W , then the post-AI
+10
+
+equilibrium is either Type 1 (in which AI is a worker but not a solver) or Type 2 (in which AI is both
+a worker and solver). Similarly, if zAI ∈ S, then the post-AI equilibrium is either Type 3 (in which AI
+is a solver but not a worker) or Type 2.
+Before formally proving this lemma, we informally derive the equilibrium in one of the regions to
+provide insight into its construction:
+Informal Construction of the Equilibrium of a Type 2 Equilibrium.— A Type 2 equilibrium partitions the
+human population as follows:
+Wa∗ = [0, z ∗2 ], Wp∗ = [z ∗2 , zAI ], I ∗ = ∅, Sp∗ = [zAI , z̄2∗ ], Sa∗ = [z̄2∗ , 1], where 0 ≤ z ∗2 ≤ zAI ≤ z̄2∗ ≤ 1
+As mentioned in the main text, given that the equilibrium price of compute is r∗ = zAI , the zeroprofit condition of a tA firm pins down the wage w∗ (z) = zAI (1 − 1/n(z)) of a human worker with
+knowledge z ∈ Wa∗ . Similarly, the zero-profit condition of a bA firm determines the wage w∗ (z) =
+n(zAI )(z − zAI ) of a human solver with knowledge z ∈ Sa∗ .
+Now consider those firms that do not use AI, i.e., the nA firms. First, let m∗2 (z) be the equilibrium
+matching function in this case. Due to Lemma 2.3, this function must be strictly increasing and
+Rz
+R m∗ (z)
+satisfy zAI2 dG(u) = z ∗ h(1 − u)dG(u) for all z ∈ [z ∗2 , zAI ] (which is simply constraint (1) of the
+2
+
+main text in this specific case). Moreover, given that sup Wp∗ = zAI and sup Sp∗ = z̄2∗ , it must also be
+that m∗2 (zAI ) = z̄2∗ .
+Note that for any given z ∈ Wp , there exists a unique increasing function m∗2 (z) that satisfies both
+∗
+constraints. It is given by the solution to the differential equation m∗′
+2 (z) = h(1 − z)g(z)/g(m2 (z))
+
+with border condition m∗2 (zAI ) = z̄2∗ (which comes from differentiating both sides of the resource
+constraint). We denote such a unique function by m∗2 (z; z ∗2 ) (as it depends on z ∗2 through its domain).
+Consider the problem of an nA firm that recruited n(z) workers of type z ∈ Wp∗ and is deciding
+which solver z ∈ Sp∗ to hire: maxs∈Sp∗ ΠnA
+2 (s, z) = n(z)[s − w(z)] − w(s). The corresponding firstorder condition evaluated at s = m∗2 (z; z ∗2 ) implies that w∗′ (z) = n(e∗2 (z; z ∗2 )) for any z ∈ Sp∗ . Thus,
+Rz
+w∗ (z) = C ∗ + zAI n(e∗2 (u; z ∗2 ))du for any z ∈ Sp∗ . The wages of the workers hired by such firms are
+then determined by the zero-profit condition of nA firms: w∗ (z) = m∗2 (z; z ∗2 ) − w∗ (m∗2 (z; z ∗2 ))/n(z) for
+any z ∈ Wp∗ .
+The final step is determining the constant C ∗ , the cutoff z ∗2 , and arguing that no firms have incentives to deviate. To do this, note that the least knowledgeable human solver has the same knowledge
+as AI, i.e., inf Sp∗ = zAI . Hence, her wage must be equal to the price of one unit of compute, so
+C ∗ = zAI . Moreover, the most knowledgeable solver hired by an nA firm has the same knowledge as
+the least knowledgeable solver of a bA firm. As a result, these two individuals must receive the same
+wage, i.e., limz↑z̄2∗ w∗ (z) = limz↓z̄2∗ w∗ (z). Since z̄2∗ = m∗2 (zAI ; z ∗2 ), we obtain the following:
+(2.3)
+
+R m∗ (z ;z ∗ )
+n(zAI )(m∗2 (zAI ; z ∗2 ) − zAI ) = zAI + zAI2 AI 2 n(e∗2 (z; z ∗2 ))dz
+
+which is the equilibrium condition in the statement of Lemma 2.4. It is then possible to prove that
+there is a unique cutoff z ∗2 that satisfies this condition and that such a cutoff is contained in [0, zAI ]
+11
+
+if and only if zAI ∈ R2 . This explains why this equilibrium can only arise in such a region of the
+parameter space. The fact that C ∗ = zAI and that z ∗2 satisfies (2.3) then implies that w∗ (z) is also
+continuous at the juncture between Wp∗ and Sp∗ :
+limz↓z ∗2 w∗ (z) = m∗2 (z ∗2 ; z ∗2 ) −
+
+w∗ (m∗2 (z ∗2 ;z ∗2 ))
+= zAI
+n(z ∗2 )
+∗
+
+∗
+
+
+
+
+1 − n(z1 ∗ ) = limz↑z ∗2 w∗ (z)
+2
+
+∗
+
+w (m2 (zAI ;z 2 ))
+limz↑zAI w∗ (z) = m∗2 (zAI ; z ∗2 ) −
+= zAI = limz↓zAI w∗ (z)
+n(zAI )
+
+This is sufficient sufficient to guarantee that w∗ (z) is continuous in all its domain, i.e., for all z ∈ [0, 1].
+From here, arguing that no firm has incentives to deviate is straightforward. Indeed, note that the
+wage function is continuous, strictly increasing, and weakly convex. This implies that if a firm does
+not have incentives to deviate locally, then it does not have incentives to deviate globally either. That
+bA firms do not want to deviate locally follows because such deviation also leads to no profits (as all
+firms who hire a human solver in Sp∗ earn zero profits). Similar reasoning also explains why tA and
+nA firms do not have incentives to deviate locally either.
+
+□
+
+We now formally prove the lemma. We do this in two steps. In the first step, we show that the
+outcomes described in the lemma are indeed an equilibrium by verifying that (i) markets clear, and
+(ii) firms are maximizing their profits while obtaining zero profits. In the second step, we prove that
+the equilibrium is unique.
+Proof of Step 1. We show this part only for zAI ∈ R1 , as the other two cases are analogous. We
+begin by verifying market clearing in the market for compute. By Corollary 2.2, it is immediate that
+µ∗i + µ∗w + µ∗s = µ. Moreover, the total time required to consult on the problems left unsolved by AI
+R1
+is equal to the total time available of solvers in Sa∗ , i.e., h(1 − zAI )µ∗w = z̄ ∗ dG(z).
+1
+
+We now turn to verifying labor market clearing. First, it must be that the total time required to
+consult on the problems left unsolved by the human workers in the interval [0, z] ⊆ Wp∗ is equal to
+the total time available of human solvers in the interval [z ∗1 , m∗1 (z; z ∗1 )] ⊆ Sp∗ . This resource constraint
+R m∗ (z;z ∗ )
+Rz
+is satisfied as m∗1 (z; z ∗1 ) is given by z ∗ 1 1 dG(u) = 0 h(1 − u)dG(u) and z̄1∗ = m∗1 (zAI ; z ∗1 ).
+1
+
+Second, it must be that the union of the sets (Wp∗ , Wa∗ , I ∗ , Sp∗ , Sa∗ ) is [0, 1], and the intersection of
+any two of these sets has measure zero. By Corollary 2.2, this occurs if and only if zAI < z ∗1 ≤ z̄1∗ ≤ 1.
+Verifying that z ∗1 ≤ z̄1∗ is straightforward: It follows because m∗1 (z; z ∗1 ) is strictly increasing in z plus
+the fact that z ∗1 = m∗1 (0; z ∗1 ) and z̄1∗ = m∗1 (zAI ; z ∗1 ).
+Showing that zAI < z ∗1 requires more work. Note that z ∗1 is given by the solution Γ1 (z ∗1 ; zAI ) = 0,
+
+R m∗ (z ;x,z )
+where Γ1 (x; zAI ) ≡ n(zAI )(m∗1 (zAI ; x, zAI ) − zAI ) − x − x 1 AI AI n e∗1 (z; x, zAI ) dz (here we are
+making explicit that m∗1 (·) and e∗1 (·) also depend indirectly on zAI through the boundary of the set
+Wp∗ = [0, zAI ] to avoid any type of confusion1 ). It is then not difficult to prove that Γ1 (x; zAI ) is strictly
+increasing in x, so zAI < z ∗1 if and only if Γ1 (0; zAI ) < 0. Furthermore, note that m∗1 (z; 0, zAI ) satisfies
+R m∗ (z;0,zAI )
+Rz
+1
+dG(u) = 0 h(1 − u)dG(u) for z ∈ [0, zAI ], which implies that m∗1 (z; 0, zAI ) = mw (z; zAI )
+0
+(and, therefore, that e∗1 (z; 0, zAI ) = ew (z; zAI )). Hence, Γ1 (0; zAI ) = Γw (zAI ) < 0 as zAI ∈ R1 .
+1
+
+In the statement of Lemma 2.4, we simply wrote m∗1 (z; z ∗1 ) instead of m∗1 (z; z ∗1 , zAI ) to avoid cluttering notation.
+
+12
+
+Finally, we show that z̄1∗ ≤ 1. To prove it, we show that z ∗1 < ẑ and then use this result to conclude
+R m∗ (z;ẑ,ẑ)
+Rz
+that z̄1∗ ≤ 1. As a first step, note that m∗1 (z; ẑ, ẑ) satisfies ẑ 1
+dG(u) = 0 h(1 − u)dG(u) for
+z ∈ [0, ẑ], so m∗1 (z; ẑ, ẑ) = m(z; ẑ) where m(z; ẑ) is matching function of the pre-AI equilibrium.
+Recall then that z ∗1 is the unique solution Γ1 (z ∗1 ; zAI ) = 0, where Γ1 (x; zAI ) is strictly increasing in x.
+It is not difficult to prove that Γ1 (x; zAI ) is strictly decreasing in zAI for any given x. We claim that
+Γ1 (ẑ; zAI ) > 0, which immediately implies that z ∗1 < ẑ. Indeed, note that Γ1 (ẑ; zAI ) ≥ Γ1 (ẑ; ẑ) =
+R1
+1
+−
+ẑ
+−
+h
+ẑ n(e(z; ẑ))dz, where the first inequality follows because Γ1 (x; zAI ) is strictly decreasing in
+zAI and zAI ≤ ẑ (as zAI ∈ W ) and the last equality follows because e∗1 (z; ẑ, ẑ) = e(z; ẑ) for all z ∈ [ẑ, 1].
+R1
+However, by Lemma 2.1, h1 − ẑ − ẑ n(e(z; ẑ))dz > 0 when h < h0 , so Γ1 (ẑ; zAI ) > 0.
+R z̄ ∗
+Having proven that z ∗1 < ẑ, we now show that z̄1∗ ≤ 1. By construction, z̄1∗ satisfies z ∗1 dG(u) =
+1
+R zAI
+R zAI
+R ẑ
+h(1
+−
+u)dG(u).
+Note,
+moreover,
+that
+z
+∈
+W
+implies
+that
+h(1
+−
+u)dG(u)
+≤
+h(1
+−
+u)dG(u)
+=
+0
+R01
+R ẑ
+R1
+R z̄1∗
+R1 0
+ẑ dG(u) (as zAI ≤ ẑ and 0 h(1 − u)dG(u) = ẑ dG(u)). Hence, z ∗ dG(u) ≤ ẑ dG(u). Given that
+1
+
+z ∗1 < ẑ, it must be that z̄1∗ < 1.
+
+Having verified market clearing, we now show that, in the candidate equilibrium, firms maximize
+their profits while obtaining zero profits. Given how the wages are constructed, it is clear that firms
+are optimizing their profits locally while obtaining zero profits. Thus, we only need to consider global
+deviations. As discussed above, to discard such global deviations, it is sufficient to show that w∗ is
+continuous, strictly increasing, and weakly convex. This is what we prove next.
+To show continuity, it suffices to verify that w∗ is continuous at the junctures of (i) Sp∗ and Sa∗ ,
+R z̄ ∗
+(ii) I ∗ and Sp∗ , and (iii) Wp∗ and I ∗ . For (i), note that limz↑z̄1∗ w∗ (z) = z̄1∗ + z ∗1 n(e∗1 (z; z ∗1 ))dz and
+1
+
+limz↓z̄1∗ w∗ (z) = n(zAI )(z̄1∗ − zAI ). Hence, from the conditions determining z ∗1 and z̄1∗ , we obtain that
+limz↑z̄1∗ w∗ (z) = limz↓z̄1∗ w∗ (z). For (ii) note that by construction, limz↑z ∗1 w∗ (z) = z ∗1 = limz↓z ∗1 w∗ (z).
+Finally, for (iii) note that limz↑zAI w∗ (z) = z̄1∗ − w∗ (z̄1∗ )/n(zAI ) = zAI = limz↓zAI w∗ (z) given that
+w∗ (z̄1∗ ) = n(zAI )(z̄1∗ − zAI ).
+With continuity at hand, proving that w∗ is strictly increasing and weakly convex is straightforward: The logic is analogous to the proof of Corollary 2.1 (which shows that the pre-AI wage function
+satisfies these two properties). Consequently, in the case zAI ∈ R1 , the outcome described in the statement is indeed a competitive equilibrium.
+
+□
+
+Proof of Step 2. We show this part only for zAI ∈ R1 , as the other two cases follow the same logic. In
+particular, we show that if zAI ∈ R1 , then there cannot be any other type of equilibrium.
+Suppose first for contradiction that there is a Type 3 equilibrium. By Corollary 2.2, we know that
+such an equilibrium features the following partition of the human population:
+Wa∗ = [0, z ∗3 ], Wp∗ = [z ∗3 , z̄3∗ ], I ∗ = (z̄3∗ , zAI ), Sp∗ = [zAI , 1], Sa∗ = ∅, where 0 < z ∗3 ≤ z̄3∗ < zAI
+To show that such an equilibrium cannot arise when zAI ∈ R1 , we first establish that zAI ∈ R1
+implies zAI < ẑ. To do this, it suffices to show that zAI ∈
+/ R1 (as R1 ⊆ W = [0, ẑ]), or, equivalently,
+that Γw (ẑ) > 0. Indeed, note that mw (z; ẑ) = m(z; ẑ), where m(z; ẑ) is the matching function of the
+R1
+pre-AI equilibrium. This implies that mw (ẑ; ẑ) = 1, so Γw (ẑ) = 1/h − ẑ − ẑ n(e(z; ẑ))dz > 0, where
+13
+
+the last inequality follows from Lemma 2.1.
+Given that zAI ∈ R1 implies zAI < ẑ, we then have the following:
+R z̄3∗
+
+z ∗3 h(1 − u)dG(u) <
+
+R zAI
+0
+
+h(1 − u)dG(u) <
+
+R ẑ
+
+0 h(1 − u)dG(u) =
+
+R1
+
+ẑ dG(u) <
+
+R1
+
+zAI dG(u)
+
+which violates the resource constraint that the total time required to consult on the problems left
+unsolved by the human workers in the interval Wp∗ equals the total time available of human solvers
+R z̄ ∗
+R1
+in the interval Sp∗ , i.e., z ∗3 h(1 − u)dG(u) = zAI dG(u). Hence, a Type 3 configuration cannot arise
+3
+
+when zAI ∈ R1 .
+Now suppose for contradiction that there is a Type 2 equilibrium. As explained above (see “Informal Construction of the Equilibrium”), for this to be an equilibrium, there must exist a cutoff
+z ∗2 ∈ [0, zAI ] with the property that Γ2 (z ∗2 ; zAI ) = 0, where Γ2 (x; zAI ) ≡ n(zAI )(m∗2 (zAI ; x) − zAI ) −
+R m∗ (z ;x)
+zAI − zAI2 AI n(e∗2 (z; x))dz. It is not difficult to prove that Γ2 (x; zAI ) is strictly decreasing in x.
+Hence, there exists at most one z ∗2 that satisfies Γ2 (z ∗2 ; zAI ) = 0, and for z ∗2 ≥ 0, it must be that
+Rz
+R m∗ (z;0)
+dG(u) = 0 h(1 − u)dG(u) for z ∈ [0, zAI ]. HowΓ2 (0; zAI ) ≥ 0, where m∗2 (z; 0) is given by zAI2
+ever, from this last condition we have that m∗2 (z; 0) = mw (z; zAI ) (as m∗2 (z; 0) and mw (z; zAI ) satisfy
+the same condition), so Γ2 (0; zAI ) = Γw (zAI ). Consequently, for z ∗2 ≥ 0, we need that Γw (zAI ) ≥ 0,
+which contradicts the fact that zAI ∈ R1 .
+Finally, suppose for contradiction that there is a Type 4 equilibrium. By Corollary 2.2, we know
+that such an equilibrium features the following partition of the human population:
+Wp∗ = ∅, Wp∗ = [0, z ∗4 ], I ∗ = (z ∗4 , z̄4∗ ) ∋ zAI , Sp∗ = [z̄4∗ , 1], Sa∗ = ∅
+Moreover, following similar reasoning as that developed above for a Type 2 equilibrium, for this to
+be an equilibrium, (i) it must be that z̄4∗ = m∗4 (0; z ∗4 ), where m∗4 (0; z ∗4 ) satisfies m∗4 (z ∗4 ; z ∗4 ) = 1 and
+R m∗4 (z;z ∗4 )
+Rz
+∗
+∗
+∗
+∗
+m∗4 (0;z ∗4 ) dG(u) = z ∗4 h(1 − u)dG(u) for z ∈ [0, z 4 ], and (ii) there must exist a cutoff z 4 < m4 (0; z 4 )
+R1
+such that 1/h − m∗4 (0; z ∗4 ) − m∗ (0;z ∗ ) n(e∗4 (z; z ∗4 ))dz = 0. By Lemma 2.1, we know that the unique
+4
+
+4
+
+solution to these equilibrium conditions is z ∗4 = z and z̄4∗ = m∗4 (0; z ∗4 ) = z̄, where z and z̄ are the
+equilibrium cutoffs of the pre-AI equilibrium when h > h0 . However, for zAI ∈ I ∗ = (z, z̄), we also
+need that z ∗4 = z < z̄ = z̄4∗ . For this to be the case, it must be that h > h0 , which contradicts the
+assumption that h < h0 .
+
+□
+
+We finish this Chapter by describing some properties of the partition (R1 , R2 , R3 ) that will be
+useful later. In particular, the next lemma states that when zAI is sufficiently low, the equilibrium is
+Type 1, so AI is used as a worker and as an independent producer, but not as a solver in that case.
+Similarly, when zAI = ẑ or zAI → 1 (where ẑ is the knowledge cutoff to become a solver in the pre-AI
+equilibrium), the equilibrium is Type 2, so AI is used in all three possible roles.
+Lemma 2.5. (i) zAI ∈ R1 if zAI ∈ [0, ϵ) with ϵ ↓ 0, (ii) zAI = ẑ ∈ R2 (where {ẑ} = W ∩ S), and (iii)
+zAI ∈ R2 if zAI ∈ [1 − ϵ, 1) with ϵ ↓ 0.
+Proof. First we show that zAI ∈ R1 if zAI ∈ [0, ϵ) with ϵ ↓ 0. Note that Γw (0) = 0 (as mw (z; 0) = 0),
+14
+
+and that Γ′w (0) = −1, as:
+R m (x;x) n(ew (z;x))3 g(x)
+w (x;x)−x
+1
+Γ′w (x) = h1 − 1 − h(1−x)
++ mh(1−x)
++h x w
+2
+g(ew (z;x)) dz
+Hence, if zAI ∈ [0, ϵ) with ϵ ↓ 0, then zAI ∈ W and Γw (zAI ) ≤ 0, so zAI ∈ R1 .
+Next, we prove that ẑ ∈ R2 by showing that Γs (ẑ) = Γw (ẑ) > 0. Note that mw (z; ẑ) = m(z; ẑ),
+where m(z; ẑ) is the matching function of the pre-AI equilibrium. This implies that mw (ẑ; ẑ) = 1, so
+R1
+Γw (ẑ) = 1/h − ẑ − ẑ n(e(z; ẑ))dz > 0, where the last inequality follows from Lemma 2.1. Similarly,
+R1
+note that es (z; ẑ) = e(z; ẑ), where e(z; ẑ) = m−1 (z; ẑ). Thus, Γs (ẑ) = 1/h − ẑ − ẑ n(e(z; ẑ))dz, so
+Γs (ẑ) = Γw (ẑ) > 0.
+Finally, we show that zAI ∈ R2 if zAI ∈ [1 − ϵ, 1) with ϵ ↓ 0. First, note that if zAI ∈ [1 − ϵ, 1)
+with ϵ ↓ 0, then zAI ∈ S. Second, is not difficult to prove that Γs (1) = 1/h − 1 > 0 so, by continuity,
+Γs (zAI ) > 0 for all zAI ∈ [1 − ϵ, 1) with ϵ ↓ 0. Hence, if zAI ∈ [1 − ϵ, 1) with ϵ ↓ 0, then zAI ∈ S and
+Γs (zAI ) > 0, so zAI ∈ R2 .
+
+2.3
+
+Proof of Proposition 3
+
+• zAI ∈ intW .— By Lemma 2.4, the AI equilibrium is either Type 1 or Type 2. If it is Type 2, then
+sup W ∗ = inf S ∗ = zAI , so W ∗ ⊂ W and S ∗ ⊃ S, since zAI < ẑ when zAI ∈ intW . If it is Type 1,
+then sup W ∗ = zAI and inf S ∗ = z ∗1 . Note that sup W ∗ = zAI implies that W ∗ ⊂ W , because zAI < ẑ.
+Similarly, note that inf S ∗ = z ∗1 implies that S ∗ ⊃ S, given that z ∗1 < ẑ (as shown in the proof of
+Lemma 2.4).
+
+□
+
+• zAI ∈ intS.— By Lemma 2.4, the AI equilibrium is either Type 2 or Type 3. Suppose first that it is
+Type 2. Then sup W ∗ = inf S ∗ = zAI , so W ∗ ⊃ W and S ∗ ⊂ S given that zAI > ẑ when zAI ∈ intS.
+Now, suppose the equilibrium is Type 3. Then, inf S ∗ = zAI > ẑ, immediately implying that
+S ∗ ⊂ S. To prove that W ∗ ⊃ W , we show that sup W ∗ = z̄3∗ > ẑ. Indeed, recall that z̄3∗ is given by:2
+
+R1
+z̄3∗ = e∗3 (1; z ∗3 , zAI ) and h1 = zAI + zAI n e∗3 (z; z ∗3 , zAI ) dz
+R m∗ (z;z ∗ ,z )
+Rz
+where zAI3 3 AI dG(u) = z ∗ h(1 − u)dG(u) for z ∈ [z ∗3 , z̄3∗ ]
+3
+
+Using the fact that m∗3 (z̄3∗ ; z ∗3 , zAI ) = 1, the equilibrium conditions that determine z ∗3 and z̄3∗ can be
+written as follows:3
+
+R1
+and h1 = zAI + zAI n ẽ∗3 (z; z̄3∗ , zAI ) dz
+R z̄ ∗
+where G(z) = 1 − ẽ∗3(z;z̄ ∗ ,zAI ) h(1 − u)dG(u) for z ∈ [zAI , 1]
+
+z ∗3 = ẽ∗3 (zAI ; z̄3∗ , zAI )
+
+3
+
+Define Γ3 (x; zAI ) ≡ h1 − zAI −
+
+3
+
+R1
+
+∗
+zAI n ẽ3 (z; x, zAI ) dz.
+
+
+
+It is not difficult to prove that Γ3 (x; zAI ) is
+
+strictly decreasing in x and strictly increasing in zAI . Moreover, z̄3∗ is given by the unique solution
+2
+
+To avoid any type of confusion, we are making explicit that m∗3 (z; z ∗3 , zAI ) and e∗3 (1; z ∗3 , zAI ) depend on both z ∗3 and zAI
+
+(in the statement of Lemma 2.4, we simply wrote m∗3 (z; z ∗3 ) instead of m∗3 (z; z ∗3 , zAI ) to avoid cluttering notation).
+3
+
+Note that ẽ∗3 (z; z̄3∗ , zAI ) is the equilibrium employee function indexed by z̄3∗ instead of z ∗3 .
+
+15
+
+to Γ3 (z̄3∗ ; zAI ) = 0. Hence, to prove that z̄3∗ > ẑ, it suffices to show that Γ3 (ẑ; zAI ) > 0. Indeed, since
+
+R1
+zAI > ẑ, we have that Γ3 (ẑ; zAI ) > Γ3 (ẑ; ẑ) = h1 − ẑ − zAI n e(z; ẑ) dz > 0, where the second-to-last
+inequality follows because ẽ∗3 (z; ẑ, ẑ) = e(z; ẑ) for all z ∈ [ẑ, 1], and the last inequality comes from the
+pre-AI equilibrium characterized in Lemma 2.1.
+
+2.4
+
+□
+
+Proof of Proposition 4
+
+For the proof that follows, it is important that we make explicit that the pre-AI equilibrium matching and employee functions depend on ẑ (i.e., the knowledge threshold that separates workers and
+solvers in the pre-AI equilibrium). For this reason, we write m(z; ẑ) and e(z; ẑ) instead of m(z) and
+e(z), respectively.
+• zAI ∈ intW .— First, we show that every z ∈ W ∗ is matched with a less knowledgeable solver
+post-AI than pre-AI. Note that if z ∈ Wa∗ , then such a worker is matched with AI in the post-AI
+equilibrium. This immediately gives the desired result, as m(z; ẑ) ≥ ẑ > zAI (given that zAI ∈ intW ).
+Proving that every z ∈ Wp∗ is also matched with a less knowledgeable solver is more involved.
+Since zAI ∈ intW , the post-AI equilibrium is either Type 1 or Type 2. Suppose first that it is Type 1.
+Then, the matching functions pre- and post-AI are given by:
+R m∗1 (z;z ∗1 )
+
+Rz
+dG(u) = 0 h(1 − u)dG(u) for z ∈ Wp∗ = [0, zAI ]
+Rz
+R m(z;ẑ)
+dG(u) = 0 h(1 − u)dG(u) for z ∈ W = [0, ẑ]
+ẑ
+z ∗1
+
+Thus, if z ∈ Wp∗ ∩ W = Wp∗ , then
+
+R m∗1 (z;z ∗1 )
+z ∗1
+
+dG(u) =
+
+R m(z;ẑ)
+ẑ
+
+dG(u), so m∗1 (z; z ∗1 ) < m(z; ẑ) as z ∗1 < ẑ.
+
+Suppose instead that the post-AI equilibrium is Type 2. Then, the matching functions pre- and
+post-AI are given by:
+R m∗ (z;z ∗ )
+
+Rz
+dG(u) = z ∗ h(1 − u)dG(u) for z ∈ Wp∗ = [z ∗2 , zAI ]
+2
+Rz
+R m(z;ẑ)
+dG(u) = 0 h(1 − u)dG(u) for z ∈ W = [0, ẑ]
+ẑ
+2
+
+2
+
+zAI
+
+Consequently, if z ∈ Wp∗ ∩ W = Wp∗ , then
+
+R m(z;ẑ)
+ẑ
+
+dG(u) −
+
+R m∗ (z;z ∗ )
+2
+zAI
+
+2
+
+dG(u) =
+
+R z∗
+2
+
+0
+
+h(1 − u)dG(u) > 0,
+
+which implies that m∗2 (z; z ∗2 ) < m(z; ẑ) as zAI < ẑ.
+We now turn to solvers, i.e., those z ∈ S ⊂ S ∗ . We first claim that if e(z; ẑ) = zAI , then z ∈ Sa∗ ∩ S,
+which immediately implies that if e(z; ẑ) = zAI , then z has the same span of control pre- and postAI. The proof is via the contrapositive. Suppose that z ∈
+/ Sa∗ ∩ S, so z ∈ Sp∗ ∩ S. It follows that
+zAI ≥ e∗j (z; z ∗j ) > e(z; ẑ), where the first inequality follows because AI is the best worker, and the
+second inequality follows because e∗j (z ′ ; z ∗j ) > e(z ′ ; ẑ) for all z ′ ∈ Sp∗ ∩ S (this follows because, as
+have already established above, m∗j (z ′′ ; z ∗j ) < m(z ′′ ; ẑ) for all z ′′ ∈ Wp∗ ∩ W = Wp∗ and j = 1, 2). In
+particular, e(z; ẑ) ̸= zAI .
+The previous claim implies that if e(z; ẑ) < zAI , then z’s span of control increases with AI, while if
+e(z; ẑ) > zAI , then z’s span of control decreases with AI. Indeed, if e(z; ẑ) < zAI , then either z ∈ Sp∗ ∩ S
+16
+
+or z ∈ Sa∗ ∩S. In either case, z is assisting more knowledgeable workers post-AI than pre-AI: If z ∈ Sp∗ ,
+then we have already shown that e∗j (z; z ∗j ) > e(z; ẑ), while if z ∈ Sa∗ , then, post-AI, individuals with
+knowledge z are assisting AI, while pre-AI, they are assisting humans with knowledge e(z; ẑ) < zAI .
+Similarly, if e(z; ẑ) > zAI , then z ∈ Sa∗ ∩ S. The latter implies that individuals with knowledge z are
+assisting less knowledgeable workers post-AI than pre-AI, as post-AI, they are assisting the work of
+AI, while pre-AI, they are assisting humans with knowledge e(z; ẑ) > zAI .
+
+□
+
+• zAI ∈ intS.— First, we show that every z ∈ S ∗ ⊂ S has a larger span of control post-AI than preAI. Note that if z ∈ Sa∗ , then such a solver is matched with AI in the post-AI equilibrium. Hence,
+e(z; ẑ) ≤ ẑ < zAI , as zAI ∈ intS.
+Next, we show that the same holds for every z ∈ Sp∗ . Since zAI ∈ intS, the post-AI equilibrium is
+either Type 2 or Type 3. Suppose first that it is Type 2. Then, the employee functions pre- and post-AI
+are given by:
+R z̄ ∗
+
+Rz
+∗
+∗
+dG(u) = e∗AI
+∗ h(1 − u)dG(u) for z ∈ Sp = [zAI , z̄2 ]
+2 (z;z 2 )
+R ẑ
+R1
+dG(u)
+=
+e(z;ẑ) h(1 − u)dG(u) for z ∈ S = [ẑ, 1]
+z
+2
+
+z
+
+Consequently, if z ∈ Sp∗ ∩ S = Sp∗ , then 0 <
+
+R1
+
+z̄2∗ dG(u) =
+
+which implies that e∗2 (z; z ∗2 ) > e(z; ẑ) (since zAI > ẑ).
+
+R zAI
+e(z;ẑ) h(1 − u)dG(u) − e∗2 (z;z ∗2 ) h(1 − u)dG(u),
+
+R ẑ
+
+Suppose instead that the post-AI equilibrium is Type 3. Then, the employee functions pre- and
+post-AI are given by:
+R1
+
+R z̄3∗
+
+R1
+
+R ẑ
+
+z dG(u) =
+z dG(u) =
+
+∗
+e∗3 (z;z ∗3 ) h(1 − u)dG(u) for z ∈ Sp = [zAI , 1]
+
+e(z;ẑ) h(1 − u)dG(u) for z ∈ S = [ẑ, 1]
+
+Consequently, for z ∈ Sp∗ ∩ S = Sp∗ , we have that
+
+R z̄3∗
+
+e(z; ẑ) < e∗3 (z; z ∗3 ) since ẑ < z̄3∗ .
+
+e∗3 (z;z ∗3 ) h(1 − u)dG(u) =
+
+R ẑ
+
+e(z;ẑ) h(1 − u)dG(u), so
+
+We now turn to workers, i.e., those with z ∈ W ⊂ W ∗ . We first claim that if z = e(zAI ; ẑ), then
+z ∈ Wa∗ ∩ W , which immediately implies that if z = e(zAI ; ẑ), then z is equally productive pre- and
+post-AI. The proof is via the contrapositive. Suppose that z ∈
+/ Wa∗ ∩ W , so z ∈ Wp∗ ∩ W . Hence,
+zAI ≤ m∗j (z; z ∗j ) < m(z; ẑ), where the first inequality follows because AI is the worst solver, and the
+second inequality follows because m∗j (z ′ ; z ∗j ) < m(z ′ ; ẑ) for all z ′ ∈ Wp∗ ∩ W (because, as we already
+showed above, e∗j (z ′′ ; z ∗j ) > e(z ′′ ; ẑ) for all z ′′ ∈ Sp∗ ∩ S = Sp∗ and j = 2, 3). In particular, z ̸= e(zAI ; ẑ).
+The previous claim implies that if z < e(zAI ; ẑ), then z is strictly more productive post-AI than
+pre-AI, while if z > e(zAI ; ẑ), then z is strictly less productive post-AI than pre-AI. Indeed, if z <
+e(zAI ; ẑ), then z ∈ Wa∗ ∩ W . Hence, individuals with knowledge z match with more knowledgeable
+solvers post-AI than pre-AI because post-AI, they are assisted by AI, while pre-AI, they are assisted
+by humans with knowledge m(z; ẑ) < zAI . Similarly, if z > e(zAI ; ẑ), then z ∈ Wa∗ ∩ W or z ∈ Wp∗ ∩ W .
+If z ∈ Wa∗ ∩ W , then individuals with knowledge z match with less knowledgeable solvers post-AI
+than pre-AI because post-AI, they are assisted by AI, while pre-AI, they are assisted by humans with
+17
+
+knowledge m(z; ẑ) > zAI . Similarly, if z ∈ Wp∗ ∩ W , then individuals with knowledge z also match
+with less knowledgeable solvers post-AI than pre-AI because we already established that m∗j (z; z ∗j ) <
+m(z; ẑ) for j = 2, 3.
+
+2.5
+
+Proof of Proposition 5
+
+2.5.1
+
+A Preliminary Result
+
+□
+
+To prove this proposition, we begin with the following preliminary result:
+Lemma 2.6. Define ∆(z) ≡ w∗ (z) − w(z). We have that ∆(zAI ) < 0 and:
+• If ∆(z) > 0 for some z ∈ [0, zAI ], then ∆(z ′ ) > 0 for all z ′ ∈ [0, z].
+• If ∆(z) > 0 for some z ∈ [zAI , 1], then ∆(z ′ ) > 0 for all z ′ ∈ [z, 1].
+For ease of exposition, we divide the proof Lemma 2.6 into three smaller claims:
+Claim 2.2. (i) ∆(zAI ) < 0, (ii) ∆(1) > 0, and (iii) ∆(0) > 0 if zAI ∈ S.
+Proof. That ∆(zAI ) = zAI − w(zAI ) < 0 follows directly from the fact that w(z) > z for all z ∈ [0, 1]
+when h < h0 (see Proposition 1). Consider next ∆(1) = w∗ (1) − w(1). By Lemma 2.4, we have that
+w∗ (1) = 1/h, while by Lemma 2.1 and Corollary 2.1, we have that w(1) < 1/h. Hence, ∆(1) > 0.
+Finally, consider ∆(0) = w∗ (0) − w(0) and suppose that zAI ∈ S. From Lemma 2.4, we have that
+w∗ (0) = zAI (1 − h) as the human with zero knowledge is assisted by AI irrespective of whether
+zAI ∈ R2 or zAI ∈ R3 . Moreover, from Lemma 2.1 and Corollary 2.1 we have that w(0) = ẑ − hw(ẑ).
+Thus, ∆(0) = zAI (1 − h) − (ẑ − hw(ẑ)) > (1 − h)(zAI − ẑ) ≥ 0, where the first inequality follows
+because w(ẑ) > ẑ, and the second inequality follows because zAI ≥ ẑ.
+Claim 2.3. If ∆(z) > 0 for some z ∈ [zAI , 1), then ∆(z ′ ) > 0 for all z ′ ∈ [z, 1).
+Proof. Given that ∆(zAI ) < 0 (by Claim 2.2), it suffices to show that if ∆(z) crosses zero at some
+z > zAI , then it always does so from below. We first consider zAI ∈ intW and then zAI ∈ intS.
+• zAI ∈ intW .— Lemma 2.4 implies that sup W ∗ = zAI , while Proposition 3 that W ∗ ⊂ W and S ∗ ⊃ S.
+Hence, if z > zAI , then z can only belong to either I ∗ ∩ W , S ∗ ∩ W , or S ∗ ∩ S.
+Now, irrespective of the presence of AI, the marginal return to knowledge is greater for solvers
+than for independent producers, and it is greater for independent producers than for workers. Hence,
+∆′ (z) = w∗′ (z) − w′ (z) ≥ 0 whenever z is in either I ∗ ∩ W or S ∗ ∩ W . This implies that if ∆(z) crosses
+zero in either of these sets, then it necessarily does so from below.
+Consider then z ∈ S ∗ ∩ S. Since S ∗ = Sp∗ ∪ Sa∗ , here we have two cases to consider: z ∈ Sp∗ ∩ S
+and z ∈ Sa∗ ∩ S. If z ∈ Sp∗ ∩ S, then ∆′ (z) = n(e∗j (z; z ∗j )) − n(e(z; ẑ)), where e∗j (z; z ∗j ) is the employee
+function in a Type j = 1, 2 equilibrium and e(z; ẑ) employee function in the pre-AI equilibrium. By
+
+18
+
+Proposition 4, we know that e∗j (z; z ∗j ) > e(z; ẑ), as every z ∈ Sp∗ ∩ S supervises better workers post-AI
+than pre-AI. Hence, in this case, ∆′ (z) > 0 also. Consequently, if ∆(z) crosses zero when z ∈ Sp∗ ∩ S,
+then it necessarily crosses from below.
+Finally, consider the possibility that ∆(z) crosses zero at z ∈ Sa∗ ∩ S. In this case, ∆′ (z) =
+n(zAI ) − n(e(z; ẑ)) ≷ 0, so ∆(z) is no longer monotone in z in this set. Note, however, that ∆′′ (z) =
+−n′ (e(z; ẑ))e′ (z; ẑ) < 0, so ∆(z) is concave. Moreover, if Sa∗ ̸= ∅, then 1 ∈ Sa∗ . The fact that ∆(z) is
+concave and that ∆(1) > 0 then immediately implies that if ∆(z) crosses zero in this set, then it can
+only cross once and from below (otherwise, ∆(1) ≤ 0 contradicting the fact ∆(1) > 0).
+• zAI ∈ intS.— From Lemma 2.4, we know that inf S ∗ = zAI . Moreover, from Proposition 3, we have
+that W ∗ ⊇ W and S ∗ ⊆ S. Consequently, if z > zAI , then z ∈ S ∗ ∩ S. Thus, we have two cases to
+consider: z ∈ Sp∗ ∩ S and z ∈ Sa∗ ∩ S.
+If z ∈ Sp∗ ∩ S, then ∆′ (z) = n(e∗j (z; z ∗j )) − n(e(z; ẑ)), while if z ∈ Sa∗ ∩ S, then ∆′ (z) = n(zAI ) −
+n(e(z; ẑ)), where e∗j (z; z ∗j ) is the employee function in a Type j = 2, 3 equilibrium and e(z; ẑ) the
+employee function in the pre-AI equilibrium. In either case, ∆′ (z) > 0 since Proposition 4 states that
+e∗j (z; z ∗j ) > e(z; ẑ) and zAI > e(z; ẑ) when AI has the knowledge of a pre-AI solver. Consequently,
+∆′ (z) > 0 for all z ≥ zAI , so if ∆(z) crosses zero at some z > zAI , then it always crosses it from
+below.
+Claim 2.4. If ∆(z) > 0 for some z ∈ [0, zAI ], then ∆(z ′ ) > 0 for all z ′ ∈ [0, z].
+Proof. Given that ∆(zAI ) < 0, it suffices to show that if ∆(z) crosses zero at some z < zAI , then it
+always crosses zero from above. We first consider zAI ∈ intW , and then zAI ∈ intS.
+• zAI ∈ intW .— Lemma 2.4 implies that sup W ∗ = zAI , while Proposition 3 that W ∗ ⊂ W and S ∗ ⊃ S.
+Consequently, if z < zAI , then z ∈ W ∗ ∩ W , where W ∗ = Wa∗ ∪ Wp∗ .
+Now, if z ∈ Wp∗ ∩ W , then ∆′ (z) = hw∗ (m∗j (z; z ∗j )) − hw(m(z; ẑ)), where m∗j (z; z ∗j ) is the matching
+function in a Type j = 1, 2 equilibrium, and m(z; ẑ) the matching function of the pre-AI equilibrium.
+However, using the firms’ zero-profit condition:
+∆′ (z) = hw∗ (m∗j (z; z ∗j )) − hw(m(z; ẑ)) =
+
+m∗j (z; z ∗j ) − m(z; ẑ) − ∆(z)
+1−z
+
+Consequently, if ∆(z) = 0 at some z in this interval, say at z = ζ, then ∆′ (ζ) = m∗j (ζ; z ∗j )−m(ζ; ẑ) ≤ 0,
+where the last inequality follows because every worker is assisted by a worse solver post-AI than preAI when zAI ∈ intW (Proposition 4).
+On the other hand, if z ∈ Wa∗ ∩ W , then following the same reasoning as before, we have that:
+∆′ (z) = hw(zAI ) − hw(m(z; ẑ)) =
+
+zAI − m(z; ẑ) − ∆(z)
+1−z
+
+Consequently, if ∆(z) = 0 at some z in this interval, say at z = ζ, then ∆′ (ζ) = zAI − m(ζ; ẑ) ≤ 0,
+where the inequality follows, again, from Proposition 4.
+19
+
+• zAI ∈ intS.— In this case, Lemma 2.4 implies that inf S ∗ = zAI , while Proposition 3 that W ∗ ⊃ W
+and S ∗ ⊂ S. Consequently, if z < zAI , then z can only belong to either I ∗ ∩ S, W ∗ ∩ S, or W ∗ ∩ W .
+Now, ∆′ (z) ≤ 0 whenever z is in either I ∗ ∩ S or W ∗ ∩ S, given that the marginal return to
+knowledge is greater for solvers than for independent producers, and it is greater for independent
+producers than for workers. Hence, if ∆(z) crosses zero in either of these sets, then it necessarily does
+so from above.
+Consider z ∈ W ∗ ∩W . We have two cases to consider: z ∈ Wp∗ ∩W and z ∈ Wa∗ ∩W . If z ∈ Wp∗ ∩W ,
+then:
+
+m∗j (z; z ∗j ) − m(z; ẑ) − ∆(z)
+1−z
+∗
+∗
+where mj (z; z j ) is the matching function in a Type j = 2, 3 equilibrium, and m(z; ẑ) the matching
+∆′ (z) = hw∗ (m∗j (z; z ∗j )) − hw(m(z; ẑ)) =
+
+function of the pre-AI equilibrium. Consequently, if ∆(z) = 0 at some z in this interval, say at z = ζ,
+then ∆′ (ζ) = m∗j (ζ; z ∗j ) − m(ζ; ẑ) ≤ 0, where the last inequality follows because every z ∈ W ∗ ∩ W is
+assisted by a worse solver post-AI than pre-AI when zAI ∈ intS.
+Finally, consider the possibility that ∆(z) crosses zero at z ∈ Wa∗ ∩ W . In this case, ∆′ (z) =
+hzAI − hw(m(z; ẑ)), so ∆′′ (z) = −hw′ (m(z; ẑ))f ′ (z; ẑ) < 0, implying that ∆(z) is concave. Moreover,
+if Wa∗ ̸= ∅, then 0 ∈ Wa∗ , and we know that ∆(0) > 0 in this case. Consequently, if ∆(z) crosses zero
+in this set, then it can only cross once and from above (otherwise, ∆(0) ≤ 0 contradicting the fact
+∆(0) > 0).
+
+2.5.2
+
+Proof of Proposition 5
+
+Note that Lemma 2.6 implies that B takes the form [0, zb ) and T takes the form (zt , 1] for some zb ≥ 0
+and zt ≤ 1. Hence, to verify the existence of winners below or above zAI , it suffices to analyze AI’s
+impact on the wages of the least and most knowledgeable individuals.
+Part (i) (“There are winners at the bottom if AI is good enough”).— To prove this part, we begin by constructing z̄AI and then showing that the statement is true.
+Let ∆(0; zAI ) ≡ w∗ (0; zAI ) − w(0), and define z̄AI as the solution to ∆(0; z̄AI ) = 0. We first show
+that z̄AI exists, is unique, and that z̄AI ∈ (0, ẑ). We do this by showing that, as we move from zAI = 0
+to zAI = 1, ∆(0; zAI ) crosses zero once, and that this crossing point is at zAI < ẑ. Indeed, if zAI ≥ ẑ,
+then Claim 2.2 states that ∆(0; zAI ) > 0 (as zAI ∈ S in this case). Moreover, as shown in Lemma
+2.5, 0 ∈ R1 , so when zAI = 0, the equilibrium is always Type 1. The latter implies that ∆(0; 0) =
+z ∗1 (0)(1 − h) − w(0) = −w(0) < 0,4 where the second-to-last equality follows because z ∗1 (0) = 0, as
+can be easily be proven from the condition that determines z ∗1 (zAI ) (see the statement of Lemma 2.4).
+When z ∈ [0, ẑ] = W , the equilibrium is either Type 1, in which case w∗ (0; zAI ) = z ∗1 (zAI )(1 − h),
+or Type 2, in which case w∗ (0; zAI ) = zAI (1 − h). Using the equilibrium condition that determines
+4
+
+To avoid any confusion, here we make explicit that z ∗1 (zAI ) depends on zAI as seen from the condition that determines
+
+z ∗1 (zAI ) in the statement of Lemma 2.4.
+
+20
+
+z ∗1 (zAI ), it is not difficult to prove that (i) z ∗1 (zAI ) is strictly increasing in zAI , and that (ii) z ∗1 (zAI ) =
+zAI whenever we switch from a Type 1 to a Type 2 equilibrium (and vice versa). Consequently,
+irrespective of the equilibrium type in this region, w∗ (0; zAI ) is continuous and strictly increasing
+in zAI , which implies that ∆(0; zAI ) is also continuous and strictly increasing in zAI . This result,
+combined with the fact that ∆(0; 0) < 0 and ∆(0; ẑ) > 0, immediately yields the desired result.
+Having constructed z̄AI , we prove that there exists z < zAI such that ∆(z; zAI ) > 0 if and only if
+zAI > z̄AI . First we show that if there exists z < zAI such that ∆(z; zAI ) > 0, then zAI > z̄AI . To do
+this, we prove the contrapositive statement: If zAI ≤ z̄AI , then there is no such z. Indeed, as shown
+above, ∆(0; zAI ) ≤ 0 for all zAI ≤ z̄AI . Hence, Lemma 2.6 implies that ∆(z; zAI ) ≤ 0 for all z < zAI .
+Finally, we prove that if zAI > z̄AI , then there exists z < zAI such that ∆(z; zAI ) > 0. Indeed, as
+shown above, if zAI > z̄AI , then ∆(0; zAI ) > 0. Consequently, Lemma 2.6 immediately implies that
+there exists ζ ∈ [0, zAI ) such that ∆(z; zAI ) > 0 for z ∈ [0, ζ) and ∆(z; zAI ) < 0 for z ∈ (ζ, zAI ].
+
+□
+
+Part (ii) (“There are always winners at the top”).— This part follows directly from Lemma 2.6 and the
+fact that ∆(1) > 0 (see Claim 2.2).
+
+2.6
+
+□
+
+Proof of Proposition 6
+
+Proposition 6 is a direct implication of Lemmas 2.7– 2.10 below.
+Lemma 2.7. Any equilibrium with non-autonomous AI has the following features:
+• Efficiency: Maximizes total output (which is equal to total labor income).
+• Occupational Stratification: W ⋆ ⪯ I ⋆ ⪯ S ⋆ = Sp⋆ .
+• Positive assortative matching: m⋆ : Wp⋆ → Sp⋆ is strictly increasing.
+• w⋆ (z) = zAI for all z ∈ Wa⋆ . Moreover, Wa⋆ ⪯ {zAI }.
+• Only the least knowledgeable humans use AI: Wa⋆ ⪯ Wp⋆ .
+Proof. The proof that the equilibrium (i) is efficient and (ii) satisfies both occupational stratification
+and positive assortative matching mirror those for the autonomous AI scenario. The fact that total
+output is equal to total labor income follows because total capital income, in this case, is zero, as
+r⋆ = 0.
+The result that w⋆ (z) = zAI for all z ∈ Wa⋆ follows from the zero profit condition of top-automated
+firms plus the fact that r⋆ = 0. Showing that Wa⋆ ⪯ {zAI } is also straightforward: no top-automated
+firm ever hires human workers who are more knowledgeable than its AI solver, as such workers can
+solve all problems that the AI solver can.5
+5
+
+Strictly speaking, the equilibrium may exhibit top-automated firms that employ humans with knowledge exceeding
+
+that of the AI. Although these firms gain no direct benefit from using AI—since the human at the bottom layer can solve
+all problems the AI can—the zero compute cost allows them to rent compute without denting their profits. However, such
+top-automated firms are functionally identical to single-layer firms. For simplicity, we rule out this type of top-automated
+firms.
+
+21
+
+Finally, we show that Wa⋆ ⪯ Wp⋆ . Suppose for contradiction that z ∈ Wa⋆ and z ′ ∈ Wp⋆ with
+z ′ < z. Note that no one can earn a wage lower than zAI in equilibrium (otherwise, a top-automated
+firm could make strictly positive profits). Moreover, firm optimality plus firms’ zero-profit condition
+implies that w⋆ is non-decreasing. Consequently, w⋆ (z ′ ) = zAI , as z ′ < z and z ∈ Wa⋆ . However, if so,
+then the non-automated firm employing z ′ could hire z instead for the same wage, strictly increasing
+its profits, as z is strictly more knowledgeable than z ′ . Contradiction.
+The next corollary is a direct implication of Lemma 2.7:
+Corollary 2.3. In the presence of non-autonomous AI, an equilibrium allocation must take one of the following
+three forms:
+• Pre-AI Configuration:
+Wa⋆ = ∅, Wp⋆ = [0, ẑ], I ⋆ = ∅, Sp⋆ = [ẑ, 1], Sa⋆ = ∅, where ẑ is given by
+
+R ẑ
+
+0 h(1 − z)dG(z) =
+
+R1
+
+ẑ dG(z)
+
+So µ⋆w = 0, µ⋆s = 0, µ⋆i = µ
+• Type 1a configuration:
+Wa⋆ = [0, z ⋆1 ], Wp⋆ = [z ⋆1 , z̄1⋆ ], I ⋆ = ∅, Sp⋆ = [z̄1⋆ , 1], Sa⋆ = ∅, where 0 < z ⋆1 ≤ z̄1⋆ ≤ 1
+R z⋆
+So µ⋆w = 0, µ⋆s = 0 1 h(1 − z)dG(z), µ⋆i = µ − µ⋆s
+• Type 2a configuration:
+Wa⋆ = [0, z ⋆2 ], Wp⋆ = [z ⋆2 , ẑ2⋆ ], I ⋆ = [ẑ2⋆ , z̄2⋆ ], Sp⋆ = [z̄2⋆ , 1], Sa⋆ = ∅, where 0 ≤ z ⋆2 ≤ ẑ2⋆ ≤ z̄2⋆ ≤ 1
+R z⋆
+So µ⋆w = 0, µ⋆s = 0 2 h(1 − z)dG(z), µ⋆i = µ − µ⋆s
+Proof. By Lemma 2.7, we have that, in equilibriun, Wa⋆ ⪯ Wp⋆ ⪯ I ⋆ ⪯ Sp⋆ and Sa⋆ = ∅. Now, if AI is not
+used in equilibrium (i.e., Wa⋆ = ∅), the equilibrium must coincide with the pre-AI equilibrium (this
+implies, in particular, that I ⋆ = ∅ necessarily in this case). Otherwise, there are only two alternative
+configurations, either Wa⋆ ⪯ Wp⋆ ⪯ Sp⋆ with I ⋆ = ∅, or Wa⋆ ⪯ Wp⋆ ⪯ I ⋆ ⪯ Sp⋆ with all being nonempty.
+The following lemma—which is the main result of this chapter—characterizes in detail the post-AI
+equilibrium for a non-autonomous AI when compute is abundant relative to time:
+Lemma 2.8. In the presence of a non-autonomous AI, there is a unique competitive equilibrium. It is given as
+follows:
+• When zAI ≤ w(0), the equilibrium allocation follows a pre-AI configuration.
+• When zAI > w(0), the equilibrium allocation is either Type 1a or Type 2a.
+– If the allocation is Type 1a, the equilibrium cutoffs z ⋆1 and z̄1⋆ are the unique solution to:
+
+h
+i
+R1
+1
+1
+⋆ (z; z̄ ))dz
+n(z 1 )(z̄1 − zAI ) = z̄1 + 1+n(z̄
+−
+z̄
+−
+n(e
+and m⋆1 (z 1 ; z̄1 ) = z̄1
+1
+1
+1
+h
+z̄1
+1)
+R z̄
+R1
+where m⋆1 : [z 1 , z̄1 ] → [z̄1 , 1] satisfies z 1 h(1 − u)dG(u) = m⋆ (z;z̄1 ) dG(u) and e⋆1 (z; ·) = (m⋆1 )−1 (z; ·)
+1
+
+R1
+
+And z̄1⋆ must be such that h1 > z̄1⋆ + z̄ ⋆ n(e⋆1 (z; z̄1⋆ ))dz. In this case, m⋆ (z) = m⋆1 (z; z̄1⋆ ).
+1
+
+22
+
+– If the allocation is Type 2a, the equilibrium cutoffs z ⋆2 , ẑ2⋆ , and z̄2⋆ are the unique solution to:
+R1
+1
+⋆
+h = z̄2 + z̄2 n(e2 (z; ẑ2 ))dz
+where m⋆2 : [z 2 , ẑ2 ] → [z̄2 , 1] is given by
+
+and
+R ẑ2
+z
+
+z̄2 = n(z 2 )(z̄2 − zAI ) and m⋆2 (z 2 ; ẑ2 ) = z̄2
+R1
+h(1 − u)dG(u) = m⋆ (z;ẑ2 ) dG(u) and e⋆2 (z; ·) = (m⋆2 )−1 (z; ·)
+2
+
+The equilibrium matching function is then given by m⋆ (z) = m⋆2 (z; ẑ2⋆ ).
+Irrespective of whether the allocation is Type 1a or Type 2a, the equilibrium wage w⋆ is continuous, weakly
+increasing, and weakly convex, and is given by:
+– w⋆ (z) = zAI for all z ∈ Wa⋆ .
+– w⋆ (z) = m⋆ (z) − w⋆ (m⋆ (z))/n(z) for all z ∈ Wp⋆ .
+– w⋆ (z) = z for all z ∈ I ⋆ .
+
+
+ 
+R
+Rz
+1
+1
+⋆ − 1 n e⋆ (u) du
+−
+z̄
+– w⋆ (z) = C ⋆ + inf S ⋆ n(e⋆ (u))du for all z ∈ Sp⋆ , where C ⋆ = z̄1⋆ + 1+n(z̄
+⋆
+⋆)
+1
+h
+z̄
+p
+
+if the equilibrium is Type 1a, and C ⋆ = z̄2⋆ if it is Type 2a.
+
+1
+
+1
+
+To prove this lemma, we will make use of the following auxiliary result:
+Claim 2.5. For a fixed parameter κ ∈ [0, 1), consider an auxiliary economy identical to the ’true’ economy,
+except that all individuals with z ∈ [0, κ] are absent (so there is only a mass 1 − G(κ) of humans). The pre-AI
+equilibrium of such an economy is unique and given as follows. There exists h̃0 (κ) ∈ [0, 1] such that:
+• If h < h̃0 (κ), then W̃ = [κ, ẑ(κ)] and S̃ = [ẑ(κ), 1]. Moreover, workers and solvers are matched according
+R1
+R ẑ(κ)
+to the strictly increasing function m̃1 (z; ẑ(κ)) given by z h(1 − u)dG(u) = m̃1 (z;ẑ(κ)) dG(z). Finally,
+R1
+R ẑ(κ)
+the cutoff ẑ(κ) ∈ (κ, 1) is the unique solution to κ h(1 − z)dG(z) = ẑ(κ) dG(z) and satisfies:
+1
+h − ẑ(κ) >
+
+R1
+
+−1
+ẑ(κ) n(ẽ1 (z; ẑ(κ)))dz, where ẽ1 (z; ẑ(κ)) = m̃1 (z; ẑ(κ))
+
+• If h ≥ h̃0 (κ), then W̃ = [κ, z(κ)], I˜ = (z(κ), z̄(κ)), and S̃ = [z̄(κ), 1]. Moreover, workers and solvers
+R z(κ)
+are matched according to the strictly increasing function m̃2 (z; z(κ)), given by z h(1 − u)dG(u) =
+R1
+m̃2 (z;z(κ)) dG(u). Finally, the cutoffs κ < z(κ) < z̄(κ) < 1 are the unique solutions to:
+1
+h − z̄(κ) =
+
+R1
+
+−1
+z̄(κ) n ẽ2 (u; z(κ)) du, and m̃2 (κ; z(κ)) = z̄(κ), where ẽ2 (z; z(κ)) = m̃2 (z; z(κ))
+
+
+
+Let m̃(z; κ) = m̃1 (z; ẑ(κ)) if h < h̃0 (κ) and m̃(z; κ) = m̃2 (z; z(κ)), otherwise. Define ẽ(z; κ) =
+(m̃)−1 (z; κ). Irrespective of h ≷ h̃0 (κ), the equilibrium wage w̃ is continuous, weakly increasing, and weakly
+convex in z, and is given by:
+• w̃(z; κ) = m̃(z; κ) − w̃(m̃(z; κ))/n(z) for all z ∈ W̃ .
+˜
+• w̃(z; κ) = z for all z ∈ I.
+Rz
+• w̃(z; κ) = C̃(κ) + inf S̃ n(ẽ(u; κ))du for all z ∈ S̃, where:
+
+
+
+ 
+R1
+1
+1
+ ẑ(κ) +
+−
+ẑ(κ)
+−
+n
+ẽ(u;
+κ)
+du
+if h < h̃0 (κ)
+h
+ẑ(κ)
+1+n(ẑ(κ))
+C̃(κ) =
+
+z̄(κ)
+if h ≥ h̃0 (κ)
+
+23
+
+Finally, the wage w̃(κ; κ) is continuous and strictly increasing in κ, and w̃(0; 0) = w(0), where w(0) is the
+equilibrium wages of the least knowledgeable individual of the pre-AI economy of the ’true’ economy.
+Proof. The characterization of the equilibrium (i.e., the equilibrium occupations and wages) is virtually identical to the characterization of the pre-AI equilibrium of the ‘true’ economy (which has κ = 0)
+of Chapter 2.1. Furthermore, the fact that w̃(0; 0) = w(0) follows because the auxiliary economy with
+κ = 0 is identical to the ‘true’ economy, and the equilibrium is unique in both cases. Hence, here we
+only prove that the wage w̃(κ; κ) is continuous and strictly increasing in κ.
+First, note that the equilibrium is continuous in (h, κ) and therefore so is w̃(κ; κ). This follows
+because equilibrium occupations and wages are continuous in (h, κ) when h < h̃0 (κ) and when
+h > h̃0 (κ), and because equilibrium wages and occupations coincide as we approach h̃0 (κ) from
+above or below. The latter is due to the fact that for a given κ, h̃0 (κ) is the unique h ∈ (0, 1) that
+R1
+satisfies h1 − ẑ(κ; h) = ẑ(κ;h) n(ẽ(z; ẑ(κ; h), h), h)dz (as shown by Fuchs et al., 2015).6
+Now, because w̃(κ; κ) is continuous in κ, to show that w̃(κ; κ) is strictly increasing in κ it suffices to
+show that it strictly increasing when h < h̃0 (κ) and when h > h̃0 (κ). When h < h̃0 (κ), we have that:
+
+
+
+R1
+1
+1
+n(ẽ(z;
+ẑ(κ)))dz
+−
+ẑ(κ)
+−
+w̃(κ; κ) = ẑ(κ)[1 − h(1 − κ)] − h(1 − κ) 1+n(ẑ(κ))
+h
+ẑ(κ)
+Using the facts that (i) ẑ(κ) is strictly increasing in κ, (ii) (∂/∂ ẑ)ẽ(z; ẑ(κ)) > 0, and (iii) h1 − ẑ(κ) >
+R1
+ẑ(κ) n(ẽ(z; ẑ(κ)))dz, it is not difficult to prove that (d/dκ)w̃(κ; κ) > 0. When h > h̃0 (κ), in turn, we
+have that w̃(κ; κ) = z̄(κ)[1 − h(1 − κ)]. This is also strictly increasing in κ, as z̄(κ) is strictly increasing
+in κ.
+To understand the usefulness of Claim 2.5, note that the equilibrium wages and occupations of
+the humans who do not work with a non-autonomous AI—those in Wp⋆ and Sp⋆ —must coincide with
+the pre-AI equilibrium of the auxiliary κ-economy when κ = inf Wp⋆ . Of course, the threshold κ =
+inf Wp⋆ is endogenous. However, we know that w⋆ (z) = zAI for all z ∈ Wa⋆ . Hence, the endogenous
+cutoff κ = inf Wp⋆ is determined either by w̃(κ; κ) = zAI (if the κ that solves this condition is weakly
+positive), or it is equal to κ = 0 (if the κ that solves w̃(κ; κ) = zAI is strictly negative).
+We can now proceed to prove Lemma 2.8. We do this in two steps. First, we argue that when
+zAI ≤ w(0), there is a unique equilibrium with the pre-AI configuration. Then, we show that when
+zAI > w(0), there is a unique equilibrium, and this equilibrium follows either a Type 1a or a Type
+2a configuration. For each case, we obtain the conditions that determine the equilibrium cutoffs and
+wages.
+Step 1. First, it is clear that if zAI ≤ w(0), then the pre-AI equilibrium is also an equilibrium with a
+non-autonomous AI. Indeed, if at the prevailing pre-AI wages a top-automated firm hired a human
+with knowledge z, the most that firm would earn in profits is n(z)[max{z, zAI } − w(z)] ≤ 0, where
+the inequality follows because w(z) > z and zAI ≤ w(0) < w(z) (as w(z) is strictly increasing in
+6
+
+Here we are making explicit that ẑ(κ; h), ẽ(z; ẑ, h), and n(z; h) = [h × (1 − z)]−1 all depend on h.
+
+24
+
+z). Thus, no firm has incentives to deviate from the pre-AI equilibrium, even in the presence of
+non-autonomous AI.
+To show that the equilibrium is unique, suppose for contradiction that there exists an equilibrium
+where AI is used. This implies that there exists κ > 0 such that w̃(κ; κ) = zAI , as explained above.
+However, by Claim 2.5, we know that w̃(0; 0) = w(0) and that w̃(κ; κ) is strictly increasing in κ.
+Hence, when zAI ≤ w(0), there does not exist a κ > 0 with the desired properties. Contradiction. □
+Step 2. First, note that if zAI > w(0), then the pre-AI equilibrium cannot be an equilibrium with a
+non-autonomous AI. At the pre-AI wages, a top-automated firm can hire a human with knowledge
+z = 0 and earn strictly positive profits. Thus, in this case, the equilibrium can only follow a Type 1a
+or a Type 2a configuration.
+To show equilibrium existence and uniqueness, we simply note that w̃(0; 0) = w(0) and that
+w̃(κ; κ) is strictly increasing in κ. Hence, there exists a unique κ > 0 such that w̃(κ; κ) = zAI . This
+also yields uniqueness since we know that for a given κ > 0, the pre-AI equilibrium of the auxiliary
+κ-economy is unique (by Claim 2.5).
+Finally, we obtain the equilibrium cutoffs for each of the two possible configurations. Suppose first
+that the post-AI equilibrium follows a Type 1a configuration. In this case, z ⋆1 = κ and z̄1⋆ = ẑ(κ = z ⋆1 ),
+which immediately implies that e⋆1 (z; z̄1⋆ ) = ẽ1 (z; ẑ(κ)). Hence, z ⋆1 and z̄1⋆ must satisfy the following
+two conditions:
+h
+i
+
+R
+1
+1
+⋆ − 1 n(e⋆ (z; z̄ ⋆ ))dz)
+w̃(κ; κ) = zAI ⇐⇒ n(z ⋆1 )(z̄1⋆ − zAI ) = z̄1⋆ + 1+n(z̄
+−
+z̄
+⋆
+⋆)
+1
+1
+1
+h
+z̄1
+1
+R1
+R ẑ(κ)
+h(1 − z)dG(z) = ẑ(κ) dG(z) ⇐⇒ m⋆1 (z ⋆1 ; z̄1⋆ ) = z̄1⋆
+κ
+These are exactly the conditions in the statement of Lemma 2.8. Moreover, note that, by construction,
+R1
+1
+1
+⋆
+⋆
+⋆
+h > z̄1 + z̄1⋆ n(e1 (z; z̄1 ))dz, since the equilibrium of the auxiliary κ-economy satisfies h − ẑ(κ) >
+R1
+ẑ(κ) n(ẽ1 (z; ẑ(κ)))dz. Finally, a direct application of Claim 2.5 implies that the equilibrium wages are
+indeed the ones described in the statement of the lemma.
+Now, suppose that the post-AI equilibrium follows a Type 2a configuration. In this case, z ⋆2 = κ,
+ẑ2⋆ = z(κ = z ⋆2 ), and z̄2⋆ = z̄(κ = z ⋆2 ), which immediately implies that e⋆2 (z; ẑ2⋆ ) = ẽ2 (u; z(κ)). Hence,
+z ⋆2 , ẑ2⋆ , and z̄2⋆ must satisfy the following three equilibrium conditions:
+w̃(κ; κ) = zAI ⇐⇒ z̄2⋆ = n(z ⋆2 )(z̄2⋆ − zAI )
+
+R1
+R1
+1
+1
+⋆
+⋆
+⋆
+h − z̄(κ) = z̄(κ) n ẽ2 (u; z(κ)) du ⇐⇒ h = z̄2 + z̄ ⋆ n(e2 (z; ẑ2 ))dz
+2
+
+m̃2 (κ; z(κ)) = z̄(κ) ⇐⇒ m⋆2 (z ⋆2 ; ẑ2⋆ ) = z̄2⋆
+These are exactly the conditions in the statement of Lemma 2.8. Finally, a direct application of Claim
+2.5 implies that the equilibrium wages are indeed the ones described in the statement of the lemma.
+□
+The following lemma (i) shows that there is always an individual that loses from the introduction
+of a non-autonomous AI relative to the pre-AI equilibrium, and (ii) characterizes the effects of a non25
+
+autonomous AI on the wages of the least and most knowledgeable individuals relative to the pre-AI
+and the autonomous AI case.
+Lemma 2.9.
+1. ∃ z ∈ (0, 1] such w⋆ (z) ≤ w(z) (with strict inequality if zAI > w(0)).
+2. ∃ ϵ > 0 such that w⋆ (z) ≥ max{w(z), w∗ (z)} for all z ∈ [0, ϵ) (with strict inequality if zAI > w(0))
+3. ∃ ϵ > 0 such that w⋆ (z) ≤ w∗ (z) for all z ∈ (1 − ϵ, 1], with strict inequality if z ̸= 1.
+Proof. 1. ∃ z ∈ (0, 1] such w⋆ (z) ≤ w(z) (with strict inequality if zAI > w(0)).— If zAI ≤ w(0), then
+w⋆ (z) = w(z), so the statement holds trivially. Hence, it only remains to show that when zAI > w(0),
+there exists a z ∈ (0, 1] such w⋆ (z) < w(z).
+Let κ be the supremum of Wa⋆ . If w⋆ (κ) < w(κ), we are done as κ loses from AI. So suppose
+otherwise without loss, i.e., w⋆ (κ) ≥ w(κ). The fact that, pre-AI, m⋆ (κ) could have matched with κ
+paying her no more than post-AI implies that w⋆ (m⋆ (κ)) ≤ w(m⋆ (κ)), with strict inequality unless
+w⋆ (κ) = w(κ). Hence, it only remains to consider the case w⋆ (κ) = w(κ) and w⋆ (m⋆ (κ)) = w(m⋆ (κ)).
+Without loss of generality, we can restrict attention to a Type 1a configuration (because in a Type 2a
+configuration there are clearly losers, namely, the newly created independent producers). Clearly,
+z ⋆1 > ẑ, so m⋆ (κ) < m(κ) given that:
+R z⋆
+R ẑ
+R1
+1
+m(κ) dG(u) = h κ (1 − u)dG(u) < h κ (1 − u)dG(u) = m⋆ (κ) dG(u)
+
+R1
+
+Recall that in equilibrium, for any worker z we have that w′ (z) = m(z)−w(z)
+. Hence, m⋆ (κ) < m(κ)
+1−z
+together with w⋆ (κ) = w(κ) imply that w⋆′ (κ) < w∗′ (κ). It follows that there exists z ′ > κ with
+w⋆ (z ′ ) < w(z ′ ).
+2. ∃ ϵ > 0 such that w⋆ (z) ≥ max{w(z), w∗ (z)} for all z ∈ [0, ϵ) (with strict inequality if zAI > w(0)).—
+First, note that if zAI ≤ w(0), then w⋆ (z) = w(z) for all z. Now consider zAI > w(0). Because
+w⋆ (0) = zAI > w(0), the individual with z = 0 is always strictly better off relative to the pre-AI
+equilibrium. Thus, by continuity, there exists ϵ′ > 0 such that w⋆ (z) ≥ w(z) for all z ∈ [0, ϵ′ ), with
+strict inequality if zAI > w(0).
+To show the remaining part, note that in the equilibrium with autonomy w∗ (zAI ) = zAI and w∗ (z)
+is strictly increasing in z. This immediately implies that w∗ (0) < w∗ (zAI ) = zAI ≤ max{zAI , w(0)} =
+w⋆ (0). Consequently, by continuity, there exists ϵ′′ > 0 such that w⋆ (z) > w∗ (z) for all z ∈ [0, ϵ′′ ).
+Taking ϵ = min{ϵ′ , ϵ′′ } we obtain the desired result.
+3. ∃ ϵ > 0 such that w⋆ (z) ≤ w∗ (z) for all z ∈ (1 − ϵ, 1], with strict inequality if z ̸= 1.— In the equilibrium
+with autonomous AI, we always have that w∗ (1) = 1/h. In contrast, with a non-autonomous AI,
+w⋆ (1) = w(0) < 1/h in a pre-AI configuration, w⋆ (1) < 1/h in a Type 1a configuration, and w⋆ (1) =
+1/h in a Type 2a configuration.
+Thus, if the equilibrium with a non-autonomous AI follows a pre-AI configuration or is Type 1a,
+we are done: w⋆ (1) < 1/h = w∗ (1), so by continuity there exists ϵ > 0 such that w⋆ (z) < w∗ (z)
+26
+
+for all z ∈ (1 − ϵ, 1]. When the equilibrium with a non-autonomous AI is Type 2a, we have that
+w⋆ (1) = 1/h = w∗ (1), so to prove that there exists ϵ > 0 such that w⋆ (z) < w∗ (z) for all z ∈ (1 − ϵ, 1),
+we will show that w∗′ (1) < w⋆′ (1), implying that w∗ (z) − w⋆ (z) converges to zero from above when
+z → 1.
+Indeed, we have that w∗′ (1) = n(e∗ (1)) and that w⋆′ (1) = n(e⋆ (1)). Hence, w∗′ (1) < w⋆′ (1) if
+and only if e∗ (1) < e⋆ (1). Note then that e∗ (1) ≤ zAI ,7 while e⋆ (1) = ẑ2⋆ in a Type 2a configuration.
+Hence, if we show that ẑ2⋆ > zAI , we are done. To show this, note that w⋆ (z) = zAI for all z ∈ [0, z ⋆2 ]
+and that w⋆ (ẑ2⋆ ) = ẑ2⋆ . Since w⋆ (z) is strictly increasing (and continuous) in z ∈ Wp⋆ , it must be that
+w⋆ (ẑ2⋆ ) = ẑ2⋆ > w⋆ (z ⋆2 ) = zAI .
+We finish this chapter with the following lemma comparing overall output with autonomous and
+non-autonomous AI:
+Lemma 2.10. Overall output is strictly higher with autonomous than non-autonomous AI.
+Proof. The competitive equilibrium is efficient both in the case of autonomous and in the case of nonautonomous AI (i.e., both maximize output subject to AI’s technological constraints and the available
+resources). The only difference between autonomous and non-autonomous AI is that the latter has an
+additional constraint that AI cannot do production work. Moreover, given that compute is abundant
+relative to time, this constraint is strictly binding because, in the autonomous case, some compute
+is used for independent production. In contrast, non-autonomous AI necessarily leaves resources
+(namely, compute) idle. It follows that output is strictly smaller when this constraint is there than
+when it is not.
+
+7
+
+This follows because e∗ (1) = zAI in a Type 1 and Type 2 equilibrium, and e∗ (1) = z̄3∗ < zAI in a Type 3 equilibrium.
+
+27
+
+Chapter 3
+
+The Pre-AI Economy: Further Results
+3.1
+
+Pre-AI Equilibrium when Knowledge is Uniformly Distributed
+
+When knowledge is uniformly distributed, the pre-AI equilibrium can almost be obtained in closed
+form. We present the following results without proof, as they are straightforward applications of the
+results found in Chapter 2.1.
+Lemma 3.1. In the absence of AI, there is a unique competitive equilibrium. It is given as follows:
+• When h > h0 = 3/4, then W = [0, z], I = (z, z̄), and S = [z̄, 1], where:
+√
+√
+1
+h2 − 4h + 3
+2
+h2 − 4h + 3
+z =1− +
+and
+z̄ = − 1 −
+h
+h
+h
+h
+The equilibrium matching function is m(z; z̄) = z̄ + hz − hz 2 /2, while the wage function is given by:
+
+2
+
+if z ∈ W
+z + h(z−z)
+
+2
+
+z
+if z ∈ I
+w(z) =
+q
+
+
+2(z+z̄)
+ 1 + z̄ − (1 + z̄)2 −
++ 1 if z ∈ S
+h
+
+h2
+
+• When h ≤ h0 = 3/4, then W = [0, ẑ], I = ∅, and S = [ẑ, 1], where ẑ = (1 + h −
+
+√
+
+1 + h2 )/h. The
+
+equilibrium matching function is m(z; ẑ) = ẑ + hz − hz 2 /2, while the wage function is given by:
+
+
+
+hẑ(2+hẑ)
+hz 2
+ ẑ −
+if z ∈ W
+2(1+h(1−ẑ)) (1 − z) + 2
+q
+w(z) =
+
+h+2ẑ
+1 − 2(z−ẑ)
+if z ∈ S
+h
+1+h(1−ẑ) −
+
+3.2
+
+Developing vs. Advanced Economies
+
+In the main text, we claimed that the knowledge cutoff to become a solver in the pre-AI equilibrium
+is higher in advanced than in developing economies if the former have better communication technologies and/or a more knowledgeable population than the latter. In this appendix, we formalize
+this claim.
+28
+
+In particular, the following lemma characterizes how the communication cost h, and the distribution of knowledge G(z) affect the knowledge cutoff to become a solver. For simplicity, we focus on
+the case h < h0 :
+Lemma 3.2.
+(i) Let ẑ(h) be the knowledge of the best worker/worst solver of the pre-AI equilibrium as a function of h. Then
+ẑ(h) is strictly decreasing in h ∈ (0, h0 ).
+(ii) Let ẑ k (h) for h ∈ (0, hk0 ) be the knowledge of the best worker/worst solver of the pre-AI equilibrium under the
+B
+knowledge distribution Gk (z). If GA ≽FOSD GB , then ẑ A (h) ≥ ẑ B (h) for any given h ∈ (0, hA
+0 ) ∩ (0, h0 ).
+
+Proof. The proof that ẑ(h) is strictly decreasing in h is in Fuchs et al. (2015, Lemma 2). Hence, here
+we only provide the proof for (ii).
+B
+We want to show that if GA ≽FOSD GB , then ẑ A (h) ≥ ẑ B (h) for any given h ∈ (0, hA
+0 ) ∩ (0, h0 ). To
+
+simplify notation, we omit the dependence of the equilibrium variables on h. Recall that ẑ k is given
+by mk (ẑ k ; ẑ k ) = 1, where mk (z; ẑ k ) is the equilibrium matching function in the pre-AI equilibrium.
+R ẑ k
+This implies that ẑ k must satisfy 1 = G(ẑ k ) + 0 h(1 − u)dGk (u). Integrating by parts the right-hand
+side of this last expression and rearranging terms yields:
+R ẑ k
+1 = Gk (ẑ k )[1 + h(1 − ẑ k )] + h 0 Gk (z)dz
+{z
+}
+|
+≡αk (ẑ k )
+
+Note that αk (x) is strictly increasing in x, so ẑ k is the unique solution to αk (x) = 1. We claim that
+GA ≽FOSD GB implies that αA (x) ≤ αB (x) for any given x, which immediately implies that ẑ A ≥ ẑ B .
+Indeed, given that GB (z) ≥ GA (z) (as GA ≽FOSD GB ):
+Rx
+αB (x) − αA (x) = [1 + h(1 − x)][GB (x) − GA (x)] + h 0 [GB (u) − GA (u)]du ≥ 0
+
+29
+
+Chapter 4
+
+Autonomous AI: Further Results
+4.1
+
+More on the Baseline Model
+
+4.1.1
+
+Post-AI Equilibrium when Knowledge is Uniformly Distributed
+
+When knowledge is uniformly distributed, the equilibrium with autonomous AI can be obtained in
+almost closed form. As in the main text, we focus on h < h0 . We present the following statements
+without proof, as they are straightforward applications of the results found in Chapter 2.2.
+Recall from Chapter 2.2 that R1 ≡ {z ∈ W : Γw (z) < 0}, R2 ≡ {z ∈ W : Γw (z) ≥ 0} ∪ {z ∈ S :
+Γs (z) ≥ 0}, and R3 ≡ {z ∈ S : Γs (z) < 0}, where:
+R m (x;x)
+n(ew (u; x))du
+Γw (x) ≡ n(x)(mw (x; x) − x) − x − x w
+R
+1
+Γs (x) ≡ h1 − x − x n(es (u; x))du
+with
+
+R mw (z;zAI )
+zAI
+
+dG(u) =
+
+Rz
+
+0 h(1 − u)dG(u) for z ∈ [0, zAI ], and
+
+R1
+
+z dG(u) =
+
+R zAI
+
+es (z;zAI ) h(1 − u)dG(u) for
+
+z ∈ [zAI , 1]. When G(z) = z, we have:
+2
+
+mw (z; zAI ) = zAI + hz − hz2 for z ∈ [0, zAI ]
+q
+es (z; zAI ) = 1 − (1 − zAI )2 + 2(1−z)
+for z ∈ [zAI , 1]
+h
+Γw (x) = x(2−x)
+2(1−x) − 2x
+Γs (x) = h1 + 1 − 2x −
+
+q
+
+(1−x)(2+h−hx)
+h
+
+We are now ready to present the post-AI equilibrium when knowledge is uniformly distributed:
+Lemma 4.1. When G(z) = z and AI is autonomous, there is a unique competitive equilibrium. It is given as
+follows:
+• If zAI ∈ R1 , then:
+Wa∗ = ∅, Wp∗ = [0, zAI ], I ∗ = (zAI , z ∗1 ), Sp∗ = [z ∗1 , m∗1 (zAI ; z ∗1 )], Sa∗ = [m∗1 (zAI ; z ∗1 ), 1]
+30
+
+2
+
+zAI (2−hzAI )
+where z ∗1 = 2[1−h(1−z
+and m∗1 (z; z ∗1 ) = z ∗1 + hz − hz2 for z ∈ [0, zAI ]. The equilibrium wage function
+AI )]
+
+is:
+
+
+2
+
+z ∗1 − hz ∗1 (1 − z) + hz2
+
+
+
+
+
+z
+∗
+q
+w (z) =
+2(z−z ∗ )
+
+
+1 + z ∗1 − 1 − h 1
+
+
+
+
+n(z )(z − z )
+AI
+
+AI
+
+if z ∈ Wp∗
+if z ∈ I ∗
+if z ∈ Sp∗
+if z ∈ Sa∗
+
+• If zAI ∈ R2 , then:
+Wa∗ = [0, z ∗2 ], Wp∗ = [z ∗2 , zAI ], I ∗ = ∅, Sp∗ = [zAI , m∗2 (zAI ; z ∗2 )], Sa∗ = [m∗2 (zAI ; z ∗2 ), 1]
+where z ∗2 = zAI −
+
+p
+2 )
+h(z 2 −zAI
+2zAI (1 − zAI ) and m∗2 (z; z ∗2 ) = zAI + h(z − zAI ) −
+for [z ∗2 , zAI ]. The
+2
+
+equilibrium wage function is:
+
+
+
+zAI
+
+z
+1
+−
+AI
+
+n(z)
+
+
+
+
+
+ z − hz ∗ 1 − z ∗2 − h(z − z ∗ )(1 − z) + hz 2
+AI
+AI
+2
+2
+2
+2
+q
+w∗ (z) =
+
+2(z−z
+)
+AI
+
+1 + zAI − z ∗2 − (1 − z ∗2 )2 −
+
+h
+
+
+
+n(zAI )(z − zAI )
+
+if z ∈ Wa∗
+if z ∈ Wp∗
+if z ∈ Sp∗
+if z ∈ Sa∗
+
+• If zAI ∈ R3 , then:
+Wa∗ = [0, z ∗3 ], Wp∗ = [z ∗3 , z̄3∗ ], I ∗ = (z̄3∗ , zAI ], Sp∗ = [zAI , 1], Sa∗ = ∅
+1−zAI
+1−zAI
+1−hzAI
+∗
+∗
+∗
+∗
+AI
+where z ∗3 = 1 − 1−hz
+− 1−hz
+2h , z̄3 = 1 + 1−hzAI +
+2h , and m3 (z; z 3 ) = zAI + h(z − z 3 ) −
+AI
+
+for [z ∗3 , z̄3∗ ]. The equilibrium wage function is:
+
+
+
+zAI
+
+zAI 1 − n(z)
+
+
+
+
+
+
+ 1 − hz ∗ 1 − z ∗3 − (1 − z)(1 − hz ∗ ) + hz 2
+3
+3
+2
+2
+w∗ (z) =
+
+z
+
+
+q
+
+
+
+1 − z ∗3 + h1 − (1 − z ∗3 )2 + 2(1−z)
+h
+
+4.1.2
+
+h(z 2 −z ∗2
+3 )
+2
+
+if z ∈ Wa∗
+if z ∈ Wp∗
+if z ∈ I ∗
+if z ∈ Sp∗
+
+The Effects of AI on the Distribution of Firm Size, Productivity, and Span of Control
+
+This chapter analyzes the effects of autonomous AI on the distribution of firm size, productivity,
+and span of control. We focus on two-layer organizations and begin with the following preliminary
+result:
+Corollary 4.1. Autonomous AI necessarily increases the number (i.e., the measure) of two-layer firms.
+Proof. Since all two-layer organizations hire a single solver, to prove this corollary, it is sufficient to
+show that AI increases the overall number of solvers in the economy. When zAI ∈ intW , this follows
+because S ∗ ⊃ S (see Proposition 3 of the main text). When zAI ∈ intS, more humans become workers
+31
+
+after AI’s introduction (i.e., W ∗ ⊃ W , see Proposition 3 of the main text). Hence, the overall number
+of solvers—human plus AI—must increase as each worker requires the same amount of help post-AI
+as that required pre-AI.
+We take firm size as its output, and firm productivity as its output divided by the units of time or
+compute used in production (this is a measure of “average” productivity). Hence, a firm’s productivity is equal to the knowledge of its solver. We define a firm’s span of control as the amount of resources
+under its solver’s supervision. Hence, the span of control of a firm that hires human workers with
+knowledge z is n(z), while that of a firm that uses AI for production is n(zAI ). Note that span of control is a measure of decentralization because a solver can supervise more resources only if its workers
+solve more problems on their own.
+Proposition 4.1.
+• If zAI ∈ intW , then autonomous AI decreases the maximum span of control, the minimum firm productivity,
+and both the minimum and maximum firm size.
+• If zAI ∈ intS, then autonomous AI increases the maximum span of control, the minimum firm productivity,
+and both the minimum and maximum firm size.
+
+Proof. Consider first span of control. The most decentralized firm of the pre-AI economy has a span
+of control n(sup W ), while the most decentralized firm of the post-AI world has a span of control of
+n(sup W ∗ ). That AI decreases the maximum span of control when zAI ∈ intW , and increases it when
+zAI ∈ intS, follows from occupational displacement, i.e. Proposition 3 of the main text, and the fact
+that n(z) = [h × (1 − z)]−1 is strictly increasing in z.
+Consider next productivity. The least productive firm of the pre-AI economy has productivity
+inf S, while the least productive firm of the post-AI world has productivity inf S ∗ . That AI decreases
+the minimum firm productivity when zAI ∈ intW , and increases it when zAI ∈ intS, follows directly
+from occupational displacement (i.e. Proposition 3 of the main text).
+Finally, consider size. By positive assortative matching, the size of the smallest firm is n(0) times
+the minimum firm productivity, while the size of the largest firm is 1 times the maximum span of
+control. Consequently, when zAI ∈ intW , AI reduces the minimum and maximum firm size, as
+it decreases the maximum span of control and the minimum firm productivity. Likewise, when
+zAI ∈ intS, AI increases the minimum and maximum firm size, as it increases the maximum span of
+control and the minimum firm productivity.
+Proposition 4.1 is illustrated in Figure 4.1, which depicts the pre- and post-AI distributions of firm
+decentralization, productivity, and size when zAI = 0.425 and zAI = 0.85. The dark-shaded and
+light-shaded bars correspond to the firms created and destroyed by AI’s introduction, respectively.
+Hence, the pre-AI distribution is equal to the white bars plus the light-shaded bars, while the post-AI
+distribution is equal to the white bars plus the dark-shaded bars.
+
+32
+
+10 6
+
+6
+
+10 6
+
+6
+
+5
+
+5
+
+4
+
+4
+
+3
+
+3
+
+2
+
+2
+
+1
+
+1
+
+0
+
+0
+2
+
+4
+
+6
+
+8
+
+10
+
+12
+
+2
+
+(a) Span of Control - zAI ∈ intW
+
+5
+
+4
+
+4
+
+3
+
+3
+
+2
+
+2
+
+1
+
+1
+
+0.5
+
+0.6
+
+0.7
+
+0.8
+
+0.9
+
+8
+
+10
+
+12
+
+14
+
+10 6
+
+6
+
+5
+
+0
+0.4
+
+6
+
+(b) Span of Control - zAI ∈ intS
+
+10 6
+
+6
+
+4
+
+0
+0.4
+
+1
+
+0.5
+
+(c) Productivity - zAI ∈ intW
+
+0.6
+
+0.7
+
+0.8
+
+0.9
+
+1
+
+(d) Productivity - zAI ∈ intS
+
+10 6
+
+10 6
+
+3.5
+
+3.5
+
+3
+
+3
+
+2.5
+
+2.5
+
+2
+
+2
+
+1.5
+
+1.5
+
+1
+
+1
+
+0.5
+
+0.5
+
+0
+
+0
+0
+
+5
+
+10
+
+15
+
+0
+
+(e) Size - zAI ∈ intW
+
+5
+
+10
+
+15
+
+(f) Size - zAI ∈ intS
+
+Figure 4.1: The Effects of AI on the Distribution of Firms’ Span of Control, Productivity, and Size
+Notes. This histogram is based on a human population of N = 100 × 106 individuals. Distribution of knowledge: G(z) = z.
+For both panels, h = 1/2. Moreover, for panel (a), zAI = 0.425, while for panel (b), zAI = 0.85. Pre-AI, there are 23.6 × 106
+firms. Post-AI, the number of firms increases to 46.7 × 106 in panel (a) and to 29.3 × 106 in panel (b). See Ide and Talamàs
+(2024) for the exact expressions of the pre- and post-AI distributions of firm size, productivity, and span of control.
+
+33
+
+As the figure shows, when zAI ∈ intW , AI destroys the largest and most decentralized firms
+and leads to the creation of firms that are smaller and less productive than the smallest and least
+productive pre-AI firms. Similarly, when zAI ∈ intS, AI destroys the smallest and least productive
+firms and leads to the creation of firms that are larger and more decentralized than the largest and
+most decentralized pre-AI firms.
+We end this chapter by showing that when AI has the knowledge of a pre-AI solver, and this
+knowledge is sufficiently high, autonomous AI also leads to the creation of superstar firms that have
+“scale without mass.” This term was coined by Brynjolfsson et al. (2008) and Autor et al. (2020) to
+refer to those firms that attain large market shares with relatively few employees.
+Formally, we say that AI creates superstar firms with scale but no mass if the following two conditions are satisfied: (i) the largest post-AI firms are larger than the largest pre-AI firms, and (ii)
+the largest post-AI firms are bottom-automated (that is, they use a single human solver to supervise
+production work by AI).
+Corollary 4.2. There exists ζ ∈ intS such that for all zAI ≥ ζ, autonomous AI leads to the creation of
+superstar firms with scale but no mass.
+Proof. First, note that when zAI ∈ intS, the largest post-AI firms are larger than the largest pre-AI
+firms. Second, we know by Lemma 2.5 of Chapter 2.2 that zAI ∈ R2 if zAI ∈ [1 − ϵ, 1) ⊂ S with
+ϵ ↓ 0. Thus, by Lemma 2.4 of Chapter 2.2, firms use AI in all three possible roles when zAI is sufficiently close to 1. Since no worker is better than AI and the equilibrium exhibits positive assortative
+matching (Lemma 2.3 of Chapter 2.2), we then have that AI is the best worker in the economy and is
+therefore supervised by the most knowledgeable humans. Hence, when zAI is sufficiently close to 1,
+the largest firms post-AI are bottom-automated firms.
+Combining these two results, we have that when zAI is sufficiently close to 1, AI leads to the
+creation of superstar firms with scale but no mass.
+Intuitively, AI increases the maximum firm size only when zAI ∈ intS. In such a case, we know
+that AI is necessarily used as a solver and possibly also as a worker (Proposition 2 of the main text).
+The condition that zAI ≥ ζ is necessary and sufficient for AI to be used in both roles, in which case
+the largest post-AI firms are bA firms (as AI is the best worker in the economy). These superstar firms
+with scale but no mass can, in fact, be seen in panel (f) of Figure 4.1.
+
+4.1.3
+
+The Knife-Edge Case zAI ∈ W ∩ S
+
+In this chapter, we describe the effects of AI when zAI ∈ W ∩ S = {ẑ}.
+Occupational Displacement
+Proposition 4.2. When zAI ∈ W ∩ S = {ẑ}, autonomous AI does not lead to any human displacement
+between routine knowledge work and specialized problem solving, i.e., W ∗ = W and S ∗ = S. However, it
+34
+
+leads to the creation of bA and tA firms, i.e., Wa∗ ̸= ∅ and Sa∗ ̸= ∅.
+Proof. By Lemma 2.5 of Chapter 2.2, we know that zAI = ẑ ∈ R2 , so Lemma 2.4 of the same chapter
+implies that the equilibrium is necessarily Type 2. Hence, in this case, we have that sup W ∗ = inf S ∗ =
+zAI = ẑ, so there is no occupational displacement.
+Showing that Wa∗ ̸= ∅ and Sa∗ ̸= ∅ requires more work. First, it is not difficult to prove that z ∗2 > 0 if
+and only if z̄2∗ < 1. Hence, to prove that Wa∗ ̸= ∅ and Sa∗ ̸= ∅ it suffices to show that z ∗2 > 0. To do the
+latter, suppose for contradiction that z ∗2 = 0 (z ∗2 < 0 immediately contradicts that we are in a Type 2
+R m∗ (z;0)
+Rz
+equilibrium). Then the equilibrium matching function is given by ẑ 2
+dG(u) = 0 h(1 − u)dG(u)
+for z ∈ [ẑ, 1], so m∗2 (z; 0) = m(z; ẑ) for all z ∈ [ẑ, 1], which implies that n(zAI )(m∗2 (zAI ; 0) − zAI ) = 1/h.
+R1
+However, since h1 > ẑ + ẑ n(e(z; ẑ))dz (by Lemma 2.1 of Chapter 2.1), we have that:
+
+
+R1
+R m∗ (z ;0)
+n(zAI )(m∗2 (zAI ; 0) − zAI ) = h1 > ẑ + ẑ n e(z; ẑ) dz = zAI + zAI2 AI n e∗2 (z; 0) dz
+so the equilibrium condition for z ∗2 = 0 is not satisfied (see the statement of Lemma 2.4 of Chapter
+2.2). Contradiction.
+Distribution of Firm Size, Productivity, and Span of Control
+Corollary 4.3. When zAI ∈ W ∩ S = {ẑ}, autonomous AI also increases the measure of two-layer firms.
+Proof. Since all two-layer organizations hire a single solver, to prove this corollary, it suffices to show
+that AI increases the overall number of solvers in the economy. Proving the latter is easy. By Proposition 4.2, we know that there is the same amount of human workers pre- and post-AI. Moreover,
+because Sa∗ ̸= ∅, there is a strictly positive amount of compute doing assisted production work. Both
+observations together imply that there are more overall workers (human or compute) post-AI than
+pre-AI. Hence, the overall number of solvers—human plus AI—must also be greater post-AI than
+pre-AI, as each worker requires the same amount of help post-AI as pre-AI.
+Proposition 4.3. When zAI ∈ W ∩ S = {ẑ}, autonomous AI does not affect the maximum span of control,
+the minimum firm productivity, or the minimum or maximum firm size.
+Proof. Recall that the most decentralized firm of the pre-AI economy has a span of control n(sup W ),
+while the most decentralized firm of the post-AI world has a span of control of n(sup W ∗ ). Hence, AI
+does not affect the maximum span of control because, by Proposition 4.2, we know that W = W ∗ .
+Similarly, recall that the least productive firm of the pre-AI economy has productivity inf S, while
+the least productive firm of the post-AI world has productivity inf S ∗ . Hence, AI does not affect the
+minimum firm productivity because, by Proposition 4.2, we know that S = S ∗ .
+Finally, consider size. As noted in the main text, the size of the smallest firm is n(0) times the
+minimum firm productivity, while the size of the largest firm is 1 times the maximum span of control.
+Hence, AI does not affect the minimum or maximum firm size since, in this case, it does not affect
+the minimum firm productivity or the maximum span of control.
+35
+
+Note, finally, that because AI does not increase the maximum firm size when zAI ∈ W ∩ S = {ẑ},
+then in this case, AI cannot lead to the emergence of “superstar firms with scale but no mass,” as
+defined in Chapter 4.1.2
+The Effects of AI on Workers and Solvers who are Not Occupationally Displaced
+Proposition 4.4. If zAI ∈ W ∩ S = {ẑ}, then:
+• The productivity of z ∈ W ∗ = W decreases with autonomous AI (strictly so for all z ̸= 0).
+• The span of control of z ∈ S ∗ = S increases with autonomous AI (strictly so for all z ̸= 1).
+Proof. We first show that each z ∈ W ∗ = W is assisted by a less knowledgeable solver post-AI than
+pre-AI (strictly so for all z ̸= 0). By Lemma 2.5 of Chapter 2.2, we know that zAI = ẑ ∈ R2 , so Lemma
+2.4 of the same chapter implies that the equilibrium is necessarily Type 2. Moreover, as shown in
+the proof of Proposition 4.2, in this case, we have that z ∗2 > 0 and z̄2∗ < 1. Consequently, if z ∈ Wa∗ ,
+then m(z; ẑ) ≥ ẑ = zAI , where the first inequality is strict when z > 0. If z ∈ Wp∗ instead, then the
+matching functions pre- and post-AI are given by:
+R m∗ (z;z ∗ )
+Rz
+2
+2
+dG(u) = z ∗ h(1 − u)dG(u) for z ∈ Wp∗ = [z ∗2 , zAI ]
+zAI
+2
+Rz
+R m(z;ẑ)
+dG(u) = 0 h(1 − u)dG(u) for z ∈ W = [0, ẑ]
+ẑ
+when evaluating zAI = ẑ. Consequently, for z ∈ W ∗ = W ,
+which implies that m∗2 (z; z ∗2 ) < m(z; ẑ) given that z ∗2 > 0.
+
+R m(z;ẑ)
+
+m∗2 (z;z ∗2 ) dG(u) =
+
+R z∗
+
+h(1 − u)dG(u) > 0,
+
+2
+
+0
+
+We now show that each z ∈ S ∗ = S improves her match post-AI compared to pre-AI (strictly so
+for all z ̸= 1). Indeed, if z ∈ Sa∗ , then e(z; ẑ) ≤ ẑ = zAI , where the first inequality is strict when z < 1.
+If z ∈ Sp∗ instead, then the employee functions pre- and post-AI are given by:
+R zAI
+R z̄ ∗
+∗
+∗
+2
+z dG(u) = e∗2 (z;z ∗2 ) h(1 − u)dG(u) for z ∈ Sp = [zAI , z̄2 ]
+R ẑ
+R1
+z dG(u) = e(z;ẑ) h(1 − u)dG(u) for z ∈ S = [ẑ, 1]
+when evaluating zAI = ẑ. Consequently, for z ∈ S ∗ = S,
+which implies that e∗2 (z; z ∗2 ) > e(z; ẑ) since z̄2∗ < 1.
+
+4.1.4
+
+R1
+
+z̄2∗ dG(u) =
+
+R e∗2 (z;z ∗2 )
+e(z;ẑ)
+
+h(1 − u)dG(u) > 0,
+
+Superintelligent AI: zAI = 1
+
+We now characterize and discuss the effects of a superintelligent AI, i.e., zAI = 1.
+Proposition 4.5. In the presence of a superintelligent autonomous AI, there is a unique equilibrium. The
+equilibrium allocations are:
+Wa∗ = [0, 1], Wp∗ = I ∗ = Sp∗ = Sa∗ = ∅
+R1
+µ∗w = 0, µ∗s = 0 n(z)−1 dG(z), µ∗i = µ − µ∗s
+The equilibrium prices are r∗ = 1 and w∗ (z) = 1 − h(1 − z) for any z ∈ [0, 1].
+36
+
+Proof. Given that compute is abundant relative to human time, some compute must be allocated
+to independent production. The zero-profit condition of single-layer automated firms then implies
+that r∗ = 1. Moreover, because the equilibrium still exhibits occupational stratification, the unique
+candidate for the equilibrium has the following allocations:
+Wa∗ = [0, 1], Wp∗ = I ∗ = Sp∗ = Sa∗ = ∅
+R1
+µ∗w = 0, µ∗s = 0 n(z)−1 dG(z), µ∗i = µ − µ∗s
+That is, all humans are employed as workers in top-automated firms. The zero-profit conditions of
+these firms then pin down the candidate wage schedule, i.e., w∗ (z) = 1 − h(1 − z) for any z ∈ [0, 1].
+From here, verifying that this is indeed an equilibrium, i.e., that no firms have incentives to deviate
+and all market clearing conditions are satisfied, is straightforward.
+The effects of a superintelligent AI are depicted in Figure 4.2. As the figure shows—and Proposition 4.5 formalizes—in this case, all humans are hired as workers in top-automated firms. As a result,
+there are some similarities as well as some differences compared to the baseline setting studied in the
+main text.
+Let us begin with the similarities. It is easy to see that in the case of a superintelligent AI, the results
+regarding (i) occupational displacement and (ii) the distribution of firm size, productivity, and span
+of control are the same as the ones in the baseline model when AI has the knowledge of a pre-AI
+Wa∗
+zAI
+
+w(z)
+
+w∗ (z)
+
+0
+
+1
+W
+
+z
+
+S
+
+Figure 4.2: The Effects of a Superintelligent AI
+Notes. Distribution of knowledge: G(z) = z. Parameter values: h = 1/2 and zAI = 1. The thick gray line depicts the pre-AI
+equilibrium wage function w. The thick black line depicts the post-AI equilibrium wage function w∗ .
+
+37
+
+solver. Indeed, humans are still displaced from specialized problem solving into routine production
+work, which leads to the destruction of the least productive firms and the creation of larger, more
+decentralized firms. The only difference is that when zAI = 1, AI no longer leads to the creation of
+superstar firms with scale but no mass, as there are no bA firms.
+Regarding the productivity of the workers who remain workers (note that there are no solvers
+who remain solvers), the results in the case of zAI = 1 are also similar to those of the baseline. Indeed,
+Proposition 3 of Section 5.1 of the main text continues to hold. The only difference is that now all
+workers who are not occupationally displaced see a gain in productivity because z ≤ e(zAI = 1) = ẑ
+for all z ∈ W ⊂ W ∗
+Thus, the main differences between the case of a superintelligent AI and the case studied in the
+baseline emerge regarding the distribution of labor income. In particular, as stated in Proposition 5
+of Section 5.2 the main text, when zAI ∈ [0, 1), the most knowledgeable humans necessarily win from
+AI’s introduction, even if zAI → 1. In contrast, when zAI = 1, then the most knowledgeable humans
+necessarily lose from the introduction of the technology, as illustrated in Figure 4.2.
+Intuitively, this difference arises because when zAI < 1, the humans with z ∈ (zAI , 1] can still use
+AI to increase the extent to which they leverage their knowledge. In contrast, when zAI = 1, that
+is no longer possible as the AI can solve the same amount of problems as the most knowledgeable
+humans.
+
+4.2
+
+Negligible Amount of Compute: µ → 0
+
+We now characterize the equilibrium with an autonomous AI in the case where µ → 0 and compare
+it to the case where compute is abundant relative to time. This comparison allows us to disentangle
+in a clean way the role that abundant compute is playing in our results. As in the main text, we focus
+on the case h < h0 .
+
+4.2.1
+
+Overview
+
+We begin with an overview of the equilibrium when µ is arbitrarily small and a comparison to the
+case where µ is abundant relative to time.
+Proposition 4.6. Regarding autonomous AI:
+• If zAI ∈ intW , then there exists µ̄w > 0 such that if µ ∈ (0, µ̄w ), then the unique equilibrium involves AI
+being used exclusively as a worker. In particular, there exist cutoffs ẑ ∗ < z ∗s < z̄s∗ < 1 such that:
+Wa∗ = ∅, Wp∗ = [0, ẑ ∗ ] ∋ zAI , I ∗ = ∅, Sp∗ = [ẑ ∗ , z ∗s ] ∪ [z̄s∗ , 1], Sa∗ = [z ∗s , z̄s∗ ]
+where ẑ ∗ < ẑ and satisfies
+
+R ẑ ∗
+0
+
+h(1 − z)dG(z) + h(1 − zAI )µ =
+
+38
+
+R1
+
+ẑ ∗ dG(z).
+
+• If zAI ∈ intS, then there exists µ̄s > 0 such that if µ ∈ (0, µ̄s ), then the unique equilibrium involves AI
+∗ < ẑ ∗ such that:
+being used exclusively as a solver. In particular, there exist cutoffs 0 < z ∗w < z̄w
+∗
+∗
+Wa∗ = [z ∗w , z̄w
+], Wp∗ = [0, z ∗w ] ∪ [z̄w
+, ẑ ∗ ], I ∗ = ∅, Sp∗ = [ẑ ∗ , 1] ∋ zAI , Sa∗ = ∅
+
+where ẑ ∗ > ẑ and satisfies
+
+R ẑ ∗
+0
+
+R1
+h(1 − z)dG(z) = µ + ẑ ∗ dG(z).
+
+• If zAI = ẑ, then there exists µ̄k > 0 such that if µ ∈ (0, µ̄k ), then the unique equilibrium involves AI
+simultaneously being used as a worker and as a solver (but not used as an independent producer). In
+∗ < ẑ ∗ < z ∗ < 1 such that:
+particular, there exist cutoffs 0 < z̄w
+s
+∗
+∗
+Wa∗ = [0, z̄w
+], Wp∗ = [z̄w
+, ẑ ∗ ], I ∗ = ∅, Sp∗ = [ẑ ∗ , z ∗s ], Sa∗ = [z ∗s , 1]
+
+where ẑ ∗ is equal to the pre-AI cutoff and, therefore, equal to zAI , i.e., ẑ ∗ = ẑ = zAI .
+Proof. See Chapter 4.2.2 below.
+Proposition 4.6 highlights two key differences between small and large compute. First, when µ
+is small, AI is used exclusively as a worker when it has the knowledge of a pre-AI worker, while it
+is used exclusively as a solver when it has the knowledge of a pre-AI solver. Second, when AI is
+used exclusively as a worker, it is not the best worker in the economy. Similarly, when AI is used
+exclusively as a solver, it is not the worst solver of the economy.
+Intuitively, when compute is large relative to human time, using all of the economy’s compute
+requires allocating some of it to independent production, irrespective of AI’s knowledge (as mentioned in Section 4 of the main text). Occupational stratification then leads to AI being the best
+worker and/or the worst solver in that case. These forces are absent when µ is small, as compute can
+be completely absorbed in production in two-layer firms (if zAI ∈ intW ) or completely absorbed in
+the supervision of humans (if zAI ∈ intS).
+As in Section 5 of the main text, we now compare the pre- and post-AI equilibrium. We start
+by noting that Proposition 3 of the main text (concerning occupational displacement) remains the
+same. This follows because—as Proposition 4.6 shows—when zAI ∈ intW then ẑ < ẑ ∗ , while zAI ∈
+intS, then ẑ > ẑ ∗ . This implies that humans are again displaced from routine production work into
+specialized problem solving when AI has the knowledge of a pre-AI worker, while they are displaced
+in the opposite direction when AI has the knowledge of a pre-AI solver.
+The comparison is more subtle in the case of changes in the quality of matches (Proposition 4 of
+the main text). We now provide its analog for the case of small compute (recall that e(z; ẑ) is the
+equilibrium employee function of the pre-AI equilibrium):
+Proposition 4.7. When AI is autonomous and µ > 0, but arbitrarily small:
+• If zAI ∈ intW , then:
+– The productivity of z ∈ W ⊂ W ∗ strictly decreases with autonomous AI if z < zAI , and strictly increases
+with autonomous AI if z > zAI .
+39
+
+– The span of control of z ∈ S ⊂ S ∗ strictly increases with autonomous AI if e(z; ẑ) < zAI , and strictly
+decreases with autonomous AI if e(z; ẑ) > zAI .
+• If zAI ∈ intS, then:
+– The productivity of z ∈ W ⊂ W ∗ strictly increases with autonomous AI if z < e(zAI ; ẑ), and strictly
+increases with autonomous AI if z > e(zAI ; ẑ).
+– The span of control of z ∈ S ⊂ S ∗ strictly decreases with autonomous AI if z < zAI , and strictly increases
+with autonomous AI if z > zAI .
+• If zAI = ẑ, then:
+– The productivity of z ∈ W ⊂ W ∗ decreases with autonomous AI (strictly so for all z ̸= 0).
+– The span of control of z ∈ S ⊂ S ∗ increases with autonomous AI (strictly so for all z ̸= 1).
+Proof. See Chapter 4.2.3 below.
+Proposition 4.7 is similar to Proposition 4 of the main text, except in the following two aspects.
+First, while all workers are worse matched when compute is abundant if zAI ∈ intW , there is a set
+of workers—those with knowledge above zAI —who are better matched post-AI than pre-AI when
+compute is small. Second, while the span of control of all solvers increases when compute is abundant
+and zAI ∈ intS, there is a set of solvers—those with knowledge below zAI —whose span of control
+decreases when compute is small.
+Intuitively, these differences arise because, when compute is abundant, AI is the best worker
+and/or the worst solver. Thus, in this case, there are no human workers with knowledge above zAI
+nor human solvers with knowledge below zAI . In that sense, Proposition 4.7 is true both with small
+and large compute, but Proposition 4 of the main text exploits the fact that compute is abundant to
+deliver stronger predictions.
+Finally, we turn to the consequences of AI for labor income. In contrast to the case in which compute is abundant, when µ is small, the winners from AI are not necessarily the ones at the extremes
+of the knowledge distribution. For example, Figure 4.3 depicts the function ∆(z) ≡ w∗ (z) − w(z) in a
+case with relatively low compute and zAI = 0. In the example provided in the figure, the humans in
+the middle of knowledge distribution benefit from AI, while those at the extreme of the distribution
+are worse off from its introduction.
+Intuitively, in this case, the reduction of wages at knowledge 0 increases the wages of the least
+knowledgeable solvers post-AI, which, in turn, increases the wages of the most knowledgeable workers post-AI. This makes the solvers of the latter—the most knowledgeable humans—strictly worse
+off since they can now appropriate a smaller share of the output produced. This intuition highlights
+the key role that abundant compute plays in our analysis of the distributional consequences of AI:
+By guaranteeing that the best workers and the worst solvers post-AI do not gain from AI, it prevents
+situations like the one depicted in Figure 4.3, where both extremes of the knowledge distribution lose
+from AI.
+40
+
+∆(z)
+
+W
+
+S
+
+1
+
+0
+
+z
+
+W∗
+
+S∗
+
+Figure 4.3: An Illustration of ∆(z) for low compute µ.
+Notes. Distribution of knowledge: G(z) = z. Parameter values: zAI = 0.01, h = 0.73, µ = 0.01. Moreover, ∆(0) =
+−1.89 × 10−3 , ∆(1) = −1.26 × 10−3 , maxz ∆(z) = 2.58 × 10−3 , minz ∆(z) = −1.89 × 10−3 .
+
+4.2.2
+
+Proof of Proposition 4.6
+
+We begin with some preliminary observations. First, recall that we are assuming that h < h0 . Second,
+as in the pre-AI equilibrium and the AI equilibrium with abundant compute, it is not difficult to
+prove that in this setting, the equilibrium continues to exhibit positive assortative matching and
+occupational stratification. Third, we have the following result, which applies regardless of the value
+of zAI :
+Claim 4.1. When µ is sufficiently small, there is no independent production in equilibrium with autonomous
+AI.
+Proof. Suppose that agent z ∈ [0, 1] is hired as an independent producer in equilibrium. This implies
+that w∗ (z; µ) = z, where we are making explicit that the post-AI equilibrium depends on µ. Note
+then that w∗ (z; µ) must be continuous in µ, and that limµ→0 w∗ (z; µ) > z, since h < h0 . Therefore, by
+continuity, it must be that w∗ (z; µ) > z for a positive but sufficient small µ, contradicting the premise
+that z is an independent producer. The exact same argument with z = zAI can be used to show that
+no positive mass of compute can be allocated to independent production in equilibrium.
+• AI has the Knowledge of a Pre-AI Worker.— We begin by characterizing the equilibrium when zAI ∈
+intW .
+Claim 4.2. When µ is sufficiently small and zAI ∈ intW , autonomous AI is not used as a solver in equilibrium.
+41
+
+Proof. The proof is by contradiction. If AI is used as a solver in equilibrium, occupational stratification implies that W ∗ = [0, zAI ] and S ∗ = [zAI , 1] (that W ∗ = [0, zAI ] and not W ∗ ⊂ [0, zAI ] is due to the
+fact that there is no independent production in equilibrium). This implies that a necessary condition
+Rz
+R1
+for market clearing is 0 AI h(1 − u)dG(u) + h(1 − zAI )µw = zAI dG(u) + µs . Given that µw → 0 and
+µs → 0 as µ → 0, then it must be that:
+R
+
+R1
+z
+limµ→0 0 AI h(1 − u)dG(u) − zAI dG(u) = 0
+However, given that zAI < ẑ then for any µ > 0 we have that
+R
+
+R1
+z
+limµ→0 0 AI h(1 − u)dG(u) − zAI dG(u) < 0, contradiction.
+
+R zAI
+0
+
+h(1 − u)dG(u) <
+
+R1
+
+zAI dG(u), so
+
+Lemma 4.2. When µ is sufficiently small and zAI ∈ intW , the unique equilibrium with autonomous AI is as
+follows. The equilibrium allocation is:
+Wa∗ = ∅, Wp∗ = [0, ẑ ∗ ] ∋ zAI , I ∗ = ∅, Sp∗ = [ẑ ∗ , z ∗s ] ∪ [z̄s∗ , 1], Sa∗ = [z ∗s , z̄s∗ ]
+R z̄ ∗
+µ = µ∗w = z ∗s n(zAI )dG(u)
+s
+
+where ẑ ∗ satisfies
+
+R ẑ ∗
+
+R1
+
+∗
+∗
+∗
+∗
+ẑ ∗ dG(z), while z s = m− (zAI ; ẑ ) and z̄s
+m∗+ (zAI ; ẑ ∗ ), where m∗− : [0, zAI ] → [ẑ ∗ , z ∗s ] and m∗+ : [zAI , ẑ ∗ ] → [z̄s∗ , 1] are given by:
+0
+
+h(1 − z)dG(z) + h(1 − zAI )µ =
+
+=
+
+R m∗− (z;ẑ ∗ )
+(4.1)
+
+Rz
+dG(u) = 0 h(1 − u)dG(u), for z ∈ [0, zAI ]
+ẑ ∗
+R ẑ ∗
+R1
+∗
+m∗+ (z;ẑ ∗ ) dG(u) = z h(1 − u)dG(u), for z ∈ [zAI , ẑ ]
+
+Moreover, the equilibrium wage schedule is:
+
+
+m∗− (z; ẑ ∗ ) − w∗ (m∗− (z; ẑ ∗ ))/n(z)
+
+
+
+
+∗
+∗
+∗
+∗
+∗
+
+
+ m+ (z;Rẑ ) − w (m+ (z; ẑ ))/n(z)
+z
+(4.2)
+w∗ (z) =
+C ∗ + ẑ ∗ n(e∗− (u; ẑ ∗ ))du
+
+
+
+
+n(zAI )(z − r∗ )
+
+
+
+ n(z )(z̄ ∗ − r∗ ) + R z∗ n(e∗ (u; ẑ ∗ ))du
+AI
++
+s
+z̄
+s
+
+if z ∈ [0, zAI ]
+if z ∈ [zAI , ẑ ∗ ]
+if z ∈ [ẑ ∗ , z ∗s ]
+if z ∈ [z ∗s , z̄s∗ ]
+if z ∈ [z̄s∗ , 1]
+
+where (C ∗ , r∗ ) are given by the following system of linear equations:
+R1
+n(ẑ ∗ )(1 − C ∗ ) = n(zAI )(z̄s∗ − r∗ ) + z̄ ∗ n(e∗+ (u; ẑ ∗ ))du
+s
+R z ∗s
+∗
+∗
+∗
+∗
+C + ẑ ∗ n(e− (u; ẑ ))du = n(zAI )(z s − r∗ )
+Proof. Claims 4.1 and 4.2 imply that compute is used exclusively for production in two-layer organizations when µ is sufficiently small. Occupational stratification and positive assortative matching
+then imply that the equilibrium allocations must necessarily take the following form: There exist
+cutoffs zAI ≤ ẑ ∗ ≤ z ∗s < z̄s∗ < 1 such that:
+Wa∗ = ∅, Wp∗ = [0, ẑ ∗ ] ∋ zAI , I ∗ = ∅, Sp∗ = [ẑ ∗ , z ∗s ] ∪ [z̄s∗ , 1], Sa∗ = [z ∗s , z̄s∗ ]
+R z̄ ∗
+µ = µ∗w = z ∗s n(zAI )dG(u)
+s
+
+42
+
+Following similar reasoning as in Chapter 2.2 (see “Informal Construction of the Equilibrium”), the
+matching functions m∗− (z; ẑ ∗ ) and m∗+ (z; ẑ ∗ ) must satisfy (4.1), which implies that z ∗s = m∗− (zAI ; ẑ ∗ )
+R z̄ ∗
+and z̄s∗ = m∗+ (zAI ; ẑ ∗ ). Combining these expressions with the fact that µ = z ∗s n(zAI )dG(u), we obtain
+s
+R ẑ ∗
+R1
+the equilibrium condition for ẑ ∗ : 0 h(1 − z)dG(z) + h(1 − zAI )µ = ẑ ∗ dG(z). Notice from this last
+condition that ẑ ∗ < ẑ and that ẑ ∗ → ẑ as µ → 0. This implies that, for any zAI < ẑ, we can always
+find a sufficiently small µ such that zAI < ẑ ∗ .
+Having determined the equilibrium allocation, we now turn to wages. Following a similar reasoning as in Chapter 2.2 (see “Informal Construction of the Equilibrium”), the equilibrium wages must
+be given as in (4.2). Moreover, the equilibrium wage function has to be continuous, so limz↑ẑ ∗ w∗ (z) =
+limz↓ẑ ∗ w∗ (z) and limz↑z ∗s w∗ (z) = limz↓z ∗s w∗ (z). These two conditions give the system of linear equations that determines (C ∗ , r∗ ). It is straightforward to prove that this system has a unique solution.
+The final step is verifying that the proposed allocations and prices are indeed an equilibrium. To
+do this, we need to argue that no firm has incentives to deviate. This is relatively straightforward:
+first, by construction, no firm has incentives to deviate locally. Moreover, also by construction, the
+wage function is continuous in z. Now, following a similar logic as the proof of Corollary 2.1 of
+Chapter 2.1, it is easy to prove that w∗ (z) is strictly increasing and weakly convex. This implies that if
+a firm does not have incentives to deviate locally, then it does not have incentives to deviate globally
+either. Thus, given the wage function and the equilibrium allocation, no firms have incentives to
+deviate.
+• AI has the Knowledge of a Pre-AI solver.—We now consider the case when zAI ∈ intS.
+Claim 4.3. When µ is sufficiently small and zAI ∈ intS, autonomous AI is exclusively used as a solver in
+equilibrium.
+Proof. The proof is by contradiction. If AI is used as a worker in equilibrium, occupational stratification implies that W ∗ = [0, zAI ] and S ∗ = [zAI , 1] (because there is no independent production in
+Rz
+equilibrium). This implies that a necessary condition for market clearing is 0 AI h(1−u)dG(u)+h(1−
+R1
+zAI )µw = zAI dG(u) + µs . Given that µw → 0 and µs → 0 as µ → 0, it must be that:
+limµ→0
+
+R
+
+R1
+zAI
+h(1
+−
+u)dG(u)
+−
+0
+zAI dG(u)
+
+However, given that zAI > ẑ, then for any µ > 0 we have that
+R
+
+R1
+z
+limµ→0 0 AI h(1 − u)dG(u) − zAI dG(u) > 0, contradiction.
+
+
+
+R zAI
+0
+
+=0
+
+h(1 − u)dG(u) >
+
+R1
+
+zAI dG(u), so
+
+Lemma 4.3. When µ is sufficiently small and zAI ∈ intS, the unique equilibrium with autonomous AI is as
+follows. The equilibrium allocation involves:
+∗
+∗
+Wa∗ = [z ∗w , z̄w
+], Wp∗ = [0, z ∗w ] ∪ [z̄w
+, ẑ ∗ ], I ∗ = ∅, Sp∗ = [ẑ ∗ , 1] ∋ zAI , Sa∗ = ∅
+R z̄ ∗
+µ = µ∗s = z ∗w h(1 − z)dG(z)
+w
+
+43
+
+where ẑ ∗ satisfies
+
+R ẑ ∗
+0
+
+R1
+∗ = e∗ (z ; ẑ ∗ ), where
+h(1 − z)dG(z) = µ + ẑ ∗ dG(z), while z ∗w = e∗− (zAI ; ẑ ∗ ) and z̄w
++ AI
+
+∗ , ẑ ∗ ] are given by:
+e∗− : [ẑ ∗ , zAI ] → [0, z ∗w ] and e∗+ : [zAI , 1] → [z̄w
+
+Rz
+
+R e∗− (z;ẑ)
+
+h(1 − u)dG(u), for z ∈ [ẑ ∗ , zAI ]
+0
+R1
+R ẑ ∗
+z dG(u) = e∗+ (z;ẑ ∗ ) h(1 − u)dG(u), for z ∈ [zAI , 1]
+ẑ ∗
+
+(4.3)
+
+dG(u) =
+
+Moreover, the equilibrium wage schedule is:
+
+
+m∗− (z; ẑ ∗ ) − w∗ (m∗− (z; ẑ ∗ ))/n(z)
+
+
+
+
+∗
+
+
+ zAI − r /n(z)
+(4.4)
+w∗ (z) =
+m∗+ (z; ẑ ∗ ) − w∗ (m∗+ (z; ẑ ∗ ))/n(z)
+
+Rz
+
+
+
+C ∗ + ẑ ∗ n(e∗− (u; ẑ ∗ ))du
+
+
+
+ r∗ + R z n(e∗ (u; ẑ ∗ ))du
+zAI
+
++
+
+if z ∈ [0, z ∗w ]
+∗]
+if z ∈ [z ∗w , z̄w
+∗ , ẑ ∗ ]
+if z ∈ [z̄w
+
+if z ∈ [ẑ ∗ , zAI ]
+if z ∈ [zAI , 1]
+
+where (C ∗ , r∗ ) satisfy:
+R1
+(1 − C ∗ )n(ẑ ∗ ) = r∗ + zAI n(e∗+ (z; ẑ ∗ ))dz
+
+and
+
+Rz
+r∗ = C ∗ + ẑ ∗AI n(e∗− (z; ẑ ∗ ))dz
+
+Proof. According to Claim 4.3, compute is only used to supervise humans in equilibrium. Occupational stratification and positive assortative matching then imply that the equilibrium allocations
+∗ ≤ ẑ ∗ ≤ z
+must necessarily take the following form: There exist cutoffs 0 < z ∗w < z̄w
+AI ≤ 1 such that:
+∗
+∗
+Wa∗ = [z ∗w , z̄w
+], Wp∗ = [0, z ∗w ] ∪ [z̄w
+, ẑ ∗ ], I ∗ = ∅, Sp∗ = [ẑ ∗ , 1] ∋ zAI , Sa∗ = ∅
+R
+∗
+z̄
+µ = µ∗s = z ∗w h(1 − z)dG(z)
+w
+
+Following similar reasoning as in Chapter 2.2 (see “Informal Construction of the Equilibrium”), the
+employee functions e∗− (z; ẑ ∗ ) and e∗+ (z; ẑ ∗ ) then satisfy (4.3), which implies that z ∗w = e∗− (zAI ; ẑ ∗ ) and
+R ∗
+∗ = e∗ (z ; ẑ ∗ ). Combining these expressions with the fact that µ = z̄w h(1 − z)dG(z), we obtain
+z̄w
++ AI
+z ∗w
+R ẑ ∗
+R1
+∗
+the equilibrium condition for ẑ : 0 h(1 − z)dG(z) = ẑ ∗ dG(z) + µ. From this last condition, we
+have that ẑ ∗ > ẑ and that ẑ ∗ → ẑ as µ → 0. This implies that for any zAI > ẑ, we can always find a
+sufficiently small µ such that zAI > ẑ ∗ .
+Having determined the equilibrium allocation, we now turn to wages. Following a similar reasoning as in Chapter 2.2 (see “Informal Construction of the Equilibrium”), the equilibrium wages
+must then be given as in (4.4). Moreover, the equilibrium wage function has to be continuous, so
+limz↑ẑ ∗ w∗ (z) = limz↓ẑ ∗ w∗ (z) and limz↑z ∗s w∗ (z) = limz↓z ∗s w∗ (z). These two conditions give the system of linear equations that determines (C ∗ , r∗ ). It is straightforward to prove that this system has a
+unique solution.
+The final step is verifying that the proposed allocations and prices are indeed an equilibrium. To
+do this, we need to argue that no firm has incentives to deviate. This is relatively straightforward:
+first, by construction, no firm has incentives to deviate locally. Moreover, also by construction, the
+wage function is continuous in z. Now, following a similar logic as the proof of Corollary 2.1 of
+Chapter 2.1, it is easy to prove that w∗ (z) is strictly increasing and weakly convex. This implies that if
+44
+
+a firm does not have incentives to deviate locally, then it does not have incentives to deviate globally
+either. Thus, given the wage function and the equilibrium allocation, no firms have incentives to
+deviate.
+• AI has the Knife-Edge Knowledge of a Pre-AI Worker and Pre-AI solver.— Finally, we consider the case
+where zAI = ẑ.
+Claim 4.4. When µ is sufficiently small and zAI = ẑ, autonomous AI must be used as a worker and a solver
+in equilibrium.
+Proof. As shown in the proof of Lemma 4.2, if AI is used exclusively as a worker, then zAI < ẑ ∗ ,
+R ẑ ∗
+R1
+where 0 h(1 − z)dG(z) + h(1 − zAI )µ = ẑ ∗ dG(z). Hence, zAI < ẑ (as ẑ ∗ → ẑ when µ → 0), which
+contradicts the premise that zAI = ẑ. Similarly, as shown in the proof of Lemma 4.3, if AI is used
+R ẑ ∗
+R1
+exclusively as a solver, then zAI > ẑ ∗ , where 0 h(1 − z)dG(z) = ẑ ∗ dG(z) + µ. Hence, zAI > ẑ (as
+ẑ ∗ → ẑ when µ → 0), which contradicts the premise that zAI = ẑ.
+Lemma 4.4. When µ is sufficiently small and zAI = ẑ, the unique equilibrium with autonomous AI is as
+follows. The equilibrium allocation is:
+
+µ∗s =
+
+R z̄w∗
+0
+
+∗
+∗
+Wa∗ = [0, z̄w
+], Wp∗ = [z̄w
+, ẑ], I ∗ = ∅, Sp∗ = [ẑ, z ∗s ], Sa∗ = [z ∗s , 1]
+R1
+h(1 − z)dG(z), h(1 − zAI )µ∗w = z ∗ dG(u), µ∗s = h(1 − zAI )µ∗w , µ = µ∗w + µ∗s
+s
+
+where ẑ = zAI is the pre-AI equilibrium cutoff. Moreover, the equilibrium wage schedule is:
+
+∗]
+
+zAI − r∗ /n(z)
+if z ∈ [0, z̄w
+
+
+
+ m∗ (z; ẑ) − w∗ (m∗ (z; ẑ))/n(z) if z ∈ [z̄ ∗ , ẑ]
+w
+(4.5)
+w∗ (z) =
+R
+∗ + z n(e∗ (u; ẑ))du
+
+if
+z
+∈
+[ẑ,
+z ∗s ]
+r
+
+ẑ
+
+
+
+n(ẑ)(z − r∗ )
+if z ∈ [z ∗s , 1]
+R z∗
+∗ , ẑ] → [ẑ, z ∗ ] is given by:
+where r∗ satisfies r∗ + ẑ s n(e∗ (u; ẑ))du = n(ẑ)(z ∗s − r∗ ), and m∗ : [z̄w
+s
+(4.6)
+
+R m∗ (z;ẑ)
+ẑ
+
+dG(u) =
+
+Rz
+
+∗
+∗
+∗
+∗ h(1 − u)dG(u), for z ∈ [z̄w , ẑ] with m (ẑ; ẑ) = z s
+z̄w
+
+Proof. According to Claim 4.4, AI is used as a worker and as a solver in equilibrium. Occupational
+stratification and positive assortative matching then imply that the equilibrium allocations must nec∗ ≤z
+∗
+essarily take the following form: There exist cutoffs 0 < z̄w
+AI = ẑ ≤ z s < 1 such that:
+∗
+∗
+Wa∗ = [0, z̄w
+], Wp∗ = [z̄w
+, ẑ], I ∗ = ∅, Sp∗ = [ẑ, z ∗s ], Sa∗ = [z ∗s , 1]
+R z̄ ∗
+R1
+µ∗s = 0 w h(1 − z)dG(z), h(1 − zAI )µ∗w = z ∗ dG(u), µ = µ∗w + µ∗s
+s
+
+Following similar reasoning as in Chapter 2.2 (see “Informal Construction of the Equilibrium”), the
+employee function e∗ (u; ẑ) must satisfy (4.6), which implies that m∗ (ẑ; ẑ) = z ∗s . Consequently, we
+
+45
+
+R ẑ
+R z∗
+have that ẑ s dG(z) = z̄ ∗ h(1 − z)dG(z). Combining this last expression with the fact that µ∗s =
+w
+R1
+R z̄w∗
+h(1
+−
+z)dG(z)
+and
+h(1
+− zAI )µ∗w = z ∗ dG(u) we obtain that:
+0
+s
+
+R1
+
+∗
+ẑ dG(u) + µs =
+
+Given that
+
+R1
+
+ẑ dG(u) =
+
+R ẑ
+
+∗
+0 h(1 − z)dG(z) + h(1 − zAI )µw
+
+R ẑ
+
+∗
+∗
+0 h(1 − z)dG(z), this implies that µs = h(1 − zAI )µw .
+
+Having determined the equilibrium allocation, we now turn to wages. Following a similar reasoning as in Chapter 2.2 (see “Informal Construction of the Equilibrium”), the equilibrium wages must
+then be given as in (4.5). Moreover, a necessary condition for this to be an equilibrium is for the wage
+function to be continuous. The latter requires that limz↑z ∗s w∗ (z) = limz↓z ∗s w∗ (z). This gives a single
+R z∗
+equation for r∗ : r∗ + ẑ s n(e∗ (u; ẑ))du = n(ẑ)(z ∗s − r∗ ).
+The final step is verifying that the proposed allocations and prices are indeed an equilibrium. To
+do this, we need to argue that no firm has incentives to deviate. This is relatively straightforward:
+first, by construction, no firm has incentives to deviate locally. Moreover, also by construction, the
+wage function is continuous in z. Now, following a similar logic as the proof of Corollary 2.1 of
+Chapter 2.1, it is easy to prove that w∗ (z) is strictly increasing and weakly convex. This implies that
+if a firm does not have incentives to deviate locally, it does not have incentives to deviate globally
+either. Thus, given the wage function and the equilibrium allocation, no firms have incentives to
+deviate.
+
+4.2.3
+
+Proof of Proposition 4.7
+
+As noted in the main text, a worker’s productivity increases if and only if her solver match improves.
+Similarly, a given solver’s span of control increases if and only if her workers’ knowledge increases.
+• zAI ∈ intW .— Consider first z ∈ W ∗ ⊂ W . We want to show that if z < zAI , then individuals
+with knowledge z are strictly less productive post-AI than pre-AI, while if z > zAI , then individuals
+with knowledge z are strictly more productive post-AI than pre-AI. Recall that the pre-AI matching
+R m(z;ẑ)
+Rz
+function for any z ∈ W ∗ ⊂ W satisfies ẑ
+dG(u) = 0 h(1−u)dG(u) for z ∈ [0, ẑ], or, equivalently,
+R1
+R ẑ
+m(z;ẑ) dG(u) = z h(1 − u)dG(u) for z ∈ [0, ẑ]. Post-AI matching, in turn, can be written as:
+R m∗− (z;ẑ ∗ )
+ẑ ∗
+
+R1
+
+Rz
+
+0 h(1 − u)dG(u), for z ∈ [0, zAI ]
+
+dG(u) =
+
+m∗+ (z;ẑ ∗ ) dG(u) =
+
+R ẑ ∗
+z
+
+h(1 − u)dG(u), for z ∈ [zAI , ẑ ∗ ]
+
+R m(z;ẑ)
+Hence, if z < zAI , the pre- and post-AI matching conditions can be combined to obtain ẑ
+dG(u) =
+R m∗− (z;ẑ ∗ )
+dG(u), which implies that m∗− (z; ẑ ∗ ) < m(z; ẑ) as ẑ > ẑ ∗ . In contrast, if z > zAI , the pre- and
+ẑ ∗
+R ẑ
+R m∗+ (z;ẑ ∗ )
+dG(u) = ẑ ∗ h(1 − u)dG(u), which
+post-AI matching conditions can be combined to obtain m(z;ẑ)
+implies that m∗+ (z; ẑ ∗ ) > m(z; ẑ) as ẑ > ẑ ∗ .
+Now consider z ∈ S ⊂ S ∗ . We want to show that if e(z; ẑ) < zAI , then z’s span of control increases
+with AI, while if e(z; ẑ) > zAI , then z’s span of control decreases with AI.
+46
+
+We first claim that if e(z; ẑ) = zAI , then z ∈ Sa∗ ∩ S. The proof is via the contrapositive. Suppose
+that z ∈
+/ Sa∗ ∩ S, so z ∈ Sp∗ ∩ S, where Sp∗ = [ẑ ∗ , z ∗s ] ∪ [z̄s∗ , 1]. Note then that if z ∈ [ẑ ∗ , z ∗s ] ∩ S,
+then e(z; ẑ) < e∗− (z; ẑ ∗ ) ≤ zAI , where the first inequality follows because e(z ′ ; ẑ) < e∗− (z ′ ; ẑ ∗ ) for all
+z ′ ∈ [ẑ ∗ , z ∗s ] ∩ S if m(z ′′ ; ẑ) > m∗− (z ′′ ; ẑ ∗ ) for all z ′′ ∈ [0, zAI ] (which we already showed is true). Hence,
+e(z; ẑ) ̸= zAI in this case. Suppose instead that z ∈ [z̄s∗ , 1] ∩ S, then e(z; ẑ) > e∗+ (z; ẑ ∗ ) ≥ zAI , where
+the first inequality follows because e(z ′ ; ẑ) > e∗+ (z ′ ; ẑ ∗ ) for all z ′ ∈ [z̄s∗ , 1] ∩ S if m(z ′′ ; ẑ) < m∗+ (z ′′ ; ẑ ∗ )
+for all z ′′ ∈ [zAI , ẑ ∗ ] (which we already showed is true). Hence, e(z; ẑ) ̸= zAI in this case also.
+The above implies that if e(z; ẑ) < zAI , then either z ∈ [ẑ ∗ , z ∗s ] ∩ S or z ∈ Sa∗ ∩ S. In the former case, we already know that e(z; ẑ) < e∗− (z; ẑ ∗ ), i.e., individuals with knowledge z assist more
+knowledgeable workers post-AI than pre-AI. In the latter case, the knowledge of the workers under the supervision of solvers with knowledge z also increases because post-AI, these solvers assist
+AI, which has knowledge zAI , while pre-AI, they assist humans with knowledge e(z; ẑ). Similarly,
+if e(z; ẑ) > zAI , then either z ∈ [z̄s∗ , 1] ∩ S or z ∈ Sa∗ ∩ S. In the former case, we already know
+that e(z; ẑ) > e∗+ (z; ẑ ∗ ), i.e., individuals with knowledge z assist less knowledgeable workers post-AI
+than pre-AI. In the latter case, the knowledge of the workers under the supervision of solvers with
+knowledge z also decreases because post-AI, these solvers assist AI, which has knowledge zAI , while
+pre-AI, they assist humans with knowledge e(z; ẑ).
+
+□
+
+• zAI ∈ intS.— Consider first z ∈ S ∗ ⊂ S. We want to show that if z < zAI , then individuals with
+knowledge z assist a strictly smaller team of workers post-AI than pre-AI, while if z > zAI , then
+individuals with knowledge z assist a strictly larger team of workers post-AI than pre-AI. Recall
+R e(z;ẑ)
+Rz
+h(1 − u)dG(u) for
+that the pre-AI employee function for any z ∈ S ∗ ⊂ S satisfies ẑ dG(u) = 0
+R ẑ
+R1
+z ∈ [ẑ, 1], or, equivalently, z dG(u) = e(z;ẑ) h(1 − u)dG(u) for z ∈ [0, ẑ]. Post-AI matching, in turn,
+can be written as:
+Rz
+
+ẑ ∗
+
+R1
+
+dG(u) =
+
+z dG(u) =
+
+R e∗− (z;ẑ)
+0
+
+h(1 − u)dG(u), for z ∈ [ẑ ∗ , zAI ]
+
+R ẑ ∗
+
+e∗+ (z;ẑ ∗ ) h(1 − u)dG(u), for z ∈ [zAI , 1]
+
+R ẑ ∗
+Hence, if z < zAI , the pre- and post-AI employee functions can be combined to obtain ẑ dG(u) =
+R e(z;ẑ)
+∗
+∗
+∗
+e∗− (z;ẑ ∗ ) dG(u), which implies that e− (z; ẑ ) < e(z; ẑ) as ẑ < ẑ . In contrast, if z > zAI , the pre∗
+R e (z;ẑ ∗ )
+R e(z;ẑ)
+and post-AI matching conditions can be combined to obtain ẑ ∗+
+h(1 − u)dG(u) = ẑ
+h(1 −
+u)dG(u), which implies that e∗+ (z; ẑ ∗ ) > e(z; ẑ) as ẑ < ẑ ∗ .
+Consider now z ∈ W ⊂ W ∗ . We want to show that if z < e(zAI ; ẑ), then z is strictly more
+productive post-AI than pre-AI, while if z > e(zAI ; ẑ), z is strictly less productive post-AI than pre-AI.
+We first claim that if z = e(zAI ; ẑ), then z ∈ Wa∗ ∩ W . The proof is via the contrapositive. Suppose
+∗ , ẑ ∗ ]. Note then that if z ∈ [0, z ∗ ] ∩ W ,
+that z ∈
+/ Wa∗ ∩ W , so z ∈ Wp∗ ∩ W , where Wp∗ = [0, z ∗w ] ∪ [z̄w
+w
+
+then m(z; ẑ) < m∗− (z; ẑ ∗ ) ≤ zAI , where the first inequality follows because m(z ′ ; ẑ) < m∗− (z ′ ; ẑ ∗ ) for
+all z ′ ∈ [0, z ∗w ] ∩ W if e∗− (z ′′ ; ẑ ∗ ) < e(z ′′ ; ẑ) for all z ′′ ∈ [ẑ ∗ , zAI ] (which we already showed is true). This
+∗ , ẑ ∗ ] ∩ W . Then
+implies that m(z; ẑ) < zAI , or, equivalently, z < e(zAI ; ẑ). Suppose instead that z ∈ [z̄w
+
+m(z; ẑ) > m∗+ (z; ẑ ∗ ) ≥ zAI , where the first inequality follows because m(z ′ ; ẑ) > m∗+ (z ′ ; ẑ ∗ ) for all
+47
+
+∗ , ẑ ∗ ] ∩ W if e∗ (z ′′ ; ẑ ∗ ) > e(z ′′ ; ẑ) in [z , 1] (which we already showed is true). Consequently,
+z ′ ∈ [z̄w
+AI
++
+
+m(z; ẑ) > zAI , or, equivalently, z > e(zAI ; ẑ). Thus, in either case, z ̸= e(zAI ; ẑ).
+The previous claim implies that if z < e(zAI ; ẑ), then either z ∈ [0, z ∗w ] ∩ W or z ∈ Wa∗ ∩ W . In
+the former case, we already showed that m(z; ẑ) < m∗− (z; ẑ ∗ ), so individuals with knowledge z are
+strictly more productive post-AI than pre-AI. In the latter case, the individuals with knowledge z are
+also strictly more productive post-AI than pre-AI because post-AI, they are assisted by AI—which has
+knowledge zAI —while pre-AI, they are assisted by humans with knowledge m(z; ẑ) < zAI . Similarly,
+∗ , ẑ ∗ ] ∩ W or z ∈ W ∗ ∩ W . In the former case, we already established
+if z > e(zAI ; ẑ), then either z ∈ [z̄w
+a
+
+that m(z; ẑ) > m∗+ (z; ẑ ∗ ), so the individuals with knowledge z are strictly less productive post-AI
+than pre-AI. In the latter case, the individuals with knowledge z are also less productive post-AI than
+pre-AI because post-AI, they are being assisted by AI, while pre-AI, they are assisted by humans with
+knowledge m(z; ẑ) > zAI .
+
+□
+
+• zAI = ẑ.— We first show that individuals with knowledge z ∈ W ∗ = W are assisted by a less
+knowledgeable solver post-AI than pre-AI (strictly so for all z ̸= 0). Indeed, if z ∈ Wa∗ , then m(z; ẑ) ≥
+ẑ = zAI , where the first inequality is strict when z > 0. If z ∈ Wp∗ instead, then the matching functions
+pre- and post-AI are given by:
+Rz
+dG(u) = 0 h(1 − u)dG(u), for z ∈ [0, ẑ]
+ẑ
+Rz
+R m∗ (z;ẑ)
+∗ , ẑ]
+dG(u) = z̄ ∗ h(1 − u)dG(u), for z ∈ [z̄w
+ẑ
+w
+
+R m(z;ẑ)
+
+∗ > 0, this immediately implies that m∗ (z; ẑ) < m(z; ẑ) for all z ∈ W ∗ .
+Since z̄w
+p
+
+We now show that individuals with knowledge z ∈ S ∗ = S assist more knowledgeable workers
+post-AI than pre-AI (strictly so for all z ̸= 1). Indeed, if z ∈ Sa∗ , then e(z; ẑ) ≤ ẑ = zAI , where the first
+inequality is strict when z < 1. If z ∈ Sp∗ instead, then the employee functions pre- and post-AI are
+given by:
+R1
+
+z dG(u) =
+
+R ẑ
+
+R z ∗s
+
+R ẑ
+
+z
+
+dG(u) =
+
+e(z;ẑ) h(1 − u)dG(u), for z ∈ [ẑ, 1]
+∗
+e∗ (z;ẑ) h(1 − u)dG(u), for z ∈ [ẑ, z s ]
+
+Since z ∗s < 1, this immediately implies that e∗ (z; ẑ) > e(z; ẑ) for all z ∈ Sp∗ .
+
+4.3
+
+□
+
+Equilibrium when Compute is Abundant Relative to Production Opportunities
+
+In our baseline setting, compute is abundant relative to time but scarce relative to the existing production opportunities. This has two noteworthy implications. First, the equilibrium rental rate of compute is equal to AI’s knowledge. Second, all humans earn labor income in the post-AI equilibrium—
+even those who are less knowledgeable than AI.
+
+48
+
+In this chapter, we relax the assumption that compute is scarce relative to production opportunities. In this case, the equilibrium price of compute is zero, and AI leads to technological unemployment: All humans who are less knowledgeable than AI become unemployed. Organizations,
+however, still display a hierarchical structure in that the most knowledgeable humans specialize in
+tackling problems that AI cannot solve.
+
+4.3.1
+
+Preliminaries
+
+The model is exactly as described in Section 3 of the main text, except that the number of production
+opportunities is smaller than the compute available to pursue them (but larger than such capacity
+pre-AI). More precisely, denoting by ϕ the number of production opportunities, we assume that 1 <
+ϕ < µ.1
+As in the baseline model, pursuing each opportunity requires one unit of time or compute and
+solving a problem whose difficulty is not known ex-ante. To produce, firms must purchase production opportunities—which, given their scarcity, will now command a strictly positive price—and hire
+the necessary labor or rent the necessary compute to pursue them. Moreover, just as with the owners
+of compute, we do not explicitly model the “entrepreneurs” who own these opportunities.
+Wages, Prices, and Profits.—Let p be the price of production opportunities (note that all opportunities
+must have the same price since they are all ex-ante identical), and recall that w(z) and r denote the
+wage of a human with knowledge z and the rental rate of compute, respectively.
+The profit of a single-layer organization is as follows:
+
+z − w(z) − p if the firm hires a human with knowledge z
+Π1 =
+zAI − r − p
+if the firm uses AI
+In other words, the profit of a single-layer nonautomated firm is the expected output z of its independent producer net of her wage w(z) and the price of a production opportunity p. The profit of a
+single-layer automated firm is analogous.
+The profit of a two-layer organization as a function of its configuration (tA, bA, or nA) is as follows:
+ΠtA
+2 (z) = n(z)[zAI − w(z) − p] − r
+
+(where z ≤ zAI )
+
+ΠbA
+2 (s) = n(zAI )[s − r − p] − w(s)
+
+(where zAI ≤ s)
+
+ΠnA
+2 (s, z) = n(z)[s − w(z) − p] − w(s)
+
+(where z ≤ s)
+
+where z and s denote the knowledge of a human worker and a human solver, respectively, and we
+are using the fact that no two-layer firm hires a solver who is less knowledgeable than its workers.
+As in the baseline case, the profit of a two-layer organization is its expected output minus the
+cost of its resources. For instance, in the case of a tA firm that hires workers with knowledge z, its
+1
+
+To stay as close as possible to the baseline model, we assume that the number of opportunities ϕ is exogenous. In
+
+particular, AI cannot be used to generate new production opportunities.
+
+49
+
+expected output is n(z)zAI , while the cost of resources is n(z)(w(z) + p) + r, as the firm hires n(z)
+workers, rents one unit of compute, and purchases n(z) production opportunities.
+Competitive Equilibrium.— Define the sets (Wp , Wa , I, Sp , Sa ), the masses µi , µw , and µs , and the matching function m : Wp → Sp as in the baseline model. Recall that this matching function must satisfy:
+(4.7)
+
+R
+
+Y h(1 − u)dG(u) =
+
+R
+
+m(Y ) dG(u),
+
+for any measurable set Y ⊆ Wp
+
+where m(Y ) represents the set of solvers assigned to the set of workers Y ⊆ Wp . We denote by U the
+set of humans that are unemployed and by µu the mass of compute not being used. Note that the
+R
+total mass of opportunities pursued is equal to µw + µi + z∈(W ∪I) dG(u).
+Definition (Competitive Equilibrium). An equilibrium consists of nonnegative amounts (µi , µw , µs , µu ),
+measurable sets (Wa , Wp , I, Sp , Sa , U ), a matching function m : Wp → Sp satisfying (4.7), a wage
+schedule w : [0, 1] → R≥0 , a rental rate of compute r ∈ R≥0 , and a price of production opportunities
+p ∈ R≥0 , such that:
+1. Firms optimally choose their structure (while earning zero profits).
+2. Markets clear: (i) µi + µw + µs + µu = µ, and (ii) the union of the sets (Wa , Wp , I, Sp , Sa , U ) is [0, 1]
+and the intersection of any two of these sets has measure zero.
+
+4.3.2
+
+AI Leads to Technological Unemployment
+
+The pre-AI equilibrium is the same as in the baseline, as the number of opportunities is greater than
+the economy’s pre-AI capacity to pursue them (as mentioned in the previous section). The post-AI
+equilibrium, in turn, is characterized by the next proposition. We index this new post-AI equilibrium
+with the superscript “†” instead of the superscript “∗” to distinguish it from that of the baseline.
+Proposition 4.8. When ϕ < µ, there is a unique equilibrium with autonomous AI. The equilibrium allocations
+are:
+U † = [0, zAI ), Sa† = [zAI , 1], Wa† = Wp† = I † = Sp† = ∅
+n
+o
+µ†w = n(zAI )[1 − G(zAI )], µ†s = 0, µ†i = max 0, ϕ − µ†w , µ†u = µ − µ†w − µ†i
+The equilibrium prices are p† = zAI , r† = 0, and:
+
+
+0
+if z ∈ U †
+w† (z) =
+n(zAI )(z − zAI ) if z ∈ S †
+a
+Proof. See Chapter 4.3.3 below.
+According to Proposition 4.8, which is illustrated in Figure 4.4, the equilibrium when compute
+exceeds the available production opportunities differs significantly from that of the baseline. In particular, the price of compute is now zero, and all agents who are less knowledgeable than AI are
+50
+
+Sa†
+
+U†
+zAI
+
+2
+
+Sa†
+
+U†
+
+zAI
+
+2
+w(z)
+
+1.58
+
+w(z)
+
+1.58
+
+w† (z)
+
+0.36
+
+0.36
+
+0
+
+1
+W
+
+w† (z)
+
+z
+
+0
+
+S
+
+1
+W
+
+(a) Basic AI (i.e., zAI ∈ intW )
+
+z
+
+S
+
+(b) Advanced AI (i.e., zAI ∈ intS)
+
+Figure 4.4: The Effects of AI when Compute is Greater than Production Opportunities
+Notes. Distribution of knowledge: G(z) = z. Parameter values: For both panels, h = 1/2. For panel (a), zAI = 0.425, while
+for panel (b), zAI = 0.85. The thick gray line depicts the pre-AI equilibrium wage function w. The thick black line depicts
+the post-AI equilibrium wage function w† .
+
+unemployed. Moreover, all those humans who are more knowledgeable than AI become solvers in
+bottom-automated firms.
+Intuitively, given that compute is more abundant than production opportunities, firms use AI to
+pursue all available production opportunities. This displaces all those humans who are less knowledgeable than AI to unemployment. Furthermore, since some compute is left idle, the rental rate
+of compute is zero. Knowledge beyond that of AI, however, is still scarce because AI can attempt
+to solve but not actually solve all problems. Consequently, organizations are still hierarchical: All
+problems are initially attempted by AI, and humans who are more knowledgeable than AI specialize
+in solving problems that AI cannot solve. These humans are the only humans who are rewarded for
+their work.
+The scarcity of opportunities also leads to a different distribution of income compared to the baseline. In particular, while in our baseline setting, “capitalists” (i.e., compute owners) earn zAI per
+unit of compute and “entrepreneurs” (i.e., the owners of production opportunities) earn 0, in this
+extension, capitalists earn 0, and entrepreneurs earn zAI per opportunity. Moreover, AI need not
+increase total labor income relative to the pre-AI benchmark, as a significant fraction of the population is displaced toward unemployment. The combination of these results suggests that as compute
+becomes abundant, there are incentives to reallocate labor and compute from pursuing production
+
+51
+
+opportunities toward generating them.
+Nevertheless, despite these differences, many of the results of our baseline continue to hold in
+this setting. Indeed, if zAI ∈ intW , then AI still displaces humans from routine production work to
+specialized problem-solving, while if zAI ∈ intS, then AI still reduces the number of humans doing specialized problem-solving (although the displacement, in this case, is toward unemployment).
+This immediately implies that our results regarding the distribution of firm productivity and span of
+control continue to hold without changes. The same applies to the effects of AI on the span of control
+of those solvers who are not occupationally displaced.
+
+4.3.3
+
+Proof of Proposition 4.8
+
+For ease of exposition, we divide the proof into several smaller claims.
+Claim 4.5. When AI is autonomous and ϕ < µ, the equilibrium rental rate of compute is zero, i.e., r† = 0.
+Hence, so is the wage of the human with knowledge zAI , i.e., w† (zAI ) = 0.
+Proof. This result follows because there is more available compute than production opportunities
+(i.e., ϕ < µ). Hence, some compute must be idle and, thus, not obtain any return. Since all compute is
+homogenous, this implies that no unit of compute can obtain a strictly positive return in equilibrium,
+i.e., r† = 0. That w† (zAI ) = 0 then follows because a human with knowledge zAI is indistinguishable
+from a unit of compute used with AI.
+Claim 4.6. When AI is autonomous and ϕ < µ, in equilibrium, all humans who are strictly less knowledgeable
+than AI are unemployed, i.e., [0, zAI ) ⊆ U †
+Proof. Suppose that in equilibrium there exists some z ∈ [0, zAI ) that is employed. This implies that
+all humans with knowledge z must also be employed and obtain a wage w† (z) ≥ 0; otherwise, we
+would contradict the premise that this is an equilibrium. We show that firms hiring such humans can
+strictly increase their profits by replacing them with AI.
+Indeed, if a single-layer firm employs a human with knowledge z, its profits are z − w† (z) − p,
+which are strictly lower than zAI − p. Similarly, if an nA firm is employing these humans as workers,
+then its profits are n(z)(s − w(z) − p) − w(s) (where s is the knowledge of the firm’s solver), which are
+strictly lower than n(zAI )(s − p) − w(s). Moreover, if the same type of firm is hiring such a human to
+be a solver, its profits are n(z ′ )(z − w(z ′ ) − p) − w(z) (where z ′ is the knowledge of the firm’s workers),
+which are strictly lower than n(zAI )(z − w(z ′ ) − p). The case of tA and bA firms follow an identical
+logic to that of nA firms.
+Claim 4.7. When AI is autonomous and ϕ < µ, in equilibrium, a strictly positive mass of firms rent compute.
+Proof. For contradiction, suppose otherwise. Then, only humans are employed in equilibrium. The
+fact that ϕ > 1 implies that p† = 0, as there are more production opportunities than humans available
+
+52
+
+to pursue them. Hence, a firm can earn strictly positive profits by renting one unit of compute to
+pursue a production opportunity. Contradiction.
+Claim 4.8. When AI is autonomous and ϕ < µ, in equilibrium, all humans that are strictly more knowledgeable than AI are employed and receive a strictly positive wage for their work, i.e., w† (z) > 0 for all z ∈ (zAI , 1].
+Proof. By Claim 4.7, a strictly positive mass of firms rent compute in equilibrium. Suppose for contradiction that there exists some z ∈ (zAI , 1] that is either not employed or receives a wage of w† (z) = 0
+for her work. If so, one of the firms renting compute can strictly increase its profits by replacing AI
+with such a human. Contradiction.
+Given that in this setting the equilibrium still exhibits occupational stratification, the previous
+claims imply that the equilibrium takes the following form: There exists a cutoff ζ † ∈ [zAI , 1] such
+that:
+U † = [0, zAI ), Wa† = ∅, Wp† = ∅, I † = [zAI , ζ † ), Sp† = ∅, Sa† = [ζ † , 1]
+o
+n
+R ζ†
+R1
+Hence µ†w = ζ † n(zAI )dG(z), µ†s = 0, µ†i = max 0, ϕ − µ†w − zAI dG(z) , µ†u = µ − µ†w − µ†i
+We then claim that ζ † = zAI , implying that all humans that are strictly more knowledgeable than AI
+are employed as solvers:
+Claim 4.9. When AI is autonomous and ϕ < µ, in equilibrium, the price of problems is equal to AI’s knowledge, i.e., p† = zAI .
+Proof. Suppose first that I † ̸= ∅. Then, the zero-profit condition of single-layer nonautomated firms
+implies that w† (z) = z −p† for all z ∈ I † . Since the wage function must be continuous and w† (zAI ) = 0
+(by claim 4.5), this immediately implies that p† = zAI .
+Suppose instead that I † = ∅. Then, the zero-profit condition of bA firms implies that w† (z) =
+n(zAI )(z − p† ). Thus, again, since the wage function must be continuous and w† (zAI ) = 0, this implies
+that p† = zAI .
+Claim 4.10. When AI is autonomous and ϕ < µ, in equilibrium, all humans that are strictly more knowledgeable than AI are employed as solvers and supervise the production work of AI, i.e., ζ † = zAI .
+Proof. Suppose for contradiction that ζ † > zAI . Then, the zero-profit condition of single-layer firms
+implies that w† (z) = z − zAI for all z ∈ I † . However, if so, then a firm can hire a human with
+knowledge z ∈ I † , rent n(zAI ) units of compute, and purchase n(zAI ) problems to obtain a profit of
+n(zAI )(z − p† ) − w† (z) = [n(zAI ) − 1](z − zAI ) > 0. Contradiction.
+The last claim describes the equilibrium wages of the set of humans who are indeed employed:
+Claim 4.11. When AI is autonomous and ϕ < µ, w† (z) = n(zAI )(z − zAI ) for z ∈ Sa† .
+Proof. Immediate from the zero-profit condition of bA firms.
+53
+
+Combining the previous seven claims, we conclude that the unique candidate for the equilibrium
+has the following form. The candidate allocations are:
+U † = [0, zAI ), Sa† = [zAI , 1], Wa† = Wp† = I † = Sp† = ∅
+n
+o
+µ†w = n(zAI )[1 − G(zAI )], µ†s = 0, µ†i = max 0, ϕ − µ†w , µ†u = µ − µ†w − µ†i
+while the candidate prices are p† = zAI , r† = 0, and:
+
+
+0
+w† (z) =
+n(zAI )(z − zAI )
+
+if z ∈ U †
+if z ∈ Sa†
+
+From here, verifying that this is indeed an equilibrium, i.e., that no firms have incentives to deviate
+and all market clearing conditions are satisfied, is straightforward.
+
+4.3.4
+
+□
+
+A Reinterpretation of the Price of Production Opportunities
+
+As currently written, the model assumes that unspecified “entrepreneurs” own production opportunities. Firms then purchase these opportunities at the equilibrium price p∗ = zAI and claim the
+resulting output—priced at 1—if they successfully produce with them.
+We now show that an equivalent interpretation is that unspecified “consumers” own production
+opportunities, which, if successfully pursued, generate a value of 1. Rather than purchasing these
+opportunities, firms publicly post bids specifying how the surplus from transforming an opportunity
+into output will be shared between the firm and the consumer providing it.2
+Formally, let α(z) be the bid posted by a firm whose most knowledgeable employee has knowledge z. These bids vary across firms since their likelihood of transforming opportunities into output
+differs. The profit of a single-layer organization is equal to:
+
+α(z)z − w(z) if the firm hires a human with knowledge z
+Π1 =
+α(zAI )zAI − r if the firm uses AI
+The profit of a two-layer organization as a function of its type (nA, tA, or bA) and the knowledge of
+its employees is:
+ΠnA
+2 (s, z) = n(z)[α(s)s − w(z)] − w(s)
+ΠtA
+2 (z) = n(z)[α(zAI )zAI − w(z)] − r
+ΠbA
+2 (s) = n(zAI )[α(s)s − r] − w(s)
+It follows that setting α(z) = 1 − p/z recovers the original model, where firms purchase problems
+from “entrepreneurs” at a price p. Moreover, since p∗ = zAI (Proposition 4.8), equilibrium bids satisfy
+2
+
+For example, in legal services, it is not uncommon for lawyers to obtain a percentage of the settlement or deal they help
+
+their clients secure.
+
+54
+
+α∗ (z) = 1 − zAI /z. Thus, single-layer automated firms return all output to consumers, as compute is
+more abundant than production opportunities, while bottom-automated firms—more likely to succeed by employing human solvers with greater knowledge than AI—claim a positive share of the
+output.
+
+4.4
+
+AI Heterogeneity
+
+In the main text, we claimed that if multiple AI technologies are available and all of them require
+similar computational resources to create AI agents, only the most advanced AI will be used in equilibrium. This underpins our assumption of focusing on a single AI technology. In this Appendix, we
+formalize this claim. We also show that if less advanced AI technologies require substantially less
+compute than their more advanced counterparts, they could coexist alongside them. This is consistent with the development of “smaller” foundation models like GPT-4o mini and Claude 3 Haiku.
+
+4.4.1
+
+Preliminaries
+
+The model is exactly as described in Section 3 of the main text, except that we introduce an additional
+AI technology. This technology creates AI agents with knowledge ξAI < zAI , but each agent created
+requires ρ ≤ 1 units of compute. For brevity, we refer to this new AI as “mini-AI,” while we refer to
+the original technology—the one that produces AI agents with knowledge zAI and requires one unit
+of compute—by simply “AI.”
+Note that both AI and mini-AI rely on the same general-purpose compute. As a result, there is
+a single market price for compute in this economy and the existence of two AI technologies creates
+competition for this shared resource. The key question in this extension is: what is the equilibrium
+price of compute, and, at this price, which AI models are used and how?
+To start, note that the profit of a single-layer automated firm that uses AI and mini-AI is zAI − r
+and ξAI − ρr, respectively. This immediately implies that, generically, at most one AI will be used
+for independent production. Without loss of generality, we assume that zAI , ξAI , and ρ are such
+that, if single-layer automated firms form, then these firms strictly prefer to use AI for independent
+production rather than mini-AI (the opposite case is analogous). For this to be the case, we need
+ξAI < ρzAI .
+Note that, just like AI agents are perfect substitutes with humans with knowledge zAI , mini-AI
+agents are perfect substitutes with humans with knowledge ξAI . Hence, by occupational stratification, the fact that AI is used for independent production implies that mini-AI agents cannot be solvers
+in equilibrium.
+Wages, Prices, and Profits.—As in the main text, let w(z) and r denote the wage of a human with
+
+55
+
+knowledge z and the rental rate of compute, respectively. The profit of a single-layer organization is:
+
+z − w(z) if the firm hires a human with knowledge z
+Π1 =
+zAI − r
+if the firm uses AI
+where we are using the fact that no single-layer firms ever rent compute to create mini-AI agents.
+The profit of a two-layer organization as a function of its configuration and the type of AI it uses
+is as follows:
+ΠtA
+2 (z) = n(z)[zAI − w(z)] − r
+
+(where z ≤ zAI )
+
+Π2bA (s) = n(zAI )[s − r] − w(s)
+
+(where zAI ≤ s)
+
+ΠmbA
+(s) = n(ξAI )[s − ρr] − w(s)
+2
+
+(where ξAI ≤ s)
+
+ΠnA
+2 (s, z) = n(z)[s − w(z)] − w(s)
+
+(where z ≤ s)
+
+Πf2 A = n(ξAI )[zAI − ρr] − r
+where z and s denote the knowledge of a human worker and a human solver, respectively, and we
+are using the fact that among firms that combine humans and AI, only bottom-automated firms use
+mini-AI (we call these “mbA” firms). Furthermore, note that—due to AI heterogeneity—two-layer
+fully automated firms (“f A” firms) can potentially arise in equilibrium.
+Competitive Equilibrium.— Define the sets (Wa , Wp , I, Sp ) as in the main text. Let Sa be the set of
+humans who provide assistance to AI, and Sℓ as the set of humans who provide assistance to miniAI.3 Let µi and µs be the mass of compute rented to do independent production and assist humans,
+respectively. We define µw as the amount of compute rented for assisted production work using AI,
+and µℓ as the analogous object for mini-AI. Finally, let µf denote the total amount of compute rented
+by fully automated firms and define the matching function m : Wp → Sp as in the baseline model.
+Recall that this matching function must satisfy:
+(4.8)
+
+R
+
+Y h(1 − u)dG(u) =
+
+R
+
+m(Y ) dG(u),
+
+for any measurable Y ⊆ Wp
+
+where m(Y ) represents the set of solvers assigned to the set of workers Y ⊆ Wp .
+Since a bA firm that hires a human solver with knowledge s ∈ Sa rents n(zAI ) units of compute,
+R
+then µw = n(zAI ) Sa dG(z). Similarly, since a mbA firm that hires a human solver with knowledge
+R
+s ∈ Sℓ rents ρn(ξAI ) units of compute, we have that µℓ = ρn(ξAI ) Sℓ dG(z). Finally, since a tA
+firm that hires human workers with knowledge z ∈ Wa rents one unit of compute, we have that
+R
+µs = Wa h(1 − z)dG(z).
+Definition (Competitive Equilibrium). A competitive equilibrium consists of nonnegative amounts
+(µi , µw , µℓ , µs , µf ), measurable sets (Wa , Wp , I, Sp , Sa , Sℓ ), a function m : Wp → Sp satisfying condition (4.8), a wage schedule w : [0, 1] → R≥0 and a rental rate of compute r ∈ R≥0 , such that:
+3
+
+We use the subscript “ℓ” (for “limited”) instead of “m” (for “mini”), to avoid any confusion with the matching function
+
+m.
+
+56
+
+1. Firms optimally choose their structure (while earning zero profits).
+2. Markets clear: (i) µi + µw + µℓ + µs + µf = µ, and (ii) the union of the sets (Wa , Wp , I, Sp , Sa , Sℓ )
+is [0, 1] and the intersection of any two of these sets has measure zero.
+Note that the human workers in Wp are endogenously matched with the human solvers in Sp
+according to the pointwise matching function m. In contrast, all the humans in Wa are matched with
+an AI solver with knowledge zAI , all humans in Sa are matched with AI workers with knowledge
+zAI , and all the humans in Sℓ are matched with mini-AI workers with knowledge ξAI .
+For future reference, we use the superscript “∗∗” to denote equilibrium outcomes in this setting,
+distinguishing them from those in the main text, which are marked by “∗.”
+
+4.4.2
+
+Equilibrium
+
+We begin with the following lemma:
+Lemma 4.5. There exists ρ̄ ∈ [ξAI /zAI , 1) such that if ρ > ρ̄, then mini-AI is not used in equilibrium.
+Proof. Let ρ̄ = max{w∗ (ξAI )/zAI , 1 − n(ξAI )−1 } where w∗ is the wage function of the equilibrium with
+one AI characterized in the main text. That ρ̄ < 1 follows from w∗ (ξAI ) < w∗ (zAI ) = zAI . That
+ρ̄ ≥ ξAI /zAI follows from w∗ (ξAI ) ≥ ξAI .
+We now show that if ρ > ρ̄, then no fully-automated two-layer firm emerges in equilibrium. Note
+that r∗ ≥ zAI , since AI can always be used as an independent producer. Hence, Πf2 A ≤ n(zAI )(zAI −
+ρzAI ) − zAI ≤ 0, where the last inequality follows because r∗ ≥ zAI and ρ > ρ̄ ≥ 1 − n(ξAI )−1 .
+Hence, if ρ > ρ̄, the only firms potentially using mini-AI are mbA firms. We now show that these
+firms cannot arise either. Note that if ρ > ρ̄, then the AI equilibrium described in the main text—
+which only considers AI—continues to be the equilibrium when both AI and mini-AI are present.
+This is because each mini-AI agent is a perfect substitute for a human with knowledge ξAI , but the
+price of a mini-AI agent is ρzAI > w∗ (ξAI ) (as ρ > ρ̄ ≥ w∗ (ξAI )/zAI ). Hence, no firm has incentives to
+deploy a mini-AI agent. That this is the unique equilibrium when both AI and mini-AI are present
+follows because any equilibrium maximizes total output, and there is a unique allocation that does
+so.
+Lemma 4.5 formalizes our claim that only a single AI technology is used in equilibrium if all
+available AI technologies have similar compute requirements. The intuition was already explained in
+the main text: If multiple AI technologies are available and all of them require similar computational
+resources to create AI agents, compute naturally flows toward the highest-performing model.
+We close this chapter by illustrating an equilibrium where mini-AI is used. In particular, we introduce mini-AI into a Type 1 equilibrium where AI is used as an independent producer and as a
+worker (but not as a solver). For simplicity, fully automated firms do not arise in the equilibrium we
+
+57
+
+construct; only mbA-firms use mini-AI. For this to be the case we need that:
+1 − n(ξAI )−1 ≤ ρ ≤ w∗ (ξAI )/zAI = ρ̄
+
+(4.9)
+
+To start, note that if (4.9) holds, then the equilibrium price of compute is the same as when only AI
+is present, i.e., r∗∗ = r∗ = zAI . This follows because there are no fully automated firms, and singlelayer automated firms use AI—not mini-AI—for independent production. Note also that since a
+mini-AI agent costs ρzAI < w∗ (ξAI ), then the AI equilibrium described in the main text—which only
+considers AI—cannot be an equilibrium when both AI and mini-AI are both present. This also implies
+that in a world where both AI and mini-AI are present, the wage of z = ξAI has to go down to ρzAI ,
+i.e., w∗∗ (ξAI ) = ρzAI .
+Given that the equilibrium continues to satisfy occupational stratification and positive assortative
+matching, an equilibrium where AI is used as an independent producer and as a worker (but not as
+a solver) and mini-AI is used as a worker must take the following form:
+Wa∗∗ = ∅, Wp∗∗ = [0, ξAI ] ∪ [ξAI , zAI ], I ∗∗ = (zAI , z ∗∗
+)
+1
+∗∗ ¯∗∗
+∗∗
+∗∗ ∗∗
+∗∗
+¯∗∗
+Sp∗∗ = [z ∗∗
+, z ∗∗
+1 ] ∪ [z̄1 , z̄1 ], Sℓ = [z 1 , z̄1 ], Sa = [z̄1 , 1]
+1
+∗∗
+¯∗∗
+where the cutoffs zAI < z ∗∗
+< z ∗∗
+1 < z̄1 < z̄1 satisfy:
+1
+
+R ξAI
+0
+
+h(1 − u)dG(u) =
+
+R zAI
+
+ξAI h(1 − u)dG(u) =
+
+R z ∗∗
+
+z ∗∗ dG(u)
+1
+
+1
+z̄¯1∗∗
+z̄1∗∗
+
+R
+
+dG(u)
+R
+z ∗∗
+∗∗
+∗∗
+1
+n(ξAI )(z ∗∗
+1 − ρzAI ) = z 1 + z ∗∗ n(e− (z; z 1 ))dz
+1
+R z̄¯1∗∗
+∗∗
+n(zAI )(z̄¯1∗∗ − zAI ) = n(ξAI )(z ∗∗
+1 − ρzAI ) + z̄ ∗∗ n(e+ (z; z̄1 ))dz
+1
+
+∗∗ ¯∗∗
+, z ∗∗
+and e− : [z ∗∗
+1 ] → [0, ξAI ] and e+ : [z̄1 , z̄1 ] → [ξAI , zAI ] are given by:
+1
+
+R e− (z;z ∗∗
+)
+1
+0
+
+h(1 − u)dG(u) =
+
+Rz
+
+z ∗∗
+1
+
+dG(u) and
+
+R e+ (z;z̄1∗∗ )
+ξAI
+
+h(1 − u)dG(u) =
+
+Rz
+
+z̄1∗∗ dG(u)
+
+The equilibrium wages can be constructed following a similar logic as in the case of a single AI. They
+are given as follows:
+
+m− (z; z ∗∗
+) − w(m− (z; z ∗∗
+))/n(z)
+
+
+1
+1
+
+
+
+
+m+ (z; z̄1∗∗ ) − w(m+ (z; z̄1∗∗ ))/n(z)
+
+
+
+
+
+z
+
+
+Rz
+∗
+z ∗∗
++ z ∗∗ n(e− (u; z ∗∗
+))du
+w (z) =
+1
+1
+1
+
+
+
+
+n(ξAI )(z ∗∗
+
+1 − ρzAI )
+
+Rz
+
+
+∗∗
+
+n(ξAI )(z ∗∗
+
+1 − ρzAI ) + z̄1∗∗ n(e+ (u; z̄1 ))du
+
+
+
+n(zAI )(z − zAI )
+where m− (z; ·) = (e− )−1 (z; ·) and m+ (z; ·) = (e+ )−1 (z; ·).
+
+58
+
+if z ∈ [0, ξAI ] ⊂ Wp∗∗
+if z ∈ [ξAI , zAI ] ⊂ Wp∗∗
+if z ∈ (zAI , z ∗∗
+) = I ∗∗
+1
+∗∗
+if z ∈ [z ∗∗
+, z ∗∗
+1 ] ⊂ Sp
+1
+∗∗
+∗∗
+if z ∈ [z ∗∗
+1 , z̄1 ] = Sℓ
+if z ∈ [z̄1∗∗ , z̄¯1∗∗ ] ⊂ Sp∗∗
+
+if z ∈ [z̄¯1∗∗ , 1] = Sa∗∗
+
+Wp∗∗
+
+I ∗∗ Sp∗∗ Sℓ∗∗ Sp∗∗ Sa∗∗
+
+2
+
+w∗ (z)
+w∗∗ (z)
+zAI
+ρzAI
+0
+
+ξAI
+
+zAI
+z ∗∗
+z ∗∗
+z̄1∗∗ z̄¯1∗∗
+1
+1
+
+1
+
+z
+
+Figure 4.5: The Equilibrium with One vs Two AI Technologies
+Notes. Distribution of knowledge: G(z) = z. Parameter values: h = 1/2, ξAI = 0.2125, zAI = 0.425, and ρ = 0.7. The thick
+black line represents the equilibrium wage function when only one AI is present, w∗ . The thick red dotted line represents
+the equilibrium wage function when both AI and mini-AI are present, w∗∗ .
+
+Figure 4.5 illustrates the equilibrium in this case when h = 1/2, ξAI = 0.2125, zAI = 0.425, and ρ =
+0.7. The figure also compares this equilibrium with the one considered in the main text, where only AI
+is present. As it is evident from this figure, the introduction of mini-AI reduces the equilibrium wage
+of those humans with knowledge around ξAI , while benefitting the least knowledgeable solvers, who
+now have access to cheaper workers. This is also the reason why the introduction of mini-AI reduces
+the mass of human independent producers compared to the equilibrium with one AI.
+
+4.5
+
+Autonomous AI vs. Offshoring/Immigration
+
+As explained in the main text, the introduction of an autonomous AI diverges from classical labor
+shocks like offshoring or immigration. The key distinction lies in AI’s scalability. Once knowledge is
+encoded into an AI system, it can be deployed across all units of compute, which are widely available.
+This scalability amounts to the introduction of a large population of homogeneous agents.
+In contrast, large human populations are inherently heterogeneous. Consequently, offshoring or
+immigration typically involve either the introduction of a relatively small population of homogeneous agents, or the introduction of a large population of heterogeneous agents. As discussed in this
+appendix, this difference leads to qualitatively different outcomes.
+
+59
+
+4.5.1
+
+AI vs. Offshoring
+
+The canonical model of offshoring in a knowledge economy is due to Antràs et al. (2006), who consider a two-country model in which countries differ only in their knowledge distributions. In particular, one country, the North, has a distribution of knowledge with a relatively high mean, while
+the other country, the South, has a distribution of knowledge with a relatively low mean. They show
+that allowing the formation of international teams shifts humans from routine work to specialized
+problem solving in the North, while it shifts humans in the opposite direction in the South.
+Given the similarity between the occupational displacement effects of AI and offshoring, one
+might conjecture that the effects of AI when zAI ∈ intW are qualitatively similar to the effects of
+offshoring from the North’s perspective and that the effects of AI when zAI ∈ intS are qualitatively
+similar to the effects of offshoring from the South’s perspective. This, however, is not the case. For
+instance, while offshoring increases the productivity of the best workers who remain workers in the
+North (Antràs et al., 2006, Proposition 1), AI reduces the productivity of all non-occupationally displaced workers when zAI ∈ intW . Similarly, while offshoring decreases the span of control of all
+southern solvers who remain solvers (Antràs et al., 2006, Proposition 1), AI increases the span of
+control of all non-occupationally displaced solvers when zAI ∈ intS.
+As we mentioned above, the key difference between AI and offshoring is the capacity of AI to
+operate at scale. This implies that, although both offshoring and AI induce the best northern workers
+pre-offshoring/pre-AI to switch to specialized problem solving, the best northern solvers switch to
+supervising the best non-occupationally displaced northern workers in the case of offshoring, while
+they switch to supervising AI in the case of artificial intelligence.
+Similarly, when zAI ∈ intS, both offshoring and AI induce the worst southern solvers to switch to
+routine work, improving the overall pool of southern workers. However, in the case of offshoring,
+the best southern workers are matched with the best northern solvers, leaving a worse pool of workers for the non-occupationally displaced southern solvers. In contrast, in the case of AI, the worst
+workers end up being supervised by AI, leaving the best workers for the solvers who are not occupationally displaced.
+
+4.5.2
+
+AI vs. Targeted Immigration
+
+Immigration can be targeted to specific knowledge levels, leading to an influx of a population of
+homogeneous humans. However, the restriction to such specific knowledge typically implies that
+the influx is small relative to the existing population.
+Such targeted immigration is analogous to the introduction of AI when the amount of compute µ
+is small. We describe the effects of such a shock in Chapter 4.2. As described in that chapter, beyond
+the obvious quantitative differences, there are two main qualitative differences.
+First, the effects on the quality of matches of non-occupationally displaced humans are different
+(see Proposition 4.7 in Chapter 4.2.1). Second, when µ is small, the individuals who see their wage in60
+
+crease due to the shock (i.e., those complemented by it) need not be at the extremes of the knowledge
+distribution (see Figure 4.3 in Chapter 4.2.1).
+
+4.6
+
+More Layers
+
+We now show that several insights of our model that generalize to a more general model that allows
+for an arbitrary number of layers. We follow the literature on knowledge hierarchies (e.g., Garicano
+and Rossi-Hansberg, 2006; Caliendo and Rossi-Hansberg, 2012) in assuming that each organization
+requires one agent at the top. This implies that firms cannot have infinite layers. As in the main text,
+we continue to assume that compute is abundant relative to time.
+No worker is more knowledgeable than AI, and no solver is less knowledgeable than AI.— Because occupational stratification holds regardless of the number of layers and AI agents are used for independent
+production, the result that no worker is more knowledgeable than AI and no solver is less knowledgeable than AI continues to hold with an arbitrary number of layers. This implies that if AI is used
+for assistance, it provides assistance to the least knowledgeable individuals.
+The Most Knowledgeable Always Win from AI’s Introduction.— To begin, consider the pre-AI equilibrium.
+As shown in Garicano and Rossi-Hansberg (2006, p. 1416), the wage of a solver in an arbitrary layer
+can be expressed as follows: for each of the 1/h problems she encounters, she earns the conditional
+probability that she can solve the problem given that those below her could not. Additionally, she
+pays a positive fee to receive each of these problems and earns a positive fee when she cannot solve
+the problem and passes it along to the next layer.
+Now, the most knowledgeable individuals are necessarily at the top layer and, therefore, do not
+pass any problems to higher layers. This implies that their pre-AI wage is strictly less than 1/h.
+However, post-AI, individuals with knowledge z = 1 earn at least 1/h. This result follows because
+they can always rent n(zAI ) units of compute to perform production work on their behalf, yielding
+earnings of n(zAI )(1−zAI ) = 1/h. Hence, by continuity, there exists ϵ > 0 such that, for all z ∈ (1−ϵ, 1],
+w∗ (z) > w(z).
+The Least Knowledgeable Individuals Lose when AI’s Knowledge is Low.— Irrespective of the number of
+layers, it is clear that in the pre-AI economy, workers earn strictly more than their output as independent producers. The intuition is the same as in the case of two-layer organizations, and follows from
+the fact that the marginal value of knowledge is strictly lower than 1 for workers, exactly equal to 1
+for independent producers, and strictly greater than 1 for solvers.4 Consequently, when zAI is sufficiently low, the introduction of AI inevitably harms the least knowledgeable individuals by driving
+4
+
+To be more precise, suppose there exists an interval of workers [z ′ , z ′′ ] who earn their expected output as indepen-
+
+dent producers. In this case, no hierarchical firm would hire workers with knowledge z ∈ (z ′ , z ′′ ), as the firm could
+strictly increase its profits by maintaining the same number of layers, employing the same solvers, and hiring workers
+with knowledge z ′ instead. This is a violation of market clearing.
+
+61
+
+their wages closer to their expected output as independent producers, as AI directly competes with
+them in production work.
+The Least Knowledgeable Individuals Win when AI’s Knowledge is Sufficiently High.— Post-AI, an individual with knowledge z = 0 can always earn (1 − h)zAI by renting one unit of compute to create an AI
+solver. Therefore, w∗ (0) ≥ (1 − h)zAI . We claim that, pre-AI, the wage of z = 0 is strictly less than
+1 − h, i.e., w(0) < 1 − h. Consequently, for zAI sufficiently close to 1, w∗ (0) > w(0), meaning there
+exists ε > 0 such that, for all z ∈ [0, ε), w∗ (z) > w(z).
+To demonstrate that w(0) < 1−h, assume for contradiction that w(0) ≥ 1−h. As mentioned above,
+Garicano and Rossi-Hansberg (2006, p. 1416) show that the wage of an individual in an arbitrary layer
+can be expressed as follows: for each of the 1/h problems she encounters, she earns the conditional
+probability that she can solve the problem given that those below her could not. Additionally, she
+pays a positive fee to receive each of these problems and earns a positive fee if she cannot solve a
+problem and passes it to the next layer. Since workers belong to the first layer of the organization
+(i.e., layer zero), they do not pay to receive problems. Conversely, the top solver in an organization
+does not earn a positive fee for unresolved problems, as she does not pass problems to higher layers.
+Now consider the least knowledgeable individual, z = 0. This individual is necessarily a worker.
+Since the probability that an individual with knowledge 0 solves the problem is 0, w(0) is equal to
+the fee t0 that she receives for passing the problem on to the next layer. Hence, the premise that
+w(0) ≥ 1 − h, implies that t0 ≥ 1 − h.
+Let tn be the fee that her superior in layer n—with knowledge zn —receives for passing the problem
+up the hierarchy. We then have that:
+w(zn+1 ) =
+
+zn+1 − zn − tn + tn+1
+h(1 − zn )
+
+We will show that:
+(4.10)
+
+t0 ≥ 1 − h =⇒ tn ≥ (1 − h)(1 − zn ) + h
+
+Pn
+
+i=0 zi−1 (1 − zi ) > 0, for every n = 1, 2, . . .
+
+Hence, if t0 ≥ 1 − h, then every one of 0’s superiors must be sending problems up to higher layers
+(tn is strictly positive), so 0 is in a firm with infinitely many layers. This contradicts the fact that each
+organization requires one agent at the top.
+We prove (4.10) by induction. Suppose that for any n = 0, 1, · · · , we have that:
+(4.11)
+
+tn ≥ (1 − h)(1 − zn ) + h
+
+Pn
+
+i=0 zi−1 (1 − zi )
+
+We prove that:
+(4.12)
+
+tn+1 ≥ (1 − h)(1 − zn+1 ) + h
+
+Pn+1
+
+i=0 zi−1 (1 − zi )
+
+Indeed, note that since zn+1 can always do independent production, w(zn+1 ) ≥ zn+1 , so:
+(4.13)
+
+n −tn +tn+1
+w(zn+1 ) = zn+1 −z
+≥ zn+1
+h(1−zn )
+
+62
+
+Combining (4.11) and (4.13) gives:
+P
+zn+1 − zn − (1 − h)(1 − zn ) − h ni=0 zi−1 (1 − zi ) + tn+1
+≥ zn+1
+h(1 − zn )
+which rearranging gives (4.12).
+
+□
+
+63
+
+Chapter 5
+
+Non-Autonomous AI: Further Results
+5.1
+
+Occupational Choice, Firm Distribution, and Worker-Solver Matching
+
+In this chapter, we describe the effects of non-autonomous AI on (i) human occupational choices, (ii)
+the distribution of firm size, productivity, and decentralization, and (iii) the productivity and span of
+control of workers and solvers who remain in their positions, compared to the pre-AI equilibrium.
+As in the main text, we assume that compute is abundant relative to time.
+Proposition 5.1. When zAI > w(0), the effects of a non-autonomous AI relative to the pre-AI equilibrium are
+the following:
+• Occupational Displacement:
+– AI always displaces humans from specialized problem-solving to routine work, i.e., W ⋆ ⊃ W and S ⋆ ⊂ S.
+• Distribution of Firm Productivity, Size, and Span of Control:
+– When zAI ∈ intW , AI decreases the minimum firm productivity and the minimum firm size, while
+increasing the maximum span of control and the maximum firm size.
+– When zAI ∈ intS, AI increases the maximum span of control, the minimum firm productivity, and both
+the minimum and maximum firm size.
+– AI never leads to the creation of superstar firms that have scale but no mass.
+• Productivity of Non-Occupationally Displaced Workers:
+– When zAI ∈ intW , the productivity of all workers is lower post-AI than pre-AI.
+– When zAI ∈ intS, the productivity of the least knowledgeable workers is higher post-AI than pre-AI. The
+productivity of the most knowledgeable workers is lower post-AI than pre-AI.
+• Span of Control of the Non-Occupationally Displaced Solvers.
+– The span of control of all solvers is larger post-AI than pre-AI.
+We now provide the proof of this proposition. For clarity, we have divided this proof into smaller
+64
+
+claims. For all the claims that follow, we assume that zAI > w(0) (the case considered in the proposition).
+Claim 5.1. Non-autonomous AI always displaces humans from specialized problem-solving to routine work,
+i.e., W ⋆ ⊃ W and S ⋆ ⊂ S.
+Proof. We first show that S ⋆ ⊂ S. Pre-AI, we have that S = [ẑ, 1], while post-AI we have either
+S ⋆ = [z̄1⋆ , 1] (in a Type 1a configuration) or S ⋆ = [z̄2⋆ , 1] (in a Type 2a configuration), where z̄1⋆ and z̄2⋆
+are given as in Lemma 2.8. We claim that z̄1⋆ > ẑ and z̄2⋆ > ẑ, which implies that S ⋆ ⊂ S.
+Indeed, recall that if the equilibrium follows a Type 1a configuration, then z ⋆1 = κ and z̄1⋆ = ẑ(κ =
+z ⋆1 ), where ẑ(κ) is the equilibrium cutoff of the auxiliary κ-economy when h < h̃0 (κ) characterized in
+Claim 2.5. Similarly, if the equilibrium follows a Type 2a configuration, then z ⋆2 = κ, ẑ2⋆ = z(κ = z ⋆2 ),
+and z̄2⋆ = z̄(κ = z ⋆2 ), where z(κ) and z̄(κ) are the equilibrium cutoff of the auxiliary κ-economy when
+h ≥ h̃0 (κ). Moreover, as argued in the proof of Lemma 2.8, ẑ(κ) and z̄(κ) are strictly increasing in
+κ, and coincide with each other when h = h̃0 (κ). Since the pre-AI cutoff of the ‘true’ economy is
+ẑ = ẑ(κ = 0), we then have that for κ > 0:
+ẑ = ẑ(κ = 0) < ẑ(κ) and ẑ = ẑ(κ = 0) < z̄(κ)
+Thus, we conclude that z̄1⋆ = ẑ(κ = z ⋆1 ) > ẑ and z̄2⋆ = z̄(κ = z ⋆2 ) > ẑ.
+Next, we show that W ⋆ ⊃ W . Pre-AI, we have that W = [0, ẑ], while post-AI we have either
+W ⋆ = [0, z̄1⋆ ] (in a Type 1a configuration) or W ⋆ = [0, ẑ2⋆ ] (in a Type 2a configuration), where z̄1⋆ and
+ẑ2⋆ are given as in Lemma 2.8. We already established that z̄1⋆ > ẑ. Hence, if the post-AI equilibrium
+follows a Type 1a configuration, we immediately have W ⋆ ⊃ W . Thus, it only remains to show that
+ẑ2⋆ > ẑ.
+Ry
+R1
+To do this, let α(x, y) ≡ h1 − x − x n(e⋆2 (z; y))dz, where e⋆2 (z; y) is given by e⋆ (z;y) h(1 − u)dG(u) =
+2
+
+R1
+
+z dG(u). It is not difficult to prove that α(x, y) is strictly increasing in x and strictly decreasing in
+
+y. Furthermore, note that the employee matching function in a Type 2a equilibrium is e⋆2 (z; ẑ2⋆ ). This
+implies that:
+R1
+α(z̄2⋆ , ẑ2⋆ ) = h1 − z̄2⋆ − z̄ ⋆ n(e⋆2 (z; ẑ2⋆ ))dz = 0
+2
+
+Moreover, notice that e⋆2 (z; ẑ) = e(z; ẑ), where e(z; ẑ) is the employee matching function of the pre-AI
+equilibrium. Hence:
+R1
+α(ẑ, ẑ) = h1 − ẑ − ẑ n(e(z; ẑ))dz > 0
+Suppose then for contradiction that ẑ2⋆ ≤ ẑ, so α(x, ẑ) ≤ α(x, ẑ2⋆ ). Because z̄2⋆ > ẑ, we have
+α(ẑ, ẑ) ≤ α(ẑ, ẑ2⋆ ) < α(z̄2⋆ , ẑ2⋆ ) = 0. Hence, α(ẑ, ẑ) < 0, which contradicts the fact that α(ẑ, ẑ) > 0.
+Claim 5.2. When zAI ∈ intW , non-autonomous AI decreases the minimum firm productivity and the minimum firm size, while increasing the maximum span of control and the maximum firm size.
+
+65
+
+Proof. Consider first span of control. The most decentralized firm of the pre-AI economy has a span
+of control n(sup W ), while the most decentralized firm of the post-AI world has a span of control of
+n(sup W ⋆ ). That AI increases the maximum span of control follows from the fact that W ⋆ ⊃ W .
+Consider next productivity. The least productive firm of the pre-AI economy has productivity
+inf S, while the least productive firm of the post-AI world has productivity zAI ∈ intW . This immediately implies that AI decreases the minimum firm productivity.
+Finally, consider size. As noted in the main text, the size of the smallest firm is n(0) times the
+minimum firm productivity, while the size of the largest firm is 1 times the maximum span of control.
+Consequently, the results regarding the maximum span of control and minimum firm productivity
+immediately imply that AI decreases the minimum firm size and increases the maximum firm size.
+
+Claim 5.3. When zAI ∈ intS, non-autonomous AI increases the maximum span of control, the minimum firm
+productivity, and both the minimum and maximum firm size.
+Proof. Consider first span of control. The most decentralized firm of the pre-AI economy has a span
+of control n(sup W ), while the most decentralized firm of the post-AI world has a span of control of
+n(sup W ⋆ ). That AI increases the maximum span of control follows from the fact that W ⋆ ⊃ W .
+Consider next productivity. The least productive firm of the pre-AI economy has productivity
+inf S, while the least productive firm of the post-AI world has productivity zAI ∈ intS. This immediately implies that AI increases the minimum firm productivity.
+Finally, consider size. Due to positive assortative matching, the size of the smallest firm is n(0)
+times the minimum firm productivity, while the size of the largest firm is 1 times the maximum span
+of control. Consequently, the results regarding the maximum span of control and minimum firm
+productivity immediately imply that AI increases both the minimum and maximum firm size.
+Claim 5.4. Non-autonomous AI never leads to the creation of superstar firms that have scale but no mass.
+Proof. This follows directly from the fact that AI cannot do routine production work. Hence, there
+cannot be bottom-automated firms in equilibrium.
+Claim 5.5. When zAI ∈ intW and AI is non-autonomous, the productivity of all non-occupationally displaced
+workers is lower post-AI than pre-AI.
+For the proof that follows, it is useful that we make explicit that the pre-AI matching and employee
+functions depend on ẑ (i.e., the knowledge threshold that separates workers and solvers in the pre-AI
+equilibrium). For this reason, we write m(z; ẑ) and e(z; ẑ) instead of m(z) and e(z), respectively.
+Proof. As noted in the main text, a worker’s productivity increases if and only if her match improves.
+Hence, it is enough to show that all non-occupationally displaced workers have a worse match postAI than pre-AI. Note that if z ∈ Wa⋆ , then such a worker matches with AI in the post-AI equilibrium.
+Hence, in this case m(z; ẑ) ≥ ẑ > zAI , as zAI ∈ intW .
+66
+
+Proving that every z ∈ Wp⋆ also has a worse solver is more involved. The post-AI equilibrium can
+be either Type 1a or Type 2a. Suppose first that it is Type 1a. Then, the matching functions pre- and
+post-AI are given by:
+R z̄ ⋆
+
+R1
+h(1 − u)dG(u) = m⋆ (z;z̄ ⋆ ) dG(u) for z ∈ Wp⋆ = [z ⋆1 , z̄1⋆ ]
+1
+1
+R ẑ
+R1
+z h(1 − u)dG(u) = m(z;ẑ) dG(u) for z ∈ W = [0, ẑ]
+1
+
+z
+
+R z̄ ⋆
+Thus, if z ∈ Wp⋆ ∩ W = [z ⋆1 , ẑ], then substracting both conditions we get ẑ 1 h(1 − u)dG(u) =
+R m(z;ẑ)
+⋆
+m⋆ (z;z̄ ⋆ ) . Since z̄1 > ẑ, the left-hand side of this last expression is strictly positive, which implies
+1
+
+1
+
+that m⋆1 (z; z̄1⋆ ) < m(z; ẑ) for all z ∈ Wp⋆ ∩ W = [z ⋆1 , ẑ].
+Suppose instead that post-AI equilibrium is Type 2a. Then, the matching functions pre- and postAI are given by:
+R ẑ ⋆
+
+R1
+⋆ ⋆
+⋆
+h(1
+−
+u)dG(u)
+=
+z
+m⋆2 (z;ẑ2⋆ ) dG(u) for z ∈ Wp = [z 2 , ẑ2 ]
+R1
+R ẑ
+z h(1 − u)dG(u) = m(z;ẑ) dG(u) for z ∈ W = [0, ẑ]
+2
+
+R ẑ ⋆
+Thus, if z ∈ Wp⋆ ∩ W = [z ⋆2 , ẑ], then substracting both conditions we get: ẑ 2 h(1 − u)dG(u) =
+R m(z;ẑ)
+⋆
+m⋆ (z;ẑ ⋆ ) . Since ẑ2 > ẑ, the left-hand side of this last expression is strictly positive, which implies
+2
+
+2
+
+that m⋆2 (z; ẑ2⋆ ) < m(z; ẑ) for all z ∈ Wp⋆ ∩ W = [z ⋆2 , ẑ].
+Claim 5.6. When zAI ∈ intS and AI is non-autonomous, the productivity of the least knowledgeable nonoccupationally displaced workers is higher post-AI than pre-AI. The productivity of the most knowledgeable
+non-occupationally displaced workers is lower post-AI than pre-AI.
+Proof. The least knowledgeable non-occupationally displaced workers are those with knowledge
+z = 0. These workers are clearly better matched post-AI than pre-AI, as post-AI they are assisted by
+zAI ∈ intS. The most knowledgeable non-occupationally displaced workers are those with knowledge ẑ (since W ⋆ ⊃ W ). Pre-AI, these workers match with solvers with knowledge 1. Post-AI, these
+workers match with solvers with knowledge z < 1, since post-AI, the most knowledgeable individuals assist those workers with knowledge z ∈ Wp⋆ ∩ S. We conclude that the productivity of the most
+knowledgeable non-occupationally displaced workers is lower post-AI than pre-AI.
+Claim 5.7. When AI is non-autonomous, the span of control of all non-occupationally displaced solvers is
+larger post-AI than pre-AI.
+Proof. As noted in the main text, the span of control of a solver increases if and only if her workers’ knowledge increases. Hence, it is enough to show that all non-occupationally displaced solvers
+match with more knowledgeable workers post-AI than pre-AI.
+The post-AI equilibrium can be either Type 1a or Type 2a. Suppose first that it is Type 1a. In this
+case, the employee matching functions pre- and post-AI are given by:
+R z̄1⋆
+R1
+⋆
+⋆
+⋆
+h(1
+−
+u)dG(u)
+=
+⋆
+⋆
+z dG(u) for z ∈ S = Sp = [z̄1 , 1]
+e1 (z;z̄1 )
+R ẑ
+R1
+e(z;ẑ) h(1 − u)dG(u) = z dG(u) for z ∈ S = [ẑ, 1]
+67
+
+Thus, if z ∈ S ⋆ ∩ S = [z̄1⋆ , 1], then
+
+R z̄1⋆
+
+R ẑ
+
+⋆
+e(z;ẑ) h(1 − u)dG(u). Since z̄1 > ẑ, this
+immediately implies that e⋆1 (z; z̄1⋆ ) > e(z; ẑ) for all z ∈ S ⋆ ∩ S = [z̄1⋆ , 1].
+e⋆1 (z;z̄1⋆ )
+
+h(1 − u)dG(u) =
+
+Suppose instead that the post-AI equilibrium is Type 2a. In this case, the employee matching
+functions pre- and post-AI are given by:
+R ẑ2⋆
+
+e⋆2 (z;ẑ2⋆ ) h(1 − u)dG(u) =
+
+R ẑ
+
+e(z;ẑ) h(1 − u)dG(u) =
+
+R1
+
+z dG(u) for z ∈ S
+
+⋆ = S ⋆ = [z̄ ⋆ , 1]
+p
+2
+
+R1
+
+z dG(u) for z ∈ S = [ẑ, 1]
+
+R ẑ2⋆
+
+R ẑ
+⋆
+e⋆2 (z;ẑ2⋆ ) h(1 − u)dG(u) = e(z;ẑ) h(1 − u)dG(u). Since ẑ2 > ẑ, this
+immediately implies that e⋆2 (z; ẑ2⋆ ) > e(z; ẑ) for all z ∈ S ⋆ ∩ S = [z̄2⋆ , 1].
+
+Thus, if z ∈ S ⋆ ∩ S = [z̄2⋆ , 1], then
+
+Negligible Amount of Compute: µ → 0
+
+5.2
+
+We now characterize the equilibrium with non-autonomous AI when µ → 0 and compare it to the
+case where compute is abundant relative to time. This comparison allows us to disentangle in a clean
+way the role that abundant compute is playing in our results. As in the main text, we focus on the
+case h < h0 .
+
+5.2.1
+
+Overview
+
+Proposition 5.2. Regarding non-autonomous AI:
+• When zAI ∈ W , there exists µ̄w > 0 such that if µ ∈ (0, µ̄w ), then there is a unique equilibrium with a
+non-autonomous AI. It is given as follows:
+– If zAI ≤ w(0), then the equilibrium allocation follows a pre-AI configuration and r⋆ = 0.
+– If zAI > w(0), then the equilibrium is as follows. There exist cutoffs 0 < z ⋆1 < z̄1⋆ < 1 such that:
+Wa⋆ = [0, z ⋆1 ], Wp⋆ = [z ⋆1 , z̄1⋆ ], I ⋆ = ∅, Sp⋆ = [z̄1⋆ , 1], Sa⋆ = ∅
+These cutoffs satisfy:
+µ=
+
+R z⋆
+1
+
+0
+
+R1
+h(1 − z)dG(z), m⋆1 (z ⋆1 ; z̄1⋆ ) = z̄1 , and h1 > z̄1⋆ + z̄ ⋆ n(e⋆1 (z; z̄1⋆ ))dz
+1
+
+R z̄ ⋆
+
+R1
+
+⋆
+⋆ −1
+m⋆1 (z;z̄1⋆ ) dG(u), e1 (z; ·) = (m1 ) (z; ·).
+The equilibrium wage function, w⋆ , and rental rate of compute, r⋆ , are then given by:
+
+where m⋆1 : [z ⋆1 , z̄1⋆ ] → [z̄1⋆ , 1] satisfies
+
+1
+
+z
+
+h(1 − u)dG(u) =
+
+
+⋆
+
+if z ∈ Wa⋆
+
+ zAI − r /n(z)
+m⋆1 (z; z̄1⋆ ) − w⋆ (m⋆1 (z; z̄1⋆ ))/n(z) if z ∈ Wp⋆
+w⋆ (z) =
+
+R
+
+ C ⋆ + z⋆ n(e⋆ (u; z̄ ⋆ ))du
+if z ∈ Sp⋆
+1
+1
+z̄
+1
+
+where:
+C ⋆ = z̄1⋆ +
+
+
+
+1
+1+n(z̄1⋆ )
+
+
+
+
+R1
+1
+⋆
+⋆
+⋆
+h − z̄1 − z̄1⋆ n e1 (z; z̄1 ) dz
+68
+
+
+
+and r⋆ = C ⋆ − n(z ⋆1 )(z̄1⋆ − zAI ) ≥ 0
+
+• When zAI ∈ intS, there exists µ̄s > 0 such that if µ ∈ (0, µ̄s ), then the unique equilibrium with a
+non-autonomous AI coincides with the equilibrium with an autonomous AI. That is, there exist cutoffs
+⋆ < ẑ ⋆ such that:
+0 < z ⋆w < z̄w
+⋆
+⋆
+Wa∗ = [z ⋆w , z̄w
+], Wp∗ = [0, z ⋆w ] ∪ [z̄w
+, ẑ ⋆ ], I ∗ = ∅, Sp∗ = [ẑ ⋆ , 1] ∋ zAI , Sa∗ = ∅
+
+where ẑ ⋆ > ẑ and satisfies
+
+R ẑ ⋆
+0
+
+R1
+⋆ ), the wage w ⋆ , and
+h(1 − z)dG(z) = µ + ẑ ⋆ dG(z) and the cutoffs (z ⋆w , z̄w
+
+the equilibrium price of compute r⋆ are as in Lemma 4.3 of Chapter 4.2.
+Proof. See Chapter 5.2.2 below.
+As the proposition states, the equilibrium when µ → 0 shares both similarities and differences with
+the case where compute is abundant relative to time. In terms of similarities, in both scenarios, nonautonomous AI is used only when zAI > w(0); otherwise, the introduction of AI has no impact on the
+pre-AI equilibrium. Furthermore, when zAI ∈ W , it remains the case that the least knowledgeable
+individuals are the ones who adopt AI.
+Regarding differences, when µ → 0, the equilibrium price of compute is not necessarily zero. Additionally, when zAI ∈ intS, it is no longer the least knowledgeable individuals who use AI, because
+AI is no longer the least knowledgeable solver. In this case, the equilibrium with non-autonomous
+AI is identical to the equilibrium with autonomous AI.
+As established in the main text (Proposition 6), when compute is abundant, non-autonomous AI
+always benefits the least knowledgeable individuals relative to the pre-AI equilibrium and these
+benefits exceed those these individuals could obtain from autonomous AI (if the latter also raises
+their wages). In contrast, for the most knowledgeable individuals, a non-autonomous AI may lead to
+gains or losses compared to the pre-AI scenario, but, in any case, their wages with non-autonomous
+AI are always lower than with autonomous AI. As the following proposition shows, only the results
+regarding the least knowledgeable individuals generalize to the case where µ → 0, and only when
+zAI ∈ W .
+Proposition 5.3. Suppose µ > 0 but arbitrarily small. If zAI ∈ intW , then ∃ ϵ > 0 such that w⋆ (z) ≥
+max{w(z), w∗ (z)} for all z ∈ [0, ϵ) (with strict inequality if zAI > w(0)).
+Proof. See Chapter 5.2.2 below.
+To understand why the results regarding the wages of the most knowledgeable individuals do
+not extend to the case µ → 0, consider Figure 4.3 of Chapter 4.2. As illustrated by this figure, when
+zAI = 0.01, zAI = 0.73, and µ = 0.01, the most knowledgeable individuals end up worse off with
+autonomous AI than with no AI. Moreover, at such low values of zAI , non-autonomous AI is not
+used in equilibrium. Thus, here we have an example where the most knowledgeable individuals are
+strictly better off with non-autonomous AI (since it is not used in equilibrium) than with autonomous
+AI.
+
+69
+
+Intuitively, the result that wages of the most knowledgeable individuals with non-autonomous
+AI are always lower than with autonomous AI relies critically on the fact that with autonomy, the
+most knowledgeable individuals are necessarily winners from AI. However, as we explain in detail
+in Chapter 4.2, that result relies on compute being abundant relative to time.
+To understand why the results regarding the wages of the least knowledgeable individuals do not
+necessarily hold when zAI ∈
+/ intW , note that when zAI is very high, only the most knowledgeable
+pre-AI workers use AI, and their wages increase as a result. This can negatively affect the wages
+of the least knowledgeable individuals because they match with solvers who are very similar to the
+most knowledgeable pre-AI workers.
+
+5.2.2
+
+Proof of Proposition 5.2
+
+First, note that when µ → 0 and zAI ∈ intS, the unique equilibrium with autonomous AI involves
+using AI exclusively as a solver (see Lemma 4.3 of Chapter 4.2). Since the equilibrium is efficient and
+autonomous AI can be used in more ways than non-autonomous AI, we conclude that the unique
+equilibrium with non-autonomous AI coincides with the one with autonomous AI in this case.
+Hence, we focus on showing that (i) when zAI ≤ w(0), there is a unique equilibrium that follows
+the pre-AI configuration, and (ii) when zAI > w(0) and zAI ∈ W , the unique equilibrium is given as
+in the statement of the proposition.
+• When zAI ≤ w(0), there is a unique equilibrium that follows the pre-AI configuration.— First, let us
+show that if zAI ≤ w(0), then there exists an equilibrium that follows a pre-AI configuration. Given
+that nobody uses AI, in equilibrium r⋆ = 0. This immediately implies that, at the pre-AI wages,
+no firm has incentives to deviate. In particular, if a top-automated firm tried to hire a human with
+knowledge z, the most that firm would earn in profits is n(z)[max{z, zAI } − w(z)] ≤ 0, where the
+inequality follows because w(z) > z and zAI ≤ w(0) < w(z) (as w(z) is strictly increasing in z).
+Now, let us show that this is the unique equilibrium. Note that w(0) = ẑ − hw(ẑ) < ẑ. Hence,
+if zAI ≤ w(0), then zAI ∈ intW . The fact that zAI ∈ intW coupled with µ > 0 but arbitrarily small,
+immediately implies that if AI is used in equilibrium, the least knowledgeable individuals are the
+ones using AI; otherwise, there would be a violation of positive assortative matching. Furthermore,
+because µ > 0 but arbitrarily small and there are no independent producers in the pre-AI equilibrium
+(as h < h0 ), by continuity, there cannot be independent producers in the post-AI equilibrium either.
+Thus, if another equilibrium exists, it must have the following form:
+(5.1)
+
+Wa⋆ = [0, z ⋆1 ], Wp⋆ = [z ⋆1 , z̄1⋆ ], I ⋆ = ∅, Sp⋆ = [z̄1⋆ , 1], Sa⋆ = ∅, where 0 < z ⋆1 < z̄1⋆ < 1.
+
+Now, as explained in Chapter 2.6, the fact that human occupations follow the form in (5.1), also
+implies that the equilibrium wages and occupations of the humans who do not work with AI—
+those in Wp⋆ and Sp⋆ —must coincide with the pre-AI equilibrium of the auxiliary κ-economy with a
+wage schedule w̃(z; z ⋆1 ) when κ = inf Wp⋆ = z ⋆1 (characterized in Claim 2.5). Moreover, because the
+70
+
+equilibrium wage function must be continuous in z, it must be that w̃(z ⋆1 ; z ⋆1 ) = zAI − r⋆ /n(z ⋆1 ), where
+the right-hand side of this last equation comes from the zero profit condition of top-automated firms.
+Rearraging terms, we then obtain r⋆ = n(z ⋆1 )(zAI − w̃(z ⋆1 ; z ⋆1 )). However, this also implies that r⋆ < 0
+given that w̃(z ⋆1 ; z ⋆1 ) > w̃(0; 0) = w(0) ≥ zAI . Since r⋆ cannot be strictly negative, we obtain the
+desired contradiction. □
+• When zAI > w(0) and zAI ∈ W , the unique equilibrium is given as in the statement of the proposition.—
+First, it is clear that the pre-AI configuration cannot be an equilibrium in this case. If so, then r⋆ = 0
+(as nobody would be using AI), so a top-automated firm could hire an individual with z = 0 and
+obtain (1/h)(zAI − w(0)) > 0.
+Now, following an identical reasoning as in the previous step, we have that zAI ∈ W and µ > 0 but
+arbitrarily small imply that if AI is used in equilibrium, the least knowledgeable individuals are the
+ones using AI. Furthermore, because µ > 0 but arbitrarily small and there are no independent producers in the pre-AI equilibrium (as h < h0 ), by continuity, there cannot be independent producers
+in the post-AI equilibrium either. Thus, any equilibrium must have the following form:
+Wa⋆ = [0, z ⋆1 ], Wp⋆ = [z ⋆1 , z̄1⋆ ], I ⋆ = ∅, Sp⋆ = [z̄1⋆ , 1], Sa⋆ = ∅, where 0 < z ⋆1 < z̄1⋆ < 1.
+where the cutoffs satisfy:
+(5.2)
+
+µ=
+
+R z⋆
+1
+
+0
+
+R1
+h(1 − z)dG(z), m⋆1 (z ⋆1 ; z̄1⋆ ) = z̄1 , and h1 > z̄1⋆ + z̄ ⋆ n(e⋆1 (z; z̄1⋆ ))dz
+1
+
+and m⋆1 : [z ⋆1 , z̄1⋆ ] → [z̄1⋆ , 1] is given by
+
+R z̄ ⋆
+1
+
+z
+
+h(1 − u)dG(u) =
+
+R1
+
+⋆
+⋆ −1
+m⋆1 (z;z̄1⋆ ) dG(u), and e1 (z; ·) = (m1 ) (z; ·).
+
+The optimality and zero-profit condition of the different firms then yield the candidate wage function:
+
+⋆
+⋆
+
+if z ∈ Wa⋆
+
+ w (z) = zAI − r /n(z)
+m⋆1 (z; z̄1⋆ ) − w⋆ (m⋆1 (z; z̄1⋆ ))/n(z) if z ∈ Wp⋆
+w⋆ (z) =
+
+R
+
+ C ⋆ + z⋆ n(e⋆ (u; z̄ ⋆ ))du
+if z ∈ S ⋆
+z̄1
+
+1
+
+1
+
+p
+
+Because the equilibrium wage function must be continuous, it must be that limz↑z ⋆1 w⋆ (z) = limz↓z ⋆1 w⋆ (z)
+and limz↑z̄1⋆ w⋆ (z) = limz↓z̄1⋆ w⋆ (z). These two conditions together imply that:
+
+
+ 
+R
+1
+1
+⋆ − 1 n e⋆ (z; z̄ ⋆ ) dz and r ⋆ = C ⋆ − n(z ⋆ )(z̄ ⋆ − z ) ≥ 0
+−
+z̄
+C ⋆ = z̄1⋆ + 1+n(z̄
+⋆)
+AI
+1
+1
+1
+1
+1
+h
+z̄ ⋆
+1
+
+1
+
+It is not difficult to prove that there exists a unique pair of cutoffs (z ⋆1 , z̄1⋆ ) that satisfies the equality
+conditions in (5.2). Hence, if the equilibrium exists, it is unique.
+Finally, to show existence, we simply need to verify that the equilibrium cutoffs (z ⋆1 , z̄1⋆ ) satisfy
+R1
+1
+⋆
+⋆
+⋆
+⋆
+⋆
+⋆
+⋆
+h > z̄1 + z̄ ⋆ n(e1 (z; z̄1 ))dz, and that the rental rate of compute r = C − n(z 1 )(z̄1 − zAI ) is weakly
+1
+
+positive. However, we know that z ⋆1 → 0 as µ → 0, which immediately implies that z̄1⋆ → ẑ (where
+ẑ is the knowledge cutoff between workers and solvers in the pre-AI world), and e⋆1 (z; z̄1⋆ ) → e(z; ẑ).
+R1
+R1
+Thus, as µ → 0, condition h1 > z̄1⋆ + z̄ ⋆ n(e⋆1 (z; z̄1⋆ ))dz becomes h1 > ẑ + ẑ n(e(z; ẑ))dz (which we
+1
+
+know is satisfied since h < h0 ). Furthermore, condition r⋆ = C ⋆ − n(z ⋆1 )(z̄1⋆ − zAI ) becomes r⋆ =
+(1/h)(zAI − w(0)) > 0, where the last inequality follows because zAI > w(0). □
+71
+
+Proof of Proposition 5.3
+For ease of exposition, we split the proof into two bullets.
+• If zAI ∈ intW , then ∃ ϵ > 0 such that w⋆ (z) ≥ w(z) for all z ∈ [0, ϵ) (with strict inequality if zAI >
+w(0)).— If zAI ≤ w(0), then w⋆ (z) = w(z) for all z ∈ [0, 1], so the statement holds trivially. Thus, it
+only remains to show that if zAI > w(0) and zAI ∈ intW , then w⋆ (0) > w(0). The statement of the
+proposition then follows by continuity.
+To show that w⋆ (0) > w(0), note that according to Proposition 5.2, r⋆ (µ) = C ⋆ (µ)−n(z ⋆1 (µ))(z̄1⋆ (µ)−
+zAI ), which can be written as r⋆ (µ) = n(z ⋆1 (µ))(zAI − w̃(z ⋆1 (µ); z ⋆1 (µ))), where w̃(κ; κ) is the equilibrium
+wage function of the pre-AI equilibrium of the auxiliary κ-economy (characterized in Claim 2.5).1
+Thus,
+w⋆ (0; µ) = zAI −
+
+n(z ⋆1 (µ)))
+⋆
+⋆
+n(0) (zAI − w̃(z 1 (µ); z 1 (µ)))
+
+Moreover, we know that z ⋆1 (µ) → 0 as µ → 0. Hence,
+w⋆ (0; 0) = zAI − n(0)
+n(0) (zAI − w̃(0; 0)) = w̃(0; 0) = w(0)
+where w(0) is the wage of individual z = 0 in the pre-AI equilibrium. Thus, to show w⋆ (0; µ) > w(0)
+when µ → 0, it suffices to show that (d/dµ)w⋆ (0; µ) > 0 when evaluated at µ = 0. Differentiating:
+
+
+
+
+
+
+d ⋆
+d
+d ⋆
+w
+(0;
+µ)
+=
+w̃(κ;
+κ)
+−
+z
++
+w(0)
+z
+AI
+dµ
+dκ
+dµ 1
+µ=0
+
+κ=0
+
+µ=0
+
+d
+It is then not difficult to prove that z ⋆1 (µ) is strictly increasing in µ and that dκ
+w̃(κ; κ)|κ=0 > ẑ − w(0).
+
+Thus,
+
+
+d ⋆
+dµ w (0; µ)
+
+
+µ=0
+
+=
+
+
+
+d
+dκ w̃(κ; κ)
+
+
+κ=0
+
+− zAI + w(0)
+
+
+
+d ⋆
+dµ z 1
+
+
+µ=0
+
+> (ẑ − zAI )
+
+
+
+d ⋆
+dµ z 1
+
+
+µ=0
+
+≥0
+
+given that zAI ∈ W (so zAI ≤ ẑ).
+• If zAI ∈ intW , then ∃ ϵ > 0 such that w⋆ (z) > w∗ (z) for all z ∈ [0, ϵ).— Note that as µ → 0, we have
+that w∗ (0; µ) → w(0) and that w⋆ (0; µ) = w(0). Furthermore, by the previous bullet, we know that
+w⋆ (0; µ) is strictly increasing in µ. Hence, to show the desired result, it suffices to show that when
+zAI ∈ intW , w∗ (0; µ) is strictly decreasing in µ. This immediately implies that w∗ (0; µ) < w⋆ (0; µ) for
+µ > 0 but µ → 0, so statement follows by continuity.
+To show that w∗ (0; µ) is strictly decreasing in µ, note that according to Lemma 4.2, w∗ (0; µ) =
+ẑ ∗ (µ) − hw∗ (ẑ ∗ (µ); µ) = ẑ ∗ (µ) − hC ∗ (µ), where:
+C ∗ (µ) = ẑ ∗ (µ) +
+
+
+
+1
+1+n(ẑ ∗ (µ))
+
+
+
+1
+∗
+∗
+∗
+h − ẑ (µ) − n(zAI )(z̄s (µ) − z s (µ))
+
+i
+R1
+R z ∗ (µ)
+− ẑ ∗s(µ) n(e∗− (z; ẑ ∗ (µ)))dz − z̄ ∗ (µ) n(e∗+ (z; ẑ ∗ (µ)))dz
+s
+
+1
+
+Here we are making explicit that the equilibrium variables of the post-AI world (e.g., r⋆ (µ), C ⋆ (µ), z ⋆1 (µ)) depends on
+
+the available compute µ.
+
+72
+
+Using that (i) ẑ ∗ (µ) → ẑ, z ∗s (µ) − z̄s∗ (µ) → 0 as µ → 0 (where ẑ is the cutoff between workers and
+solvers of the pre-AI equilibrium), and (ii) e− (ẑ ∗ ; ẑ ∗ ) = 0 and e− (z ∗s ; ẑ ∗ ) = e+ (z̄s∗ ; ẑ ∗ ) = zAI , we obtain
+that:
+
+
+d ∗
+w
+(0;
+µ)
+dµ
+
+µ=0
+
+=
+
+h
+
+1−h−ẑ+hw(ẑ)
+(1−ẑ)(1+h(1−ẑ)) + h
+
+
+
+1
+1+n(ẑ ∗ (µ))
+
+R 
+1
+ẑ
+
+∂e+ (z;ẑ ∗ )/∂ ẑ ∗
+h(1−e+ (z;ẑ ∗ ))2
+
+
+ẑ ∗ =ẑ
+
+dz
+
+i
+
+d ∗
+dµ ẑ (µ)
+
+
+µ=0
+
+<0
+
+where the last inequality follows because (i) ẑ ∗ (µ) is strictly decreasing in µ, (ii) ∂e+ (z; ẑ ∗ )/∂ ẑ ∗ > 0
+for all feasible z, and:
+
+1 − h − ẑ + hw(ẑ)
+1−h
+>
+>0
+(1 − ẑ)(1 + h(1 − ẑ))
+1 + h(1 − ẑ)
+
+where the first inequality follows because w(ẑ) > ẑ.
+
+73
+
+□
+
+Bibliography
+A NTR ÀS , P., L. G ARICANO , AND E. R OSSI -H ANSBERG (2006): “Offshoring in a Knowledge Economy,” The
+Quarterly Journal of Economics, 121, 31–77.
+A PPENZELLER , G., M. B ORNSTEIN , AND M. C ASADO (2023): “Navigating the High Costs of AI Compute,” Andreessen Horowitz, April 27, 2023. Available at https://a16z.com/navigating-the-high-cost-of-ai-compute/
+(accessed October 16, 2024).
+A UTOR , D., D. D ORN , L. F. K ATZ , C. PATTERSON , AND J. VAN R EENEN (2020): “The Fall of the Labor Share
+and the Rise of Superstar Firms,” The Quarterly Journal of Economics, 135, 645–709.
+B RYNJOLFSSON , E., A. M C A FEE , M. S ORELL , AND F. Z HU (2008): “Scale Without Mass: Business Process
+Replication and Industry Dynamics,” Harvard Business School Technology & Operations Mgt. Unit Research
+Paper.
+C ALIENDO , L. AND E. R OSSI -H ANSBERG (2012): “The Impact of Trade on Organization and Productivity,” The
+Quarterly Journal of Economics, 127, 1393–1467.
+F UCHS , W., L. G ARICANO , AND L. R AYO (2015): “Optimal Contracting and the Organization of Knowledge,”
+The Review of Economic Studies, 82, 632–658.
+G ARICANO , L. AND E. R OSSI -H ANSBERG (2006): “Organization and Inequality in a Knowledge Economy,”
+The Quarterly Journal of Economics, 121, 1383–1435.
+G OLDMAN S ACHS (2023): “Generative AI: Hype, or Truly Transformative?”
+July 5, 2023. Available at https://www.goldmansachs.com/pdfs/insights/pages/top-of-mind/generative-ai-hype-or-trulytransformative/report.pdf (accessed November 30, 2024).
+I DE , E. AND E. TALAM ÀS (2024): “Artificial Intelligence in the Knowledge Economy,” ArXiv preprint
+arXiv:2312.05481 (version 7).
+S HAH , A. AND C. PATEL (2023): “Mastering LLM Techniques: Customization,” Nvidia Developer Technical
+Blog, August 10, 2023. Available at https://developer.nvidia.com/blog/selecting-large-language-modelcustomization-techniques (accessed December 14, 2024).
+TADELIS ,
+S. AND I. S EGAL (2005):
+“Lectures in Contract Theory,”
+Available
+https://faculty.haas.berkeley.edu/stadelis/econ 206 notes 2006.pdf (accessed February 11, 2025).
+
+at
+
+X IA , Y., J. K IM , Y. C HEN , H. Y E , S. K UNDU , C. H AO , AND N. TALATI (2024): “Understanding the Performance
+and Estimating the Cost of LLM Fine-Tuning,” ArXiv preprint arXiv:2408.04693.
+
+74
+
+

@@ -1,103 +1,62 @@
-# Repository 1 — Aouad, Lykouris & Zhong (2026)
+# Repository 5 — Ide & Talamàs (2025)
 
-*Human-AI Productivity Paradoxes: Modeling the Interplay of Skill, Effort, and AI Assistance*
-[arXiv:2605.11350](https://arxiv.org/abs/2605.11350) · [cs.GT]
+*Artificial Intelligence in the Knowledge Economy*
+[arXiv:2312.05481v11](https://arxiv.org/abs/2312.05481v11)
 
-> **This is the worked example** for *Artificial Intelligence and Economic
-> Modeling* (UP 2026-II). It shows what a weekly repository looks like when it is
-> done well. Yours does not have to be this long — see "What is required" below.
+**Version read:** arXiv v11, February 25, 2025, 35 pages.
 
----
+## Research question
 
-## What question the paper answers
+How does scalable AI that can acquire tacit knowledge reorganize knowledge work, and who gains when AI can act autonomously rather than only advise humans? The paper embeds AI in a competitive knowledge hierarchy: less knowledgeable people do routine production as workers, while more knowledgeable people solve the exceptional problems workers cannot handle.
 
-When does AI assistance make a worker **less** productive?
+## Economic problem and primitives
 
-The paper picks one mechanism and pushes it: AI is a **perfectly substitutable
-input**. Skill $s$, effort $e$ and assistance $a$ enter production only through
-their sum, $x = s + e + a$. Nothing else is going on — no learning, no
-complementarity, no contracting. Everything that follows comes from that single
-modelling choice plus a linear cost of effort.
+Humans have observable knowledge $z\in[0,1]$, distributed by a CDF $G$ with continuous, strictly positive density. A production opportunity has difficulty $x\sim U[0,1]$, so an independent producer with knowledge $z$ succeeds with probability $z$. A worker may ask a solver for help; each request costs $h\in(0,1)$ units of solver time. Because a worker fails with probability $1-z$, one solver can support
 
-## The agent's problem
+\[
+n(z)=\frac{1}{h(1-z)}
+\]
 
-$$\max_{e \ge 0}\; p(s+e+a) - \gamma e$$
+workers. Competitive firms have at most two layers, earn zero profit, choose among independent production and human/AI worker–solver configurations, and must clear the human and compute markets. The AI technology converts one unit of an exogenous compute stock $\mu$ into an agent with knowledge $z_{\mathrm{AI}}\in[0,1)$. The main comparisons assume compute is abundant relative to human time and maintain $h<h_0$, the regime with no independent human producers before AI.
 
-with $p$ weakly increasing, concave and twice differentiable, $\gamma > 0$, and
-one constraint that turns out to carry the whole result: $e \ge 0$.
+The two AI dimensions are distinct:
 
-## The main result, with all its conditions
+- **Capability $z_{\mathrm{AI}}$:** the fraction of problem difficulties the AI can solve; “basic” and “advanced” mean $z_{\mathrm{AI}}\in\operatorname{int}W$ and $z_{\mathrm{AI}}\in\operatorname{int}S$, respectively, relative to the endogenous pre-AI worker and solver sets.
+- **Autonomy:** the roles AI is allowed to perform. Autonomous AI can pursue production as an independent producer or worker and can advise as a solver/co-pilot. Non-autonomous AI can only advise. Thus capability is not autonomy.
 
-Let $x^{*}$ be the **largest** maximiser of $p(x) - \gamma x$:
+## Results
 
-$$x^{*} = \max \arg\max_{x} \left[\, p(x) - \gamma x \,\right]$$
+Propositions 1–4 provide the setup. The pre-AI equilibrium is unique and efficient, is occupationally stratified $W\preceq I\preceq S$, and has positive assortative matching. With autonomous AI the equilibrium remains unique and efficient, AI always performs some independent production, $r^*=z_{\mathrm{AI}}$, and $W^*\preceq\{z_{\mathrm{AI}}\}\preceq S^*$. Basic AI moves marginal humans from routine work into solving, $W^*\subset W$ and $S\subset S^*$; advanced AI produces the reverse displacement. These reallocations also change worker productivity and solver spans of control.
 
-This requires a **regularity condition**, without which $x^{*}$ need not exist:
+**Proposition 5 — autonomous AI and the distribution of winners.** Define
 
-$$\limsup_{x \to \infty} \frac{p(x)}{x} < \gamma$$
+\[
+B=\{z\in[0,z_{\mathrm{AI}}]:w^*(z)>w(z)\},\qquad
+T=\{z\in[z_{\mathrm{AI}},1]:w^*(z)>w(z)\}.
+\]
 
-**Proposition 2.1.** Under those conditions,
+Under $h<h_0$, competitive pre- and post-AI equilibria, $z_{\mathrm{AI}}\in[0,1)$, and compute abundance uniformly over admissible AI capabilities, there is a cutoff
 
-$$e^{*}(s,a) = \left(x^{*} - s - a\right)_{+}, \qquad
-  p^{*}(s,a) = \max\left\{ p(x^{*}),\, p(s+a) \right\}$$
+\[
+\bar z_{\mathrm{AI}}\in\operatorname{int}W
+\quad\text{such that}\quad
+B\neq\varnothing\iff z_{\mathrm{AI}}>\bar z_{\mathrm{AI}},
+\qquad T\neq\varnothing\ \text{for every }z_{\mathrm{AI}}\in[0,1).
+\]
 
-*Intuition in one sentence:* the agent has a single target level of total input,
-tops it up with effort, and once skill plus AI already reach it he stops working.
+At the bottom, a negative **match effect** (a worse solver) competes with a positive **share effect** (the worker captures more team output); the share effect wins only above the capability cutoff. At the top, the share effect always dominates under the maintained conditions. This is a threshold in **capability**, not autonomy.
 
-Two things worth noticing about the proof. It is a **case split** — interior
-versus corner — and contains **no differentiation at all**; and the largest-argmax
-tie-break is not decoration, it is what makes $e^{*}$ well defined when
-$p(x)-\gamma x$ has a flat maximum.
+**Proposition 6 — non-autonomous AI.** Under $h<h_0$, admissible $z_{\mathrm{AI}}$, abundant compute, and the corresponding pre-AI and autonomous-AI equilibria, the non-autonomous equilibrium is unique, efficient, maximizes labor income, and has $r^N=0$ because some compute is idle. Its adoption condition is different from Proposition 5:
 
-## Sections 3–5: stated, not derived
+\[
+z_{\mathrm{AI}}\le w(0)\Rightarrow\text{AI is unused and wages/occupations equal pre-AI},
+\]
+\[
+z_{\mathrm{AI}}>w(0)\Rightarrow\text{the least knowledgeable humans adopt AI as a solver}.
+\]
 
-The three headline results — the deskilling paradox, the unreliability paradox
-and skill polarisation — use machinery well beyond Section 2: a continuous-time
-birth–death Markov chain and its steady state, Arrow–Pratt risk aversion applied
-to a *production* function with IARA/DARA driving the sign, and Bayesian updating
-over a binary signal. They are worth understanding; they are not worth trying to
-reproduce in a week. See `extra/tutorial-alz-completo.pdf` for the full walk.
+For any admissible capability, autonomous AI produces strictly more output than non-autonomous AI. A sufficiently low-knowledge interval weakly prefers non-autonomous AI to both no AI and autonomous AI (strictly when $z_{\mathrm{AI}}>w(0)$); a sufficiently high-knowledge interval weakly prefers autonomous AI, with strict inequality away from $z=1$. Therefore $z_{\mathrm{AI}}>\bar z_{\mathrm{AI}}$ is the autonomous-AI **bottom-winner** condition, whereas $z_{\mathrm{AI}}>w(0)$ is the non-autonomous-AI **adoption** condition.
 
----
+## Lean formalization
 
-## What is in this repository
-
-| File | What it is |
-|---|---|
-| `README.md` | This page |
-| `prompts.md` | The full LLM conversation, unedited |
-| `extensions.md` | Which assumptions could be relaxed, and which are dead ends |
-| `hand/` | The derivation of Proposition 2.1, written out by hand |
-| `presentation.tex` / `.pdf` | The 5-minute Beamer deck |
-| `paper/` | The article itself |
-| `extra/` | Above the floor: a full tutorial of the paper and two lecture decks |
-
-## What is required
-
-Only four things. The rest of this repository is above the floor.
-
-1. **`README.md`** — one page: the question, the agent's problem, the main result
-   **with all its conditions**.
-2. **`prompts.md`** — your prompts and the answers, **raw**. Do not tidy them up:
-   the value is in seeing where the model went wrong.
-3. **`hand/`** — at least one photograph of something you derived by hand. Not the
-   whole paper: the one step you did not believe until you did it yourself.
-4. **`presentation.tex` / `.pdf`** — the 5-minute deck, source and compiled.
-
-Deadline is **Thursday 22:00**, work merged into `main` through a pull request,
-and the repository URL posted as a comment on that week's issue.
-
-## About `hand/`
-
-`hand/prop-2-1-derivacion-a-mano.pdf` is three phone photos of a notebook page.
-That is exactly the standard: crooked, with crossings-out, no transcription. What
-it shows is the first-order condition and the interior-versus-corner split written
-out step by step — the part I did not want to take on trust.
-
-## About the LLM conversation
-
-`prompts.md` is the export of the session that produced the tutorial in `extra/`.
-Read it for what it gets wrong as much as for what it gets right. The episode
-worth studying is on slide 4 of the presentation: asked for "the most natural
-extension", the model confidently proposed relaxing the linear cost — which the
-authors had already done in Appendix D. It took opening the appendix to find out.
+The supplied AppliedModelingLib run is **partially formalized**. Its authoritative build and focused interface check succeeded, and `lean/PaperInterface.lean` contains six transparent source-facing Specs, one for each numbered proposition. However, `lean/MainTheorems.lean` contains six unresolved theorem bodies using `sorry`. The successful build shows that the definitions and statements elaborate/typecheck while `sorry` is permitted; it does **not** prove Propositions 1--6. Accepting closeout is additionally blocked outside this paper contribution because the AppliedModelingLib planner requires an append-only registered formalization-engine transition involving external repository engine state.
