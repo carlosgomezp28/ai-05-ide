@@ -26,13 +26,13 @@ The two AI dimensions are distinct:
 
 ## Results
 
-Propositions 1–4 provide the setup. The pre-AI equilibrium is unique and efficient, is occupationally stratified $W\preceq I\preceq S$, and has positive assortative matching. With autonomous AI the equilibrium remains unique and efficient, AI always performs some independent production, $r^*=z_{\mathrm{AI}}$, and $W^*\preceq z_{\mathrm{AI}}\preceq S^*$. Basic AI moves marginal humans from routine work into solving, $W^*\subset W$ and $S\subset S^*$; advanced AI produces the reverse displacement. These reallocations also change worker productivity and solver spans of control.
+Propositions 1–4 provide the setup. The pre-AI equilibrium is unique and efficient, is occupationally stratified $W\preceq I\preceq S$, and has positive assortative matching. With autonomous AI the equilibrium remains unique and efficient, AI always performs some independent production, $r^{*}=z_{\mathrm{AI}}$, and $W^{*}\preceq z_{\mathrm{AI}}\preceq S^{*}$. Basic AI moves marginal humans from routine work into solving, $W^{*}\subset W$ and $S\subset S^{*}$; advanced AI produces the reverse displacement. These reallocations also change worker productivity and solver spans of control.
 
 **Proposition 5 — autonomous AI and the distribution of winners.** Define
 
 $$
-B=\{z\in[0,z_{\mathrm{AI}}]:w^*(z)>w(z)\},\qquad
-T=\{z\in[z_{\mathrm{AI}},1]:w^*(z)>w(z)\}.
+B=\{z\in[0,z_{\mathrm{AI}}]:w^{*}(z)>w(z)\},\qquad
+T=\{z\in[z_{\mathrm{AI}},1]:w^{*}(z)>w(z)\}.
 $$
 
 Under $h<h_0$, competitive pre- and post-AI equilibria, $z_{\mathrm{AI}}\in[0,1)$, and compute abundance uniformly over admissible AI capabilities, there is a cutoff
