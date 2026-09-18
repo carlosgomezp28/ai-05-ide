@@ -21,7 +21,7 @@ workers. Competitive firms have at most two layers, earn zero profit, choose amo
 
 The two AI dimensions are distinct:
 
-- **Capability $z_{\mathrm{AI}}$:** the fraction of problem difficulties the AI can solve; “basic” and “advanced” mean $z_{\mathrm{AI}}\in\operatorname{int}W$ and $z_{\mathrm{AI}}\in\operatorname{int}S$, respectively, relative to the endogenous pre-AI worker and solver sets.
+- **Capability $z_{\mathrm{AI}}$:** the fraction of problem difficulties the AI can solve; “basic” and “advanced” mean $z_{\mathrm{AI}}\in\mathrm{int}(W)$ and $z_{\mathrm{AI}}\in\mathrm{int}(S)$, respectively, relative to the endogenous pre-AI worker and solver sets.
 - **Autonomy:** the roles AI is allowed to perform. Autonomous AI can pursue production as an independent producer or worker and can advise as a solver/co-pilot. Non-autonomous AI can only advise. Thus capability is not autonomy.
 
 ## Results
@@ -38,7 +38,7 @@ T=\{z\in[z_{\mathrm{AI}},1]:w^*(z)>w(z)\}.
 Under $h<h_0$, competitive pre- and post-AI equilibria, $z_{\mathrm{AI}}\in[0,1)$, and compute abundance uniformly over admissible AI capabilities, there is a cutoff
 
 \[
-\bar z_{\mathrm{AI}}\in\operatorname{int}W
+\bar z_{\mathrm{AI}}\in\mathrm{int}(W)
 \quad\text{such that}\quad
 B\neq\varnothing\iff z_{\mathrm{AI}}>\bar z_{\mathrm{AI}},
 \qquad T\neq\varnothing\ \text{for every }z_{\mathrm{AI}}\in[0,1).
